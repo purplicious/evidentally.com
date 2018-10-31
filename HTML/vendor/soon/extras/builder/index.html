@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Soon - Visual Builder</title>
+
+    <link rel="stylesheet" href="css/soon.min.css" type="text/css">
+    <link rel="stylesheet" href="app/hljs.css">
+    <link rel="stylesheet" href="app/hljs_theme.css">
+    <link rel="stylesheet" href="app/spectrum.css">
+    <link rel="stylesheet" href="app/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="app/styles.css" type="text/css">
+
+    <style>
+
+        /* js version specific styles */
+        html,body {
+            margin:0;
+            padding:0;
+        }
+
+        html {
+            color:#444444;;
+            background:#f1f1f1;
+            -webkit-font-smoothing:antialiased;
+        }
+
+        body {
+            overflow-x:hidden;
+        }
+
+        body,button {
+            line-height:1.5;
+            font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+        }
+
+        html,body {
+            height:100%;
+            box-sizing:border-box;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="builder">
+
+    <div class="builder-demo"></div>
+
+    <form class="builder-presets" action="/"></form>
+
+    <form class="builder-form" action="/">
+
+        <h1></h1>
+
+        <div class="btn-group"></div>
+
+        <div class="inner"></div>
+
+    </form>
+
+</div>
+
+<script>
+
+    var soonId = 'my-soon-counter';
+
+    var soonInit = function(){};
+
+    var soonGeneratorFormatter = function(container,source) {
+
+        if (typeof hljs !== 'undefined') {
+            container.innerHTML = hljs.highlight('html',source).value;
+        }
+
+    };
+
+    var soonStorage = {
+
+        save:function(data,cb) {
+            localStorage.setItem('soon',JSON.stringify(data));
+            if (cb){cb();}
+        },
+
+        load:function(cb){
+            var data;
+            try {
+                data = JSON.parse(localStorage.getItem('soon'));
+            }
+            catch(e){}
+            cb(data);
+        }
+
+    };
+
+</script>
+
+<!-- soon library -->
+<script src="js/soon.min.js" data-auto="false"></script>
+
+<!-- jquery -->
+<script src="js/jquery.js"></script>
+
+<!-- app -->
+<script src="app/jquery.datetimepicker.js"></script>
+<script src="app/spectrum.js"></script>
+<script src="app/hljs.js"></script>
+<script src="app/generator.js"></script>
+<script src="app/presets.js"></script>
+<script src="app/fields.js"></script>
+<script src="app/styler.js"></script>
+<script src="app/renderer.js"></script>
+<script src="app/main.js"></script>
+
+</body>
+</html>

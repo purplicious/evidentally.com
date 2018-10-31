@@ -1,0 +1,216 @@
+﻿
+/* ********* LoadingAnimation ******** */
+
+
+/*-- animation --*/	
+.pace:after{
+	content:"";
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background-color:#FFF;
+	z-index:-1;
+}
+.pace_bg, 
+.pace-running 
+.pace_bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #FFF;
+	z-index: 10100;
+}
+.pace-running .dnngo-main {
+	visibility: hidden;
+}
+.animations {
+	visibility: visible;
+}
+.showControlBar .pace_bg {
+	margin-top: -53px!important;
+}
+.pace-running .pace {
+	z-index: 10101;
+}
+.pace, 
+.pace *, 
+.pace *:before, 
+.pace *:after, 
+.pace:before, 
+.pace:after {
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+}
+.pace-done .pace, 
+.pace-done .pace_bg {
+	opacity: 0;
+	z-index: -1;
+	visibility: hidden;
+	transition: all ease-in 500ms;
+	-moz-transition: all ease-in 500ms; /* Firefox 4 */
+	-webkit-transition: all ease-in 500ms; /* Safari and Chrome */
+	-o-transition: all ease-in 500ms; /* Opera */
+	-ms-transition: all ease-in 500ms; /* IE9? */
+}
+/*text slide*/
+.text-slide{
+	display:inline-block;
+	position:relative;
+	overflow:hidden;
+	vertical-align:top;
+}
+.text-slide span {
+	display:none;
+	position:absolute;
+	left:0;
+	top:0;
+}
+@-webkit-keyframes slide-text {
+	0% {
+	opacity:0;
+	-webkit-transform:translateY(100%);
+	}
+	100% {
+	opacity:1;
+	-webkit-transform:translateY(0%);
+	}
+}
+@-o-keyframes slide-text {
+	0% {
+	opacity:0;
+	-o-transform:translateY(100%);
+	}
+	100% {
+	opacity:1;
+	-o-transform:translateY(0%);
+	}
+}
+@keyframes slide-text {
+	0% {
+	opacity:0;
+	transform:translateY(100%);
+	}
+	100% {
+	opacity:1;
+	transform:translateY(0%);
+	}
+}
+@-webkit-keyframes slide-text-previous {
+	0% {
+	opacity:1;
+	-webkit-transform:translateY(0%);
+	}
+	100% {
+	opacity:0;
+	-webkit-transform:translateY(-100%);
+	}
+}
+@-o-keyframes slide-text-previous {
+	0% {
+	opacity:1;
+	-o-transform:translateY(0%);
+	}
+	100% {
+	opacity:0;
+	-o-transform:translateY(-100%);
+	}
+}
+@keyframes slide-text-previous {
+	0% {
+	opacity:1;
+	transform:translateY(0%);
+	}
+	100% {
+	opacity:0;
+	transform:translateY(-100%);
+	}
+}
+.text-slide span.active{
+	display:inline-block;
+	position:static;
+   -webkit-animation-name: slide-text;
+    -o-animation-name: slide-text;
+    animation-name: slide-text;
+    -webkit-animation-duration: 400ms;
+    -o-animation-duration: 400ms;
+    animation-duration: 400ms;
+    -webkit-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+	white-space:nowrap;
+}
+.text-slide span.previous{
+	display:inline-block;
+    -webkit-animation-name: slide-text-previous;
+    -o-animation-name: slide-text-previous;
+    animation-name: slide-text-previous;
+    -webkit-animation-duration: 400ms;
+    -o-animation-duration:400ms;
+    animation-duration:400ms;
+    -webkit-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+	white-space:nowrap;
+}
+
+
+
+@-webkit-keyframes bg-roll-x {
+	100% {
+		background-position-x: 0px;
+	}
+	}
+}
+@-moz-keyframes bg-roll-x {
+	100% {
+		background-position-x: 0px;
+	}
+}
+@-o-keyframes bg-roll-x {
+	100% {
+		background-position-x: 0px;
+	}
+}
+@keyframes bg-roll-x {
+	100% {
+		background-position-x: 0px;
+	}
+}
+@-webkit-keyframes bg-roll-y {
+	100% {
+		background-position-y: 0px;
+	}
+	}
+}
+@-moz-keyframes bg-roll-y {
+	100% {
+		background-position-y: 0px;
+	}
+}
+@-o-keyframes bg-roll-y {
+	100% {
+		background-position-y: 0px;
+	}
+}
+@keyframes bg-roll-y {
+	100% {
+		background-position-y: 0px;
+	}
+}
+.dg-bg-roll-left,
+.dg-bg-roll-right{
+	background-repeat:repeat-x;
+    -webkit-animation: bg-roll-x 30s linear infinite;
+    -moz-animation: bg-roll-x 30s linear infinite;
+    animation: bg-roll-x 30s linear infinite;
+}
+.dg-bg-roll-top,
+.dg-bg-roll-bottom{
+	background-repeat:repeat-y;
+    -webkit-animation: bg-roll-y 20s linear infinite;
+    -moz-animation: bg-roll-y 20s linear infinite;
+    animation: bg-roll-y 20s linear infinite;
+}

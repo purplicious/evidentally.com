@@ -1,0 +1,91 @@
+﻿
+/* ********* ShortCodes-tooltip ******** */
+
+
+.tooltip {
+	font-family:inherit;
+	line-height:inherit;
+}
+
+.custom-bg.tooltip > .tooltip-arrow{
+	border:none;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	transform-origin:center;
+	-webkit-transform-origin:center;
+	width:8px;
+	height:8px;
+}
+
+
+.color-demo .tooltip-inner{
+	white-space:nowrap;
+}
+
+div.tooltip.in{
+	opacity:1;
+}
+.tooltip .tooltip-inner {
+    padding: 5px 12px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	font-size:13px;
+}
+.color-demo .tooltip.in{
+	position:relative;
+	margin-bottom:12px;
+}
+.tooltip.top .tooltip-arrow{
+	border-left-color:transparent!important;
+	border-right-color:transparent!important;
+	border-bottom-color:transparent!important;
+}
+.tooltip.left .tooltip-arrow{
+	border-right-color:transparent!important;
+	border-top-color:transparent!important;
+	border-bottom-color:transparent!important;
+}
+.tooltip.right .tooltip-arrow{
+	border-left-color:transparent!important;
+	border-top-color:transparent!important;
+	border-bottom-color:transparent!important;
+}
+.tooltip.bottom .tooltip-arrow{
+	border-top-color:transparent!important;
+	border-right-color:transparent!important;
+	border-left-color:transparent!important;
+}
+
+.tooltip {
+	font-family:inherit;
+	line-height:inherit;
+}
+
+.custom-bg.tooltip > .tooltip-arrow{
+	border:none;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	transform-origin:center;
+	-webkit-transform-origin:center;
+	width:8px;
+	height:8px;
+}
+
+
+.custom-bg.tooltip.top>.tooltip-arrow {
+    bottom: 1px;
+	margin-left: -3px;
+}
+.custom-bg.tooltip.right>.tooltip-arrow {
+    left: 1px;
+    margin-top: -3px;
+}
+.custom-bg.tooltip.bottom>.tooltip-arrow {
+    top: 1px;
+    margin-left: -3px;
+}
+.custom-bg.tooltip.left>.tooltip-arrow {
+    right: 1px;
+    margin-top: -3px;   
+}

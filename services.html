@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Content Slider</title>
+
+<link href="fonts/ostrich_sans/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
+<link href="css/content_slider_style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.content_slider.min.js" type="text/javascript"></script>
+<script src="js/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.animate-colors.js" type="text/javascript"></script>
+<script src="js/additional_content.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function() {
+			var image_array = new Array();
+			image_array = [
+				{image: 'content/services/1.png', link_url: 'content/our_team/1big.jpg', link_rel: 'prettyPhoto'},
+					// image for the first layer, goes with the text from id="sw0"
+				{image: 'content/services/2.png', link_url: 'content/our_team/2big.jpg', link_rel: 'prettyPhoto'},
+					// image for the second layer, goes with the text from id="sw1"
+				{image: 'content/services/3.png', link_url: 'content/our_team/3big.jpg', link_rel: 'prettyPhoto'},
+					// image for the third layer, goes with the text from id="sw2"
+				{image: 'content/services/4.png', link_url: 'content/our_team/4big.jpg', link_rel: 'prettyPhoto'},
+					// ...
+				{image: 'content/services/5.png', link_url: 'content/our_team/5big.jpg', link_rel: 'prettyPhoto'},
+				{image: 'content/services/6.png', link_url: 'content/our_team/6big.jpg', link_rel: 'prettyPhoto'},
+				{image: 'content/services/7.png', link_url: 'content/our_team/7big.jpg', link_rel: 'prettyPhoto'}
+			];
+			$('#slider1').content_slider({		// bind plugin to div id="slider1"
+				map : image_array,				// pointer to the image map
+				max_shown_items: 7,				// number of visible circles
+				hv_switch: 0,					// 0 = horizontal slider, 1 = vertical
+				active_item: 0,					// layer that will be shown at start, 0=first, 1=second...
+				wrapper_text_max_height: 810,	// height of widget, displayed in pixels
+				middle_click: 1,				// when main circle is clicked: 1 = slider will go to the previous layer/circle, 2 = to the next
+				under_600_max_height: 1200,		// if resolution is below 600 px, set max height of content
+				border_radius:	-1,				// -1 = circle, 0 and other = radius
+				border_on_off: 0,
+				allow_shadow: 0
+			});
+		});
+	})(jQuery);
+</script>
+<link href="css/doc_style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+
+<div class="selectors">
+<h3 style="color:#313131;">Previews:</h3>
+<a href="index.html">Our team</a> <a href="sidebar.html">Widget style</a> <a href="products.html">Products</a> <a href="portfolio.html">Portfolio</a> <a href="services.html">Services</a> <a href="vertical.html">Vertical</a> 
+<a href="left_aligned.html">Left aligned</a> <a href="right_aligned.html">Right aligned</a> <a href="with_text_label.html">With text label</a><br /><a href="how_to_link.html">How to link a desired frame</a> <a href="how_to_control.html">How to control the slider</a> <a href="documentation.html">Documentation</a>
+</div>
+
+<img src="content/instructions/services.png" alt="" />
+
+<div class="content_slider_wrapper" id="slider1">
+
+	<div class="circle_slider_text_wrapper" id="sw0" style="display: none;">
+	<!-- content for the first layer, id="sw0" -->
+		<div class="content_slider_text_block_wrap">
+			<h3>Check-box service</h3><br/ ><br />
+			<div class="separator"></div>
+			<br /><br />
+			
+			<div class="col-1-3_block">	
+				<h4>BRAINSTORMING</h4>
+				<img src="content/services/1-1.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>LIGHT READING</h4>
+				<img src="content/services/1-2.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>CALCULATIONS & DEVELPOMENT</h4>
+				<img src="content/services/1-3.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+
+			<br /><br /><br />
+			<a href="#" class="large_link">View entire process</a><!-- large_link -->
+			
+		</div>
+		<div class="clear"></div>	
+	</div>
+
+	<div class="circle_slider_text_wrapper" id="sw1" style="display: none;">
+	<!-- content for the second layer, id="sw1" -->
+		<div class="content_slider_text_block_wrap">
+			<h3>Desktop Application Development</h3><br/ ><br />
+			<div class="separator"></div>
+			<br /><br />
+			
+			<div class="col-1-3_block">	
+				<h4>DESIGN/BRIEF SPECIFICATIONS</h4>
+				<img src="content/services/2-1.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>REPORT & MEMO</h4>
+				<img src="content/services/2-2.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>STAFF ASSIGNMENT</h4>
+				<img src="content/services/2-3.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+
+			<br /><br /><br />
+			<a href="#" class="large_link">View entire process</a><!-- large_link -->
+			
+		</div>
+		<div class="clear"></div>	
+	</div>
+
+<div class="circle_slider_text_wrapper" id="sw2" style="display: none;">
+	<!-- content for the third layer, id="sw2" -->
+		<div class="content_slider_text_block_wrap">
+			<h3>Online Application Development</h3><br/ ><br />
+			<div class="separator"></div>
+			<br /><br />
+			
+			<div class="col-1-3_block">	
+				<h4>ESTIMATED COST</h4>
+				<img src="content/services/3-1.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>COMPETITION RESEARCH</h4>
+				<img src="content/services/3-2.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>DEADLINE CALCULATIONS</h4>
+				<img src="content/services/3-3.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+
+			<br /><br /><br />
+			<a href="#" class="large_link">View entire process</a><!-- large_link -->
+			
+		</div>
+		<div class="clear"></div>	
+	</div>
+
+	<div class="circle_slider_text_wrapper" id="sw3" style="display: none;">
+		<!-- content for the fourth layer, id="sw3" -->
+		<div class="content_slider_text_block_wrap">
+			<h3>Multimedia Development</h3><br/ ><br />
+			<div class="separator"></div>
+			<br /><br />
+			
+			<div class="col-1-3_block">	
+				<h4>TYPE OF MULTIMEDIA</h4>
+				<img src="content/services/4-1.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>CASTING</h4>
+				<img src="content/services/4-2.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>SOUND SETTINGS</h4>
+				<img src="content/services/4-3.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+
+			<br /><br /><br />
+			<a href="#" class="large_link">View entire process</a><!-- large_link -->
+			
+		</div>
+		<div class="clear"></div>	
+	</div>
+	
+	<div class="circle_slider_text_wrapper" id="sw4" style="display: none;">	
+<!-- content for the fifth layer, id="sw4" -->
+		<div class="content_slider_text_block_wrap">
+			<h3>Industrial Design</h3><br/ ><br />
+			<div class="separator"></div>
+			<br /><br />
+			
+			<div class="col-1-3_block">	
+				<h4>DATE OF PLACEMENT</h4>
+				<img src="content/services/5-1.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>ESTIMATED REVENUE</h4>
+				<img src="content/services/5-2.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>FILING & REGISTRATION</h4>
+				<img src="content/services/5-3.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+
+			<br /><br /><br />
+			<a href="#" class="large_link">View entire process</a><!-- large_link -->
+			
+		</div>
+		<div class="clear"></div>	
+	</div>
+	
+	
+	<div class="circle_slider_text_wrapper" id="sw5" style="display: none;">
+<!-- content for the sixth layer, id="sw5" -->
+		<div class="content_slider_text_block_wrap">
+			<h3>Expert Chart Analysis</h3><br/ ><br />
+			<div class="separator"></div>
+			<br /><br />
+			
+			<div class="col-1-3_block">	
+				<h4>BUSINESS MEETING</h4>
+				<img src="content/services/6-1.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>COMPANY ASSESTMENT</h4>
+				<img src="content/services/6-2.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>COMPANY FILES</h4>
+				<img src="content/services/6-3.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+
+			<br /><br /><br />
+			<a href="#" class="large_link">View entire process</a><!-- large_link -->
+			
+		</div>
+		<div class="clear"></div>	
+	</div>
+
+	<div class="circle_slider_text_wrapper" id="sw6" style="display: none;">
+		<!-- content for the seventh layer, id="sw6" -->
+		<div class="content_slider_text_block_wrap">
+			<h3>Monthly Report Development</h3><br/ ><br />
+			<div class="separator"></div>
+			<br /><br />
+			
+			<div class="col-1-3_block">	
+				<h4>MONTH ASSESMENT</h4>
+				<img src="content/services/7-1.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>WRITING OF THE REPORT</h4>
+				<img src="content/services/7-2.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+			
+			<div class="col-1-3_block">	
+				<h4>DETAILED DATA-CHECK</h4>
+				<img src="content/services/7-3.png" alt="" /><br /><br />
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br /><br /><br />
+				<a href="#" class="button_regular button_hover_effect" data-hovercolor="#1fdab5" data-hoveroutcolor="#1ab99b">More Info</a><!-- button_regular -->
+			</div><!-- col-1-3_block -->
+
+			<br /><br /><br />
+			<a href="#" class="large_link">View entire process</a><!-- large_link -->
+			
+		</div>
+		<div class="clear"></div>	
+	</div>
+
+</div>
+
+
+</body>
+</html>

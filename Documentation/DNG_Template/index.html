@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <title>DNG Template documentation</title>
+
+  <!-- Styles -->
+  <link href="assets/css/theDocs.all.min.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400' rel='stylesheet' type='text/css'>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="assets/img/favicon.png">
+</head>
+
+<body data-spy="scroll" data-target=".sidebar" data-offset="200">
+
+
+  <!-- Sidebar -->
+  <aside class="sidebar sidebar-boxed sidebar-dark">
+    <ul class="nav sidenav dropable">
+      <li><a href="#Files-Structure">Files Structure</a></li>
+      <li><a href="#HTML-Structure">HTML Structure</a></li>
+      <li><a href="#Layout-Settings">Layout Settings</a></li>
+      <li><a href="#Logo-Settings">Logo Settings</a></li>
+      <li><a href="#Roll-Menu-Logo-Settings">Roll Menu Logo Settings</a></li>
+      <li><a href="#Favicons-Icons">Favicons Icons</a></li>
+      <li><a href="#Headers">Headers</a></li>
+      <li><a href="#Page-Title">Page Title</a></li>
+      <li><a href="#Page-Loading-Transitions">Page Loading Transitions</a></li>
+      <li><a href="#Dark-Scheme">Dark Scheme</a></li>
+      <li><a href="#Icons">Icons</a></li>
+      <li><a href="#Fonts">Fonts</a></li>
+      <li><a href="#Revolution-Slider">Revolution Slider</a></li>
+      <li><a href="#Helpers-CSS">Helpers CSS</a></li>
+      <li><a href="#Animations">Animations</a></li>
+      <li><a href="#Google-Map">Google Map</a></li>
+      <li><a href="#Source-Credits">Source & Credits</a></li>
+      <li><a href="#Changelog">Changelog</a></li>
+    </ul>
+
+  </aside>
+  <!-- END Sidebar -->
+
+
+  <header class="site-header navbar-transparent">
+
+    <!-- Top navbar & branding -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+
+        <!-- Toggle buttons and brand -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+              <span class="glyphicon glyphicon-option-vertical"></span>
+            </button>
+
+          <button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <!-- END Toggle buttons and brand -->
+
+        <!-- Top navbar -->
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Documentation</a></li>
+            <li><a href="https://dngsupport.ticksy.com/" target="_blank">Support</a></li>
+            <li class="hero"><a href="">Purchase</a></li>
+          </ul>
+        </div>
+        <!-- END Top navbar -->
+
+      </div>
+    </nav>
+    <!-- END Top navbar & branding -->
+
+    <!-- Banner -->
+    <div class="banner auto-size" style="background-color: #5cc7b2">
+      <div class="container-fluid text-white">
+        <h1><strong>DNG Template</strong> documentation</h1>
+        <h5>Version: 1.1 | Last update: 01/15/2018</h5>
+      </div>
+    </div>
+    <!-- END Banner -->
+
+  </header>
+
+  <main class="container-fluid">
+
+    <!-- Main content -->
+    <article class="main-content" role="main">
+
+      <p class="lead">Thank you for purchasing DNG template on ThemeForest! </p>
+      <p class="lead">The documentation will help you know the structure of template and guide you about the common functions. If what you need can’t be found here, please contact us for further help.</p>
+      <p class="lead">Our email address is support@dnngo.net</p> 
+      <section>
+        <h2 id="Files-Structure">Files Structure</h2>
+        <p>Once you download the package, you will find the following folders:</p>
+        <div class="file-tree">
+          <ul>
+            <li class="is-folder open">
+              HTML<i>Template Files </i>
+              <ul>
+                <li class="is-folder open">
+                  CSS<i>Template CSS</i>
+                  <ul>
+                    <li class="is-folder">component<i>CSS of components</i></li>
+                    <li class="is-folder">demos<i>CSS of demo pages</i></li>
+                    <li class="is-folder">elements<i>CSS of elements</i></li>
+                    <li class="is-folder">theme-color<i>CSS of accent colors</i></li>
+                    <li class="is-file">theme.css<i>Main CSS of template</i></li>
+                    <li class="is-file">blog.css<i>CSS of blog page</i></li>
+                    <li class="is-file">dark.css<i>CSS of dark mode</i></li>
+                    <li class="is-file">dnngo-font-icon.css<i>CSS of font icons</i></li>
+                    <li class="is-file">footer.css<i>CSS of footer</i></li>
+                    <li class="is-file">header.css<i>CSS of header</i></li>
+                    <li class="is-file">page-title.css<i>CSS of page title</i></li>
+                    <li class="is-file">portfolios.css<i>CSS of portfolio page</i></li>
+                    <li class="is-file">sidebar.css<i>CSS of sidebar</i></li>
+                    <li class="is-file">widget.css<i>CSS of widget</i></li>
+                  </ul>
+                </li>
+
+                <li class="is-folder">
+                  fonts<i>Font folder</i>
+                </li>
+
+                <li class="is-folder">
+                  icon-svg<i>Icons in Svg format</i>
+                </li>
+
+                <li class="is-folder">
+                  inset<i>Images folder</i>
+                </li>
+                <li class="is-folder">
+                  js<i>Javacripts folder</i>
+                </li>
+                <li class="is-folder">
+                  vendor<i>Javacripts plugins folder</i>
+                </li>
+              </ul>
+            </li>
+            <li class="is-folder">
+              Documentation<i>Documentation</i>
+            </li>
+            <li class="is-folder">
+              PSD<i>Download URLs for PSD files</i>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="HTML-Structure">HTML Structure</h2>
+        <p>The template is based on Bootstrap 3 Framework - http://getbootstrap.com </p>
+        <p>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the
+          device or viewport size increases.</p>
+        <p>Below is a sample coding structure:</p>
+        <pre class="line-numbers"><code class="language-markup">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;!-- Page meta, page css, page js files, page title etc... --&gt;
+  &lt;/head&gt;
+&lt;body&gt;   
+
+  &lt;!-- Theme Main --&gt;
+  &lt;div class=&quot;theme-main&quot;&gt;
+    &lt;div id=&quot;wrapper&quot;&gt;
+
+      &lt;!-- Header --&gt;
+      &lt;header&gt;
+      ...
+      &lt;/header&gt;   
+
+      &lt;!-- Mobile Header --&gt;
+      &lt;div class=&quot;visible-xs visible-sm mobile-header&quot;&gt;
+      ...
+      &lt;/div&gt;   
+
+      &lt;!-- Content --&gt;
+      &lt;section id=&quot;page-content&quot;&gt;
+      ...
+      &lt;/section&gt;  
+
+      &lt;!-- Footer --&gt;
+      &lt;footer class=&quot;footer-box footer-01&quot;&gt;
+      ...
+      &lt;/footer&gt;  
+      
+      &lt;!-- Back Top --&gt;
+      &lt;div id="to-top" class=&quot;backtop01&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+
+    &lt;/div&gt;        
+  &lt;/div&gt;
+
+  &lt;!-- Scripts --&gt;
+          
+  &lt;/body&gt;
+&lt;/html&gt;
+          
+          </code></pre>
+        </section>
+        <section>
+          <h2 id="Layout-Settings">Layout Settings</h2>
+          <p>The template supports 2 different kinds of layout modes: Boxed & Wide Layout. And Wide Layout is the default option, if you want to use the Boxed version, please add the following class in&lt;html&gt;, then the layout style will be changed to boxed version.</p>
+          <pre class="line-numbers"><code class="language-markup">&lt;html class=&quot;boxed&quot;&gt;</code></pre>
+        </section>
+        <section>
+          <h2 id="Logo-Settings">Logo Settings</h2>
+          <p>The default website Logo is in the #header container.</p>
+          <pre class="line-numbers"><code class="language-markup">
+&lt;div class=&quot;Logobox&quot;&gt;
+  &lt;a title=&quot;Logo&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;inset/logo.png&quot; srcset=&quot;inset/logo-2x.png 2x&quot; alt=&quot;Logo&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+          <p><span class="label label-danger">Retina Logo</span> If you want to display high-resolution retinal with retina logo on your website, then you just need to put the same directory to the high-resolution file whose name is logo-2x.png.</p>
+        </section>
+        <section>
+          <h2 id="Roll-Menu-Logo-Settings">Roll Menu Logo Settings</h2>
+          <p>You can use the following code to set the logo of roll menu</p>
+          <pre class="line-numbers"><code class="language-markup">
+&lt;div class=&quot;FixedLogoPane&quot;&gt;
+  &lt;a title=&quot;Logo&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;inset/logo.png&quot; srcset=&quot;inset/logo-2x.png 2x&quot; alt=&quot;Logo&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+        </section>
+        <section>
+          <h2 id="Favicons-Icons">Favicons Icons</h2>
+          <p>You can add a Favicon to your Website by using the following code:</p>
+          <pre class="line-numbers"><code class="language-markup">
+  &lt;link href=&quot;inset/favicon.ico&quot; rel=&quot;shortcut icon&quot;&gt;</code></pre>
+        </section>
+        <section>
+          <h2 id="Headers">Headers</h2>
+          <p>This theme contains 61 different header styles, you can find the code in the Header-*.html file.</p>
+        </section>
+        <section>
+          <h2 id="Page-Title">Page Title</h2>
+          <p>This theme contains 5 different page title styles</p>
+          <h3>Example 1: Page Title style with Text & Breadcrumbs aligned Center.</h3>
+<pre class="line-numbers"><code class="language-markup">
+&lt;div class=&quot;pagetitleBox pagetitle-layout-center pagetitle-md pagetitle-grey&quot;&gt;
+  &lt;div class=&quot;container &quot;&gt;
+      &lt;div class=&quot;pagetitle-border&quot;&gt;
+        &lt;h1 class=&quot;title&quot;&gt;Page Title 01&lt;/h1&gt;
+        &lt;div class=&quot;breadcrumb-box&quot;&gt;
+        &lt;em class=&quot;fa fa-home&quot;&gt;&lt;/em&gt;
+        &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+        &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+        &lt;span itemprop=&quot;breadcrumb&quot; itemscope=&quot;&quot; itemtype=&quot;https://schema.org/breadcrumb&quot;&gt;
+        &lt;span itemscope=&quot;&quot; itemtype=&quot;http://schema.org/BreadcrumbList&quot;&gt;&lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Features&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;1&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+        &lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Page Title&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;2&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+        &lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Page Title 01&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;3&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;pagetitle-info&quot;&gt;Sed ut perspiciatis unde omnis&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>    
+<h3>Example 2: Page Title style with Text aligned Left & Breadcrumbs Right.</h3>
+<pre class="line-numbers"><code class="language-markup">
+&lt;div class=&quot;pagetitleBox pagetitle-layout-normal pagetitle-md pagetitle-grey&quot;&gt;
+  &lt;div class=&quot;container &quot;&gt;
+    &lt;div class=&quot;pagetitle-border&quot;&gt;
+      &lt;div class=&quot;pagetitle-left&quot;&gt;
+        &lt;h1 class=&quot;title&quot;&gt;Page Title 02&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;pagetitle-right&quot;&gt;
+        &lt;div class=&quot;breadcrumb-box&quot;&gt;
+          &lt;em class=&quot;fa fa-home&quot;&gt;&lt;/em&gt;
+          &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+          &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+          &lt;span itemprop=&quot;breadcrumb&quot; itemscope=&quot;&quot; itemtype=&quot;https://schema.org/breadcrumb&quot;&gt;
+          &lt;span itemscope=&quot;&quot; itemtype=&quot;http://schema.org/BreadcrumbList&quot;&gt;&lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Features&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;1&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+          &lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Page Title&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;2&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+          &lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Page Title 02&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;3&quot;&gt;
+          &lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h3>Example 3: Page Title style with Text aligned Right & Breadcrumbs Left.</h3>
+<pre class="line-numbers"><code class="language-markup">
+&lt;div class=&quot;pagetitleBox pagetitle-layout-normal pagetitle-md pagetitle-grey pagetitle-mobile-reverse&quot;&gt;
+  &lt;div class=&quot;container &quot;&gt;
+    &lt;div class=&quot;pagetitle-border&quot;&gt;
+      &lt;div class=&quot;pagetitle-left&quot;&gt;
+        &lt;div class=&quot;breadcrumb-box&quot;&gt;
+          &lt;em class=&quot;fa fa-home&quot;&gt;&lt;/em&gt;
+          &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+          &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+          &lt;span itemprop=&quot;breadcrumb&quot; itemscope=&quot;&quot; itemtype=&quot;https://schema.org/breadcrumb&quot;&gt;
+          &lt;span itemscope=&quot;&quot; itemtype=&quot;http://schema.org/BreadcrumbList&quot;&gt;&lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Features&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;1&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+          &lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Page Title&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;2&quot;&gt;
+          &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+          &lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Page Title 03&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;3&quot;&gt;&lt;/span&gt;
+          &lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;pagetitle-right&quot;&gt;
+        &lt;h1 class=&quot;title&quot;&gt;Page Title 03&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h3>Example 4: Page Title style with Text aligned Left, Breadcrumbs Left & Description Right.</h3>
+<pre class="line-numbers"><code class="language-markup">
+&lt;div class=&quot;pagetitleBox pagetitle-layout-column pagetitle-md pagetitle-grey&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;pagetitle-border&quot;&gt;
+      &lt;div class=&quot;pagetitle-left&quot;&gt;
+        &lt;h1 class=&quot;title&quot;&gt;Page Title 04&lt;/h1&gt;
+        &lt;div class=&quot;breadcrumb-box&quot;&gt;
+          &lt;em class=&quot;fa fa-home&quot;&gt;&lt;/em&gt;
+          &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+          &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+          &lt;span itemprop=&quot;breadcrumb&quot; itemscope=&quot;&quot; itemtype=&quot;https://schema.org/breadcrumb&quot;&gt;
+          &lt;span itemscope=&quot;&quot; itemtype=&quot;http://schema.org/BreadcrumbList&quot;&gt;
+          &lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Features&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;1&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+          &lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Page Title&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;2&quot;&gt;
+          &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+          &lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Page Title 04&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;3&quot;&gt;&lt;/span&gt;
+          &lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;pagetitle-right&quot;&gt;
+          &lt;div class=&quot;pagetitle-info&quot;&gt;
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h3>Example 5: Page Title style with Text aligned Right, Breadcrumbs Right & Description Left.</h3>
+<pre class="line-numbers"><code class="language-markup">
+&lt;div class=&quot;pagetitleBox pagetitle-layout-column pagetitle-md pagetitle-grey pagetitle-mobile-reverse&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;pagetitle-border&quot;&gt;
+      &lt;div class=&quot;pagetitle-left&quot;&gt;
+        &lt;div class=&quot;pagetitle-info&quot;&gt;
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;pagetitle-right&quot;&gt;
+        &lt;h1 class=&quot;title&quot;&gt;Page Title 05&lt;/h1&gt;
+        &lt;div class=&quot;breadcrumb-box&quot;&gt;
+          &lt;em class=&quot;fa fa-home&quot;&gt;&lt;/em&gt;
+          &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+          &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+          &lt;span itemprop=&quot;breadcrumb&quot; itemscope=&quot;&quot; itemtype=&quot;https://schema.org/breadcrumb&quot;&gt;
+          &lt;span itemscope=&quot;&quot; itemtype=&quot;http://schema.org/BreadcrumbList&quot;&gt;
+          &lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Features&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;1&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+          &lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Page Title&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;2&quot;&gt;
+          &lt;span class=&quot;separator&quot;&gt;/&lt;/span&gt;
+          &lt;span itemprop=&quot;itemListElement&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pagetitle&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Page Title 05&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;3&quot;&gt;&lt;/span&gt;
+          &lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+         <p><strong>Options</strong></p>
+         <div class="table-responsive">
+          <table class="table table-bordered ">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>  
+              <tr>
+                <td><code>.pagetitle-grey</code></td>
+                <td>Set the background of page title to be grey</td>
+              </tr>  
+              <tr>
+                <td><code>.pagetitle-xs</code><br/><code>.pagetitle-sm</code><br/><code>.pagetitle-md</code><br/><code>.pagetitle-lg</code><br/><code>.pagetitle-xl</code></td>
+                <td>Set the size of page title</td>
+              </tr>      
+              <tr>
+                <td><code>.pagetitle-full</code></td>
+                <td>Set the height of page title to be same as the height of browser window </td>
+              </tr>                        
+            </tbody>
+          </table>
+        </div>
+        </section>
+        <section>
+          <h2 id="Page-Loading-Transitions">Page Loading Transitions</h2>
+          <p>You can show interactive loaders to your visitors while the site pages load</p>
+          <p>First, you need to put the following code to &lt;head&gt;&lt;/head&gt;</p>
+          <pre class="line-numbers"><code class="language-markup">
+  &lt;link href=&quot;css/component/loaders.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;</code></pre>
+          <p>Then, put the following code to the top of &lt;body&gt;&lt;/body&gt;</p>
+          <pre class="line-numbers"><code class="language-markup">
+  &lt;!--Page loaders--&gt;
+  &lt;div class=&quot;page-loaders&quot;&gt;
+    &lt;div class=&quot;loaders&quot;&gt;
+      &lt;div class=&quot;loader-inner ball-clip-rotate-multiple loader-accent&quot;&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+          <p>More loading animations, please refer Page-loaders.html file</p>
+        </section>
+        <section>
+          <h2 id="Dark-Scheme">Dark Scheme</h2>
+          <p>You can completely change the Contrast of the Website to Dark</p>
+          <p>First, you need to put the following code to&lt;head&gt;&lt;/head&gt;</p>
+          <pre class="line-numbers"><code class="language-markup">
+  &lt;link href=&quot;css/dark.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;</code></pre>
+          <p>The add the following classes to &lt;html&gt;</p>
+          <pre class="line-numbers"><code class="language-markup">&lt;html class=&quot;dark&quot;&gt;</code></pre>
+        </section>        
+        <section>
+          <h2 id="Icons">Icons</h2>
+          <p>This theme contains <<strong>Font Awesome</strong> and <strong>Linearicons</strong> font libraries. You can find the complete icons list and class names from ShortCodes-Icons.html</p>
+        </section>
+        <section>
+          <h2 id="Fonts">Fonts</h2>
+          <p>This theme is using Google Fonts Library, check the head of website, you will find the tag here</p>
+          <pre class="line-numbers"><code class="language-markup">&lt;!--Google Fonts--&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css?family=Raleway:100,400,600&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;</code></pre>
+          <p>Want to change the font? Please go to http://www.google.com/webfonts to choose one font and use the generated code.</p>          
+        </section>
+        <section>
+          <h2 id="Revolution-Slider">Revolution Slider</h2>
+          <p>Revolution Slider plugin is contained in this theme, it is an amazing animation slider and will catch people’s attention.</p>
+          <p>Please find the full online documentation of Revolution Slider <a href="http://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/"
+              target="_blank">here</a></p>
+        </section>
+        <section>
+          <h2 id="Helpers-CSS">Helpers CSS</h2>
+          <p>Helpers CSS allows you to create your own custom layout without knowing any CSS code. Check here, you will know what they can do.</p>
+          <h3>Margins</h3>
+          <p>You can put the Helpers CSS to the HTML code of any element to set the margins</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>.mt-0</code></td>
+                  <td>margin-top: 0!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mr-0</code></td>
+                  <td>margin-right: 0!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mb-0</code></td>
+                  <td>margin-bottom: 0!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.ml-0</code></td>
+                  <td>margin-left: 0!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.mt-5</code></td>
+                  <td>margin-top: 5!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mr-5</code></td>
+                  <td>margin-right: 5!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mb-5</code></td>
+                  <td>margin-bottom: 5!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.ml-5</code></td>
+                  <td>margin-left: 5!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.mt-10</code></td>
+                  <td>margin-top: 10!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mr-10</code></td>
+                  <td>margin-right: 10!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mb-10</code></td>
+                  <td>margin-bottom: 10!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.ml-10</code></td>
+                  <td>margin-left: 10!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.mt-20</code></td>
+                  <td>margin-top: 20!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mr-20</code></td>
+                  <td>margin-right: 20!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mb-20</code></td>
+                  <td>margin-bottom: 20!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.ml-20</code></td>
+                  <td>margin-left: 20!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.mt-30</code></td>
+                  <td>margin-top: 30!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mr-30</code></td>
+                  <td>margin-right: 30!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mb-30</code></td>
+                  <td>margin-bottom: 30!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.ml-30</code></td>
+                  <td>margin-left: 30!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.mt-40</code></td>
+                  <td>margin-top: 40!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mr-40</code></td>
+                  <td>margin-right: 40!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mb-40</code></td>
+                  <td>margin-bottom: 40!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.ml-40</code></td>
+                  <td>margin-left: 40!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.mt-50</code></td>
+                  <td>margin-top: 50!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mr-50</code></td>
+                  <td>margin-right: 50!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mb-50</code></td>
+                  <td>margin-bottom: 50!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.ml-50</code></td>
+                  <td>margin-left: 50!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.mt-60</code></td>
+                  <td>margin-top: 60!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mr-60</code></td>
+                  <td>margin-right: 60!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mb-60</code></td>
+                  <td>margin-bottom: 60!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.ml-60</code></td>
+                  <td>margin-left: 40!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.mt-70</code></td>
+                  <td>margin-top: 40!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mr-70</code></td>
+                  <td>margin-right: 70!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mb-70</code></td>
+                  <td>margin-bottom: 70!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.ml-70</code></td>
+                  <td>margin-left: 70!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.mt-80</code></td>
+                  <td>margin-top: 40!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mr-80</code></td>
+                  <td>margin-right: 80!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.mb-80</code></td>
+                  <td>margin-bottom: 80!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.ml-80</code></td>
+                  <td>margin-left: 80!important;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Paddings</h3>
+          <p>You can put the Helpers CSS to the HTML code of any element to set the paddings</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>.pt-0</code></td>
+                  <td>padding-top: 0!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pr-0</code></td>
+                  <td>padding-right: 0!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pb-0</code></td>
+                  <td>padding-bottom: 0!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pl-0</code></td>
+                  <td>padding-left: 0!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.pt-5</code></td>
+                  <td>padding-top: 5!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pr-5</code></td>
+                  <td>padding-right: 5!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pb-5</code></td>
+                  <td>padding-bottom: 5!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pl-5</code></td>
+                  <td>padding-left: 5!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.pt-10</code></td>
+                  <td>padding-top: 10!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pr-10</code></td>
+                  <td>padding-right: 10!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pb-10</code></td>
+                  <td>padding-bottom: 10!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pl-10</code></td>
+                  <td>padding-left: 10!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.pt-20</code></td>
+                  <td>padding-top: 20!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pr-20</code></td>
+                  <td>padding-right: 20!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pb-20</code></td>
+                  <td>padding-bottom: 20!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pl-20</code></td>
+                  <td>padding-left: 20!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.pt-30</code></td>
+                  <td>padding-top: 30!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pr-30</code></td>
+                  <td>padding-right: 30!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pb-30</code></td>
+                  <td>padding-bottom: 30!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pl-30</code></td>
+                  <td>padding-left: 30!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.pt-40</code></td>
+                  <td>padding-top: 40!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pr-40</code></td>
+                  <td>padding-right: 40!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pb-40</code></td>
+                  <td>padding-bottom: 40!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pl-40</code></td>
+                  <td>padding-left: 40!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.pt-50</code></td>
+                  <td>padding-top: 50!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pr-50</code></td>
+                  <td>padding-right: 50!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pb-50</code></td>
+                  <td>padding-bottom: 50!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pl-50</code></td>
+                  <td>padding-left: 50!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.pt-60</code></td>
+                  <td>margin-top: 60!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pr-60</code></td>
+                  <td>padding-right: 60!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pb-60</code></td>
+                  <td>padding-bottom: 60!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pl-60</code></td>
+                  <td>padding-left: 40!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.pt-70</code></td>
+                  <td>padding-top: 40!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pr-70</code></td>
+                  <td>padding-right: 70!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pb-70</code></td>
+                  <td>padding-bottom: 70!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pl-70</code></td>
+                  <td>padding-left: 70!important;</td>
+                </tr>
+
+                <tr>
+                  <td><code>.pt-80</code></td>
+                  <td>padding-top: 40!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pr-80</code></td>
+                  <td>padding-right: 80!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pb-80</code></td>
+                  <td>padding-bottom: 80!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.pl-80</code></td>
+                  <td>padding-left: 80!important;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Width</h3>
+          <p>You can put the Helpers CSS to the HTML code of any element to set the width</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>.width-95</code></td>
+                  <td>margin: auto; width: 95%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-90</code></td>
+                  <td>margin: auto; width: 90%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-85</code></td>
+                  <td>margin: auto; width: 85%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-80</code></td>
+                  <td>margin: auto; width: 80%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-75</code></td>
+                  <td>margin: auto; width: 75%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-70</code></td>
+                  <td>margin: auto; width: 70%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-65</code></td>
+                  <td>margin: auto; width: 65%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-60</code></td>
+                  <td>margin: auto; width: 60%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-55</code></td>
+                  <td>margin: auto; width: 55%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-50</code></td>
+                  <td>margin: auto; width: 50%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-45</code></td>
+                  <td>margin: auto; width: 45%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-40</code></td>
+                  <td>margin: auto; width: 40%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-35</code></td>
+                  <td>margin: auto; width: 35%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-30</code></td>
+                  <td>margin: auto; width: 30%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-25</code></td>
+                  <td>margin: auto; width: 25%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-20</code></td>
+                  <td>margin: auto; width: 20%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-15</code></td>
+                  <td>margin: auto; width: 15%; text-align: center;</td>
+                </tr>
+                <tr>
+                  <td><code>.width-10</code></td>
+                  <td>margin: auto; width: 10%; text-align: center;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Text Colors</h3>
+          <p>You can put the Helpers CSS to the HTML code of any element to set the text color</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>.color-turquoise</code></td>
+                  <td>color:#08dcf5!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-borland</code></td>
+                  <td>color:#20a3f0!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-denim</code></td>
+                  <td>color:#127dcf!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-gray</code></td>
+                  <td>color:#333333!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-black</code></td>
+                  <td>color:#191919!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-night</code></td>
+                  <td>color:#323232!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-emerald</code></td>
+                  <td>color:#40d075!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-orange</code></td>
+                  <td>color:#f39705!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-chambray</code></td>
+                  <td>color:#505f79!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-bittersweet</code></td>
+                  <td>color:#ff6061!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-pelorous</code></td>
+                  <td>color:#237da6!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-citrus</code></td>
+                  <td>color:#a9d300!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-blackberry</code></td>
+                  <td>color:#461135!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-melon</code></td>
+                  <td>color:#febbb4!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-lipstick</code></td>
+                  <td>color:#9a2c4a!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-darkcyan</code></td>
+                  <td>color:#007c8e!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-toryblue</code></td>
+                  <td>color:#40548e!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-crimson</code></td>
+                  <td>color:#ef1d38!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-celery</code></td>
+                  <td>color:#bbb83f!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-pink</code></td>
+                  <td>color:#dc717c!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-citrus2</code></td>
+                  <td>color:#97c200!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-comet</code></td>
+                  <td>color:#626073!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-atomic</code></td>
+                  <td>color:#3d4c53!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-seagreen</code></td>
+                  <td>color:#1cc0be!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-shadowgreen</code></td>
+                  <td>color:#94c1ab!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-silver</code></td>
+                  <td>color:#b8b8b8!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-mercury</code></td>
+                  <td>color:#cccccc!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-acapulco</code></td>
+                  <td>color:#62a783!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-rock</code></td>
+                  <td>color:#2e313d!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-midnightblue</code></td>
+                  <td>color:#122b58!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-darkturquoise</code></td>
+                  <td>color:#00d7e9!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-radicalred</code></td>
+                  <td>color:#f82f54!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-cadetblue</code></td>
+                  <td>color:#5d9ca8!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-sunshade</code></td>
+                  <td>color:#fa973c!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-blackberry</code></td>
+                  <td>color:#361630!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-mantis</code></td>
+                  <td>color:#8fc567!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-saffron</code></td>
+                  <td>color:#f0ca3d!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-shamrock</code></td>
+                  <td>color:#24d78a!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-orange2</code></td>
+                  <td>color:#f4633c!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-primary</code></td>
+                  <td>color:#337ab7!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-success</code></td>
+                  <td>color:#5cb85c!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-info</code></td>
+                  <td>color:#5bc0de!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-warning</code></td>
+                  <td>color:#f0ad4e!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-danger</code></td>
+                  <td>color:#d9534f!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.color-white</code></td>
+                  <td>color:#ffffff!important;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Border Colors</h3>
+          <p>You can put the Helpers CSS to the HTML code of any element to set the border color</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>.border-turquoise</code></td>
+                  <td>border-color:#08dcf5!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-borland</code></td>
+                  <td>border-color:#20a3f0!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-denim</code></td>
+                  <td>border-color:#127dcf!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-gray</code></td>
+                  <td>border-color:#333333!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-black</code></td>
+                  <td>border-color:#191919!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-night</code></td>
+                  <td>border-color:#323232!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-emerald</code></td>
+                  <td>border-color:#40d075!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-orange</code></td>
+                  <td>border-color:#f39705!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-chambray</code></td>
+                  <td>border-color:#505f79!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-bittersweet</code></td>
+                  <td>border-color:#ff6061!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-pelorous</code></td>
+                  <td>border-color:#237da6!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-citrus</code></td>
+                  <td>border-color:#a9d300!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-blackberry</code></td>
+                  <td>border-color:#461135!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-melon</code></td>
+                  <td>border-color:#febbb4!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-lipstick</code></td>
+                  <td>border-color:#9a2c4a!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-darkcyan</code></td>
+                  <td>border-color:#007c8e!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-toryblue</code></td>
+                  <td>border-color:#40548e!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-crimson</code></td>
+                  <td>border-color:#ef1d38!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-celery</code></td>
+                  <td>border-color:#bbb83f!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-pink</code></td>
+                  <td>border-color:#dc717c!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-citrus2</code></td>
+                  <td>border-color:#97c200!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-comet</code></td>
+                  <td>border-color:#626073!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-atomic</code></td>
+                  <td>border-color:#3d4c53!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-seagreen</code></td>
+                  <td>border-color:#1cc0be!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-shadowgreen</code></td>
+                  <td>border-color:#94c1ab!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-silver</code></td>
+                  <td>border-color:#b8b8b8!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-mercury</code></td>
+                  <td>border-color:#cccccc!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-acapulco</code></td>
+                  <td>border-color:#62a783!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-rock</code></td>
+                  <td>border-color:#2e313d!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-midnightblue</code></td>
+                  <td>border-color:#122b58!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-darkturquoise</code></td>
+                  <td>border-color:#00d7e9!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-radicalred</code></td>
+                  <td>border-color:#f82f54!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-cadetblue</code></td>
+                  <td>border-color:#5d9ca8!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-sunshade</code></td>
+                  <td>border-color:#fa973c!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-blackberry</code></td>
+                  <td>border-color:#361630!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-mantis</code></td>
+                  <td>border-color:#8fc567!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-saffron</code></td>
+                  <td>border-color:#f0ca3d!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-shamrock</code></td>
+                  <td>border-color:#24d78a!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-orange2</code></td>
+                  <td>border-color:#f4633c!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-primary</code></td>
+                  <td>border-color:#337ab7!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-success</code></td>
+                  <td>border-color:#5cb85c!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-info</code></td>
+                  <td>border-color:#5bc0de!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-warning</code></td>
+                  <td>border-color:#f0ad4e!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-danger</code></td>
+                  <td>border-color:#d9534f!important;</td>
+                </tr>
+                <tr>
+                  <td><code>.border-white</code></td>
+                  <td>border-color:#ffffff!important;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Background Colors</h3>
+          <p>You can put the Helpers CSS to the HTML code of any element to set the background color</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>.bg-turquoise</code></td>
+                  <td>background-color:#08dcf5!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-borland</code></td>
+                  <td>background-color:#20a3f0!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-denim</code></td>
+                  <td>background-color:#127dcf!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-gray</code></td>
+                  <td>background-color:#333333!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-black</code></td>
+                  <td>background-color:#191919!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-night</code></td>
+                  <td>background-color:#323232!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-emerald</code></td>
+                  <td>background-color:#40d075!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-orange</code></td>
+                  <td>background-color:#f39705!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-chambray</code></td>
+                  <td>background-color:#505f79!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-bittersweet</code></td>
+                  <td>background-color:#ff6061!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-pelorous</code></td>
+                  <td>background-color:#237da6!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-citrus</code></td>
+                  <td>background-color:#a9d300!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-blackberry</code></td>
+                  <td>background-color:#461135!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-melon</code></td>
+                  <td>background-color:#febbb4!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-lipstick</code></td>
+                  <td>background-color:#9a2c4a!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-darkcyan</code></td>
+                  <td>background-color:#007c8e!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-toryblue</code></td>
+                  <td>background-color:#40548e!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-crimson</code></td>
+                  <td>background-color:#ef1d38!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-celery</code></td>
+                  <td>background-color:#bbb83f!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-pink</code></td>
+                  <td>background-color:#dc717c!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-citrus2</code></td>
+                  <td>background-color:#97c200!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-comet</code></td>
+                  <td>background-color:#626073!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-atomic</code></td>
+                  <td>background-color:#3d4c53!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-seagreen</code></td>
+                  <td>background-color:#1cc0be!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-shadowgreen</code></td>
+                  <td>background-color:#94c1ab!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-silver</code></td>
+                  <td>background-color:#b8b8b8!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-mercury</code></td>
+                  <td>background-color:#cccccc!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-acapulco</code></td>
+                  <td>background-color:#62a783!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-rock</code></td>
+                  <td>background-color:#2e313d!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-midnightblue</code></td>
+                  <td>background-color:#122b58!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-darkturquoise</code></td>
+                  <td>background-color:#00d7e9!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-radicalred</code></td>
+                  <td>background-color:#f82f54!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-cadetblue</code></td>
+                  <td>background-color:#5d9ca8!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-sunshade</code></td>
+                  <td>background-color:#fa973c!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-blackberry</code></td>
+                  <td>background-color:#361630!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-mantis</code></td>
+                  <td>background-color:#8fc567!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-saffron</code></td>
+                  <td>background-color:#f0ca3d!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-shamrock</code></td>
+                  <td>background-color:#24d78a!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-orange2</code></td>
+                  <td>background-color:#f4633c!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-primary</code></td>
+                  <td>background-color:#337ab7!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-success</code></td>
+                  <td>background-color:#5cb85c!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-info</code></td>
+                  <td>background-color:#5bc0de!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-warning</code></td>
+                  <td>background-color:#f0ad4e!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-danger</code></td>
+                  <td>background-color:#d9534f!important; color: #fff;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-grayish</code></td>
+                  <td>background-color:#f5f5f5!important; color: #666666;</td>
+                </tr>
+                <tr>
+                  <td><code>.bg-white</code></td>
+                  <td>background-color:#fff!important; color: #666666;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section>
+          <h2 id="Animations">Animations</h2>
+          <p>You can easily add animations to any element on your website. When you scroll page, animations will display.</p>
+          <p><strong>Example:</strong></p>
+          <pre class="line-numbers"><code class="language-markup">
+  &lt;div class=&quot;animation fadeIn&quot;&gt; ...  &lt;/div&gt;
+          </code></pre>
+          <p>You can check Page-loaders.html file to see how these animations change.</p>
+          <P><labe class="label label-danger">Heads up:</labe> fadeIn is for setting animation effect. More animation effects are as follows.</P>
+          <ul>
+            <li>bounce</li>
+            <li>flash</li>
+            <li>pulse</li>
+            <li>rubberBand</li>
+            <li>shake</li>
+            <li>swing</li>
+            <li>tada</li>
+            <li>wobble</li>
+            <li>bounceIn</li>
+            <li>bounceInDown</li>
+            <li>bounceInLeft</li>
+            <li>bounceInRight</li>
+            <li>bounceInUp</li>
+            <li>bounceOut</li>
+            <li>bounceOutDown</li>
+            <li>bounceOutLeft</li>
+            <li>bounceOutRight</li>
+            <li>bounceOutUp</li>
+            <li>fadeIn</li>
+            <li>fadeInDown</li>
+            <li>fadeInDownBig</li>
+            <li>fadeInLeft</li>
+            <li>fadeInLeftBig</li>
+            <li>fadeInRight</li>
+            <li>fadeInRightBig</li>
+            <li>fadeInUp</li>
+            <li>fadeInUp</li>
+            <li>fadeInUpBig</li>
+            <li>fadeInUpBig</li>
+            <li>fadeOut</li>
+            <li>fadeOutDown</li>
+            <li>fadeOutDownBig</li>
+            <li>fadeOutLeft</li>
+            <li>fadeOutLeftBig</li>
+            <li>fadeOutRight</li>
+            <li>fadeOutRightBig</li>
+            <li>fadeOutUp</li>
+            <li>fadeOutUpBig</li>
+            <li>flip</li>
+            <li>flipInX</li>
+            <li>flipInY</li>
+            <li>flipOutX</li>
+            <li>flipOutY</li>
+            <li>lightSpeedIn</li>
+            <li>lightSpeedOut</li>
+            <li>rotateIn</li>
+            <li>rotateInDownLeft</li>
+            <li>rotateInDownRight</li>
+            <li>rotateInUpLeft</li>
+            <li>rotateInUpRight</li>
+            <li>rotateOut</li>
+            <li>rotateOutDownLeft</li>
+            <li>rotateOutDownRight</li>    
+            <li>rotateOutUpLeft</li>  
+            <li>rotateOutUpRight</li>  
+            <li>hinge</li>  
+            <li>rollIn</li>  
+            <li>rollOut</li>  
+            <li>zoomIn</li>  
+            <li>zoomInDown</li>  
+            <li>zoomInLeft</li>  
+            <li>zoomInRight</li>  
+            <li>zoomInUp</li>  
+            <li>zoomOut</li>  
+            <li>zoomOutDown</li>  
+            <li>zoomOutLeft</li>  
+            <li>zoomOutRight</li>  
+            <li>zoomOutUp</li>  
+            <li>scaleUp</li>  
+            <li>star</li>  
+            <li>cloud</li>  
+            <li>snowflake</li>  
+            <li>dandelion</li>  
+            <li>arrows</li>  
+            <li>water</li>       
+          </ul>
+        </section>
+        <section>
+          <h2 id="Google-Map">Google Map</h2>
+          <p>You can create unlimited contact maps on your site, and here are the steps:</p>
+          <p>First, copy the following code to the end of <code>&lt;body&gt;&lt;/body&gt;</code></p>
+          <pre class="line-numbers"><code class="language-markup">
+&lt;script src=&quot; vendor/map/google.map.js&quot; &gt;&lt;/script&gt;          
+          </code></pre>
+          <p>Then copy the following code to content area</p>
+          <pre class="line-numbers"><code class="language-markup">
+&lt;div class=&quot;google-map contact-map&quot; 
+  data-Scrollwheel=&quot;false&quot; 
+  data-icon='inset/homepage03/home03_map.png' 
+  data-address=&quot;Bear city, ny&quot; 
+  data-zoom='14' 
+  data-content='&lt;h6&gt;COMPANY NAME&lt;/h6&gt;&lt;p&gt;16th floor, Downing Building, Jianshe Road,&lt;/p&gt;&lt;p&gt;Wuhan, China.&lt;/p&gt;&lt;p&gt;123-456-789&lt;/p&gt;'
+  data-styles='[ { &quot;featureType&quot;: &quot;water&quot;, &quot;elementType&quot;: &quot;geometry&quot;, &quot;stylers&quot;: [ { &quot;color&quot;: &quot;#e9e9e9&quot; }, { &quot;lightness&quot;: 17 } ] }, { &quot;featureType&quot;: &quot;landscape&quot;, &quot;elementType&quot;: &quot;geometry&quot;, &quot;stylers&quot;: [ { &quot;color&quot;: &quot;#f5f5f5&quot; }, { &quot;lightness&quot;: 20 } ] }, { &quot;featureType&quot;: &quot;road.highway&quot;, &quot;elementType&quot;: &quot;geometry.fill&quot;, &quot;stylers&quot;: [ { &quot;color&quot;: &quot;#ffffff&quot; }, { &quot;lightness&quot;: 17 } ] }, { &quot;featureType&quot;: &quot;road.highway&quot;, &quot;elementType&quot;: &quot;geometry.stroke&quot;, &quot;stylers&quot;: [ { &quot;color&quot;: &quot;#ffffff&quot; }, { &quot;lightness&quot;: 29 }, { &quot;weight&quot;: 0.2 } ] }, { &quot;featureType&quot;: &quot;road.arterial&quot;, &quot;elementType&quot;: &quot;geometry&quot;, &quot;stylers&quot;: [ { &quot;color&quot;: &quot;#ffffff&quot; }, { &quot;lightness&quot;: 18 } ] }, { &quot;featureType&quot;: &quot;road.local&quot;, &quot;elementType&quot;: &quot;geometry&quot;, &quot;stylers&quot;: [ { &quot;color&quot;: &quot;#ffffff&quot; }, { &quot;lightness&quot;: 16 } ] }, { &quot;featureType&quot;: &quot;poi&quot;, &quot;elementType&quot;: &quot;geometry&quot;, &quot;stylers&quot;: [ { &quot;color&quot;: &quot;#f5f5f5&quot; }, { &quot;lightness&quot;: 21 } ] }, { &quot;featureType&quot;: &quot;poi.park&quot;, &quot;elementType&quot;: &quot;geometry&quot;, &quot;stylers&quot;: [ { &quot;color&quot;: &quot;#dedede&quot; }, { &quot;lightness&quot;: 21 } ] }, { &quot;elementType&quot;: &quot;labels.text.stroke&quot;, &quot;stylers&quot;: [ { &quot;visibility&quot;: &quot;on&quot; }, { &quot;color&quot;: &quot;#ffffff&quot; }, { &quot;lightness&quot;: 16 } ] }, { &quot;elementType&quot;: &quot;labels.text.fill&quot;, &quot;stylers&quot;: [ { &quot;saturation&quot;: 36 }, { &quot;color&quot;: &quot;#333333&quot; }, { &quot;lightness&quot;: 40 } ] }, { &quot;elementType&quot;: &quot;labels.icon&quot;, &quot;stylers&quot;: [ { &quot;visibility&quot;: &quot;off&quot; } ] }, { &quot;featureType&quot;: &quot;transit&quot;, &quot;elementType&quot;: &quot;geometry&quot;, &quot;stylers&quot;: [ { &quot;color&quot;: &quot;#f2f2f2&quot; }, { &quot;lightness&quot;: 19 } ] }, { &quot;featureType&quot;: &quot;administrative&quot;, &quot;elementType&quot;: &quot;geometry.fill&quot;, &quot;stylers&quot;: [ { &quot;color&quot;: &quot;#fefefe&quot; }, { &quot;lightness&quot;: 20 } ] }, { &quot;featureType&quot;: &quot;administrative&quot;, &quot;elementType&quot;: &quot;geometry.stroke&quot;, &quot;stylers&quot;: [ { &quot;color&quot;: &quot;#fefefe&quot; }, { &quot;lightness&quot;: 17 }, { &quot;weight&quot;: 1.2 } ] }]'&gt; 
+&lt;/div&gt;
+          </code></pre>
+          <p><strong>Options:</strong></p>
+          <ul>
+            <li><code>data-Scrollwheel</code> - set scroll wheel to zoom map</li>
+            <li><code>data-icon</code> - set icon</li>
+            <li><code>data-address</code> - set location address</li>
+            <li><code>data-zoom</code> - set zoom size</li>
+            <li><code>data-content</code> - set popup content of icon</li>
+            <li><code>data-styles</code> - set map style. You can gain more styles from site https://snazzymaps.com/explore.</li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="Source-Credits">Source & Credits</h2>
+          <p>All images/photos used in our theme demo are just for demonstration purposes and shall not be used in any of your site or distributed. </p>
+          <ul>
+            <li>
+              <strong>Images:</strong>
+              <ul>
+                <li>Shutterstock - <a href="https://www.shutterstock.com" target="blank">https://www.shutterstock.com</a></li>
+                <li>Pixabay - <a href="https://pixabay.com" target="blank">https://pixabay.com</a></li>
+                <li>Pixeden - <a href="https://www.pixeden.com" target="blank">https://www.pixeden.com</a></li>
+                <li>Graphicburger - <a href="http://gratisography.com" target="blank">http://gratisography.com</a></li>
+                <li>Unsplash - <a href="https://unsplash.com" target="blank">https://unsplash.com</a></li>
+                <li>Streetwill - <a href="http://streetwill.co" target="blank">http://streetwill.co</a></li>
+                <li>Getrefe - <a href="http://getrefe.tumblr.com" target="blank">http://getrefe.tumblr.com</a></li>
+                <li>Barnimages - <a href="http://barnimages.com" target="blank">http://barnimages.com</a></li>
+                <li>Picjumbo - <a href="https://picjumbo.com" target="blank">https://picjumbo.com</a></li>
+                <li>Designerspics - <a href="http://www.designerspics.com" target="blank">http://www.designerspics.com</a></li>
+                <li>Lifeofpix - <a href="http://www.lifeofpix.com" target="blank">http://www.lifeofpix.com</a></li>
+                <li>Kaboompics - <a href="http://kaboompics.com" target="blank">http://kaboompics.com</a></li>
+              </ul>
+            </li>
+            <li>
+              <strong>Fonts:</strong>
+              <ul>
+                <li>Google Fonts - <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></li>
+                <li>Font Awesome - <a href="http://fontawesome.io" target="_blank">http://fontawesome.io/</a></li>
+                <li>Linearicons - <a href="https://linearicons.com/" target="_blank">https://linearicons.com/</a></li>
+              </ul>
+            </li>
+            <li>
+              <strong>Scripts:</strong>
+              <ul>
+                <li>jQuery - <a href="http://www.jquery.com/" target="_blank">http://www.jquery.com/</a></li>
+                <li>Bootstrap 3 - <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a></li>
+                <li>Revolution Slider - <a href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848" target="_blank">http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848</a></li>
+                <li>Isotope Jquery plugin - <a href="http://isotope.metafizzy.co" target="_blank">http://isotope.metafizzy.co</a></li>
+                <li>Google Maps API V3 - <a href="http://www.smashinglabs.pl/gmap" target="_blank">http://www.smashinglabs.pl/gmap</a></li>
+                <li>Owl Carousel - <a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank">https://owlcarousel2.github.io/OwlCarousel2/</a></li>
+                <li>Jquery Flickr Plugin - <a href="http://www.newmediacampaigns.com/page/jquery-flickr-plugin" target="_blank">http://www.newmediacampaigns.com/page/jquery-flickr-plugin</a></li>
+                <li>Magnific Popup - <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+                <li>CircleSlider - <a href="http://codecanyon.net/item/all-around-jquery-content-slider-carousel/4809047" target="_blank">http://codecanyon.net/item/all-around-jquery-content-slider-carousel/4809047</a></li>
+                <li>easyResponsiveTabs - <a href="https://github.com/samsono/Easy-Responsive-Tabs-to-Accordion" target="_blank">https://github.com/samsono/Easy-Responsive-Tabs-to-Accordion</a></li>
+                <li>jQuery Cookie Plugin - <a href="https://github.com/carhartl/jquery-cookie" target="_blank">https://github.com/carhartl/jquery-cookie</a></li>
+                <li>pagepiling - <a href="https://github.com/alvarotrigo/pagePiling.js" target="_blank">https://github.com/alvarotrigo/pagePiling.js</a></li>
+                <li>jQuery custom scrollbar plugin - <a href="http://manos.malihu.gr/jquery-custom-content-scroller " target="_blank">http://manos.malihu.gr/jquery-custom-content-scroller </a></li>
+                <li>Soon - <a href="http://rikschennink.nl/products/soon" target="_blank">http://rikschennink.nl/products/soon</a></li>
+                <li>Vivus - <a href="https://github.com/maxwellito/vivus" target="_blank">https://github.com/maxwellito/vivus</a></li>
+              </ul>
+            </li>
+          </ul>      
+        </section>
+        <section>
+          <h2 id="Changelog">Changelog</h2>
+          <h3 id="v1.0.0"><a href="#v1.0.0">Version 1.0.0<small class="release-date">September 20, 2017</small></a></h3>
+          <p>Initial release.</p>
+          <h3 id="v1.1.0"><a href="#v1.1.0">Version 1.1.0<small class="release-date">January 15, 2018</small></a></h3>
+          <ul class="changelog">
+            <li class="ch-added">Loading animation</li>
+            <li class="ch-fixed">The improper color of Header text</li>
+            <li class="ch-fixed">Minor bugs in responsivity</li>
+            <li class="ch-fixed">The issue that parallax background doesn't display properly on IE browser</li>
+          </ul>
+        </section>
+    </article>
+    <!-- END Main content -->
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container-fluid">
+      <a id="scroll-up" href="#"><i class="fa fa-angle-up"></i></a>
+
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <p>Copyright &copy; 2017. All right reserved</p>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <ul class="footer-menu">
+            <li><a href="mailto:support@dnngo.net">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END Footer -->
+
+  <!-- Scripts -->
+  <script src="assets/js/theDocs.all.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

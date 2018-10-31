@@ -1,0 +1,338 @@
+﻿.home19-cont {
+        font-size: 20px;
+    }
+    
+    .home19-cont h2 {
+        font-size: 80px;
+        margin: 0;
+        letter-spacing: 0.05em
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .home19-cont {
+            font-size: 16px;
+        }
+        .home19-cont h2 {
+            font-size: 24px;
+        }
+    }
+    
+    .home19-imglist {
+        padding: 0;
+        margin: 0 0 0 -30px;
+        list-style: none;
+    }
+    
+    .home19-imglist>li {
+        float: left;
+        margin: 0 0 30px 30px;
+        max-width: 100%;
+    }
+    
+    .home19-imglist img {
+        max-width: 100%;
+    }
+    
+    @media only screen and (min-width: 1200px) {
+        .home19-imglist .imglist-width-1 {
+            width: 330px;
+        }
+        .home19-imglist .imglist-width-2 {
+            width: 465px;
+        }
+        .home19-imglist .imglist-width-3 {
+            width: 279px;
+        }
+        .home19-imglist .dg-testimonials11 blockquote {
+            padding: 20px 34px 0;
+        }
+        .home19-imglist .dg-testimonials11 blockquote:before {
+            left: 30px;
+        }
+    }
+    
+    @media only screen and (min-width: 1600px) {
+        .home19-imglist .imglist-width-1 {
+            width: 420px;
+        }
+        .home19-imglist .imglist-width-2 {
+            width: 600px;
+        }
+        .home19-imglist .imglist-width-3 {
+            width: 360px;
+        }
+    }
+    
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .home19-imglist .imglist-width-1 {
+            width: 275px;
+        }
+        .home19-imglist .imglist-width-2 {
+            width: 400px;
+        }
+        .home19-imglist .imglist-width-3 {
+            width: 241px;
+        }
+        .home19-imglist .dg-testimonials11 blockquote {
+            padding: 20px 15px 0;
+        }
+        .home19-imglist .dg-testimonials11 blockquote:before {
+            left: 10px;
+        }
+        .home19-imglist {
+            margin-left: -10px;
+        }
+        .home19-imglist>li {
+            margin: 0 0 10px 10px;
+        }
+        .home19-imginfo>.owl-carousel {
+            top: 25%;
+        }
+    }
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .home19-imglist .imglist-width-1 {
+            width: 349px;
+        }
+        .home19-imglist .imglist-width-2 {
+            width: 358px;
+        }
+        .home19-imglist .imglist-width-3 {
+            width: 174px;
+        }
+        .home19-imglist .dg-testimonials11 blockquote {
+            padding: 20px 15px 0;
+        }
+        .home19-imglist .dg-testimonials11 blockquote:before {
+            left: 10px;
+        }
+        .home19-imglist {
+            margin-left: -10px;
+        }
+        .home19-imglist>li {
+            margin: 0 0 10px 10px;
+        }
+        .home19-imginfo>.owl-carousel {
+            top: 25%;
+        }
+    }
+    
+    @media only screen and (max-width: 767px) and (orientation: landscape) {
+        .home19-imglist .imglist-width-1 {
+            width: 420px;
+        }
+        .home19-imglist .imglist-width-2 {
+            width: 420px;
+        }
+        .home19-imglist .imglist-width-3 {
+            width: 205px;
+        }
+        .home19-imglist .dg-testimonials11 blockquote {
+            padding: 20px 15px 0;
+        }
+        .home19-imglist .dg-testimonials11 blockquote:before {
+            left: 10px;
+        }
+        .home19-imglist {
+            margin-left: -10px;
+        }
+        .home19-imglist>li {
+            margin: 0 0 10px 10px;
+        }
+        .home19-imginfo>.owl-carousel {
+            top: 25%;
+        }
+    }
+    
+    .home19-imginfo {
+        position: relative;
+    }
+    
+    .home19-imginfo>.owl-carousel {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+    }
+    
+    .home19-newslist {
+        text-align: left;
+        margin: 0 0 0 18px;
+        padding: 0;
+        list-style: none;
+        border-left: 1px dashed #b6b6b6;
+        counter-reset: number;
+    }
+    
+    .home19-newslist li {
+        padding: 0 0 100px 58px;
+        position: relative;
+    }
+    
+    .home19-newslist li:last-child {
+        padding-bottom: 30px;
+    }
+    
+    .home19-newslist li:after {
+        content: counter(number);
+        counter-increment: number;
+        position: absolute;
+        top: 0;
+        left: -18px;
+        background-color: #FFF;
+        pointer-events: none;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border: 1px solid #dcdcdc;
+        text-align: center;
+    }
+    
+    .home19-newslist li .title {
+        color: #20a3f0;
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .home19-newslist li {
+            padding: 0 0 20px 40px;
+        }
+    }
+    
+    .home19-cont02 {
+        font-size: 20px;
+    }
+    
+    .home19-cont02 h2 {
+        font-size: 36px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .home19-cont02 {
+            font-size: 14px;
+        }
+        .home19-cont02 h2 {
+            font-size: 18px;
+        }
+    }
+    
+    .home19-images-water {
+        display: inline-block;
+        position: relative;
+        max-width: 100%;
+        z-index: 1;
+    }
+    
+    .home19-images-water .water {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        transform: scale(3);
+        -webkit-transform: scale(3);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .home19-images-water .water {
+            transform: scale(2);
+            -webkit-transform: scale(2);
+        }
+    }
+    
+    .home19-contact .dg-ico-max {
+        margin-bottom: 27px;
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .home19-contact .dg-ico-max {
+            margin-bottom: 8px;
+        }
+    }
+    
+    .home19-bg01 {
+        background: url(../../inset/homepage19/home19-bg01.jpg) center bottom no-repeat #ebebeb;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .home19-bg02 {
+        background: url(../../inset/homepage19/home19-bg02.jpg) center bottom no-repeat #ffffff;
+        background-size: cover;
+    }
+    
+    .home19-bg03 {
+        background: url(../../inset/homepage19/home19-bg03.jpg) center bottom no-repeat #00c8d7;
+        background-size: cover;
+    }
+    
+    .home19-bg04 {
+        background: url(../../inset/homepage19/home19-bg04.jpg) center bottom no-repeat #ffffff;
+        background-size: cover;
+    }
+    
+    .home19-bg05 {
+        background: url(../../inset/homepage19/home19-bg05.jpg) center bottom no-repeat #439cd4;
+        background-size: cover;
+    }
+    
+    .home19-bg06 {
+        background: url(../../inset/homepage19/home19-bg06.jpg) center bottom no-repeat #ffffff;
+        background-size: cover;
+    }
+    
+    .home19-bg07 {
+        background: url(../../inset/homepage19/home19-bg07.jpg) center bottom no-repeat #07befa;
+        background-size: cover;
+    }
+    
+    .home19-bg08 {
+        background: url(../../inset/homepage19/home19-bg08.jpg) center bottom no-repeat #ffffff;
+        background-size: cover;
+    }
+    
+
+.dg-title36{
+	margin-bottom:30px;
+	text-align:center;
+}
+.dg-title36:before{
+	content:".\2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002.";
+	display:block;
+	margin:auto;
+	background-size: 10px 10px;  
+	background-repeat:repeat-x;
+	margin-bottom:21px;
+    text-decoration: line-through;
+	text-decoration-style: wavy; 
+	-moz-text-decoration-style: wavy;
+	font-size:13px;
+	line-height:1;
+	white-space:nowrap;
+	width:80px;
+	overflow:hidden;
+	color:#20a3f0;
+	text-indent:-3px;
+}
+.dg-title36.text-left{
+	text-align:left;
+}
+.dg-title36.text-left:before{
+	color:#acacac;
+}
+
+.dg-title36.text-left:before{
+	margin-left:0;
+}
+.dg-title36.color-white:before{
+	color:#FFF;
+}
+@media only screen and (max-width: 767px) {
+	.dg-title36{
+		font-size:22px;
+	}
+}

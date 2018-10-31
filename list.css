@@ -1,0 +1,226 @@
+﻿
+/* ********* ShortCodes-list ******** */
+
+
+
+.list-ordened,
+.list-ordened2,
+.list-ordened3 {
+    counter-reset: custom-counter;
+    list-style: none;
+	margin-left:0;	
+}
+.list-ordened li,
+.list-ordened2 li,
+.list-ordened3 li{
+	position:relative;
+    padding-left: 27px;
+    margin-bottom: 3px;
+	line-height:24px;
+}
+.list-ordened li:before,
+.list-ordened2 li:before,
+.list-ordened3 li:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: counter(custom-counter);
+    counter-increment: custom-counter;
+    font-weight: bold;
+	color:#20a3f0;
+	font-family: 'Arial'
+}
+.list-ordened2 li{
+	padding-left:36px;
+    margin-bottom: 13px;
+	padding-top:1px;	
+}
+.list-ordened2 li:before {
+	width:26px;
+	height:26px;
+	line-height:24px;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	display:inline-block;
+	border:1px solid #20a3f0;
+	text-align:center;
+	font-family: 'Arial'
+}
+.list-ordened3 li{
+	padding-left:36px;
+    margin-bottom: 13px;
+	padding-top:1px;
+}
+.list-ordened3 li:before {
+	width:26px;
+	height:26px;
+	line-height:26px;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	display:inline-block;
+	text-align:center;
+	background-color:#20a3f0;
+	color:#FFF;
+}
+
+
+.list-ico,
+.list-ico2,
+.list-ico3 {
+    list-style: none;
+	margin-left:0;	
+	padding-left:0px;
+}
+.list-ico li,
+.list-ico2 li,
+.list-ico3 li{
+	position:relative;
+    margin-bottom: 3px;
+	line-height:24px;
+	padding-left:36px;
+    margin-bottom: 18px;
+	padding-top:1px;
+}
+.list-ico li{
+   padding-left:28px;
+   margin-bottom: 10px;
+}
+.list-ico .fa,
+.list-ico2 .fa,
+.list-ico3 .fa,
+.list-ico .lnr,
+.list-ico2 .lnr,
+.list-ico3 .lnr,
+.list-ico .glyphicon,
+.list-ico2 .glyphicon,
+.list-ico3 .glyphicon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: counter(custom-counter);
+    counter-increment: custom-counter;
+    font-weight: bold;
+	color:#20a3f0;
+	width:26px;
+	height:26px;
+	text-align:center;
+	line-height:26px;
+}
+.list-ico2 .fa,
+.list-ico2 .lnr,
+.list-ico2 .glyphicon {
+	line-height:24px;
+	display:inline-block;
+	border:1px solid #20a3f0;
+	text-align:center;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+}
+.list-ico3 .fa,
+.list-ico3 .lnr,
+.list-ico3 .glyphicon {
+	display:inline-block;
+	text-align:center;
+	background-color:#20a3f0;
+	color:#FFF!important;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+}
+
+.list-ico.ico-sm li,
+.list-ico2.ico-sm li,
+.list-ico3.ico-sm li{
+	padding-left:32px;
+    margin-bottom: 9px;
+	padding-top:1px;
+}
+.list-ico.ico-sm li{
+	padding-left:20px;
+	margin-bottom: 6px;	
+}
+
+.list-ico.ico-sm .fa,
+.list-ico2.ico-sm .fa,
+.list-ico3.ico-sm .fa,
+.list-ico.ico-sm .lnr,
+.list-ico2.ico-sm .lnr,
+.list-ico3.ico-sm .lnr,
+.list-ico.ico-sm .glyphicon,
+.list-ico2.ico-sm .glyphicon,
+.list-ico3.ico-sm .glyphicon {
+	font-size: 0.8em;
+	width:18px;
+	height:18px;
+	line-height:18px;
+	top:4px;
+}
+.list-ico2.ico-sm .fa,
+.list-ico2.ico-sm .lnr,
+.list-ico2.ico-sm .glyphicon {
+	line-height:18px;
+}
+.list-ico.ico-lg li,
+.list-ico2.ico-lg li,
+.list-ico3.ico-lg li{
+	padding-left:42px;
+    margin-bottom: 18px;
+	padding-top:3px;
+}
+.list-ico.ico-lg li{
+	padding-left: 35px;
+	margin-bottom: 12px;
+}
+
+.list-ico.ico-lg .fa,
+.list-ico2.ico-lg .fa,
+.list-ico3.ico-lg .fa,
+.list-ico.ico-lg .lnr,
+.list-ico2.ico-lg .lnr,
+.list-ico3.ico-lg .lnr,
+.list-ico.ico-lg .glyphicon,
+.list-ico2.ico-lg .glyphicon,
+.list-ico3.ico-lg .glyphicon {
+    font-size: 1.5em;
+	width:30px;
+	height:30px;
+	line-height:30px;
+}
+.list-ico2.ico-lg .fa,
+.list-ico2.ico-lg .lnr,
+.list-ico2.ico-lg .glyphicon {
+	line-height:29px;
+}
+
+body ul.list-border-solid li{
+	border-bottom:1px solid #dcdcdc;
+	margin-bottom:18px;
+	padding-bottom:18px;
+}
+.list-ico.ico-lg.list-border-solid li{
+	margin-bottom: 18px;
+}
+body ul.list-border-solid.ico-sm li{
+	margin-bottom:9px;
+	padding-bottom:10px;
+}
+body ul.list-border-solid.ico-lg{
+	margin-bottom:0;
+	padding-bottom:0;
+}
+body ul.list-border-dashed li{
+	border-bottom:1px dashed #dcdcdc;
+	margin-bottom:18px;
+	padding-bottom:18px;
+}
+body ul.list-border-dashed.ico-sm li{
+	margin-bottom:9px;
+	padding-bottom:10px;
+}
+body ul.list-border-dashed.ico-lg{
+	margin-bottom:0;
+	padding-bottom:0; 
+}

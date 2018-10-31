@@ -1,0 +1,60 @@
+﻿.ourteam-bg01 {
+    background-color: #f4f4f4;
+}
+
+
+.dg-title37{
+	font-size:36px;
+	text-align:center;
+	position:relative;
+	padding-bottom:33px;
+	margin-bottom:36px;
+}
+.dg-title37>*{
+	font-size:inherit;
+}
+.dg-title37>*:after{
+	content:'';
+	width:150px;
+	border-bottom:1px solid #20a3f0;
+	position:absolute;
+	bottom:4px;
+	left:50%;
+	margin-left:-75px;
+}
+.dg-title37:after,
+.dg-title37:before{
+	content:"";
+	width:9px;
+	height:9px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #20a3f0;
+	position:absolute;
+	bottom:0;
+}
+.dg-title37:after{
+	left:50%;	
+	margin-left:-84px;
+}
+.dg-title37:before{
+	left:50%;	
+	margin-left:75px;
+}
+
+.dg-title37.text-left{
+	text-align:left;
+	font-size:28px;
+}
+.dg-title37.text-left>*:after{
+	left:0;
+	margin-left:0;
+}
+.dg-title37.text-left:after{
+	content:normal;
+}
+.dg-title37.text-left:before{
+	left:150px;	
+	margin-left:0;
+}

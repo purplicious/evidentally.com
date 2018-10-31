@@ -1,0 +1,122 @@
+﻿/*contact05*/
+
+
+.contact05-bg01 {
+    background: url(../../inset/pages-images/contact05-bg01.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact05-icon {
+    text-align: center;
+}
+
+.contact05-icon a {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: block;
+    margin: 0 auto;
+}
+
+.contact05-icon .fa {
+    vertical-align: middle;
+}
+
+.contact05-icon h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    margin: 10px 0 0 0
+}
+
+.contact05-icon a:hover {
+    color: #20a3f0;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .contact05-icon a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 25px;
+        display: block;
+    }
+    .contact05-icon {
+        padding: 0 0 20px 0;
+    }
+}
+
+
+.dg-title07{
+	text-align:center;
+	margin-bottom:30px;
+}
+.dg-title07 .title{
+	
+}
+.dg-title07 .title:after{
+	content:"";
+	width:50px;
+	border-bottom:2px solid #20a3f0;
+	display:block;
+	margin:18px auto 14px;
+}
+.dg-title07 small{
+	font-size:14px;
+	font-style:italic;
+	letter-spacing:0.075em;
+	color:#666;
+}
+.dg-title07 small + .title:before{
+	content:"";
+	width:50px;
+	border-bottom:2px solid #20a3f0;
+	display:block;
+	margin:15px auto 18px;
+}
+.dg-title07 small + .title:after{
+	content:normal;
+}
+.dg-title07.text-left{
+	text-align:left;
+}
+.dg-title07.text-left .title:after,
+.dg-title07.text-left p + .title:before{
+	margin-left:0;
+}
+.dg-title07.text-right .title:after,
+.dg-title07.text-right p + .title:before{
+	margin-right:0;
+}
+.dg-title07.color-white .title:after,
+.dg-title07.color-white .title:before{
+	border-color:#FFF;
+}
+.dg-title07.color-white .title{
+	color:#FFF;
+}
+.dg-title07.color-white,
+.dg-title07.color-white p{
+	color:#eaeaea
+}
+.dg-title07.color-white small{
+	color:#e2e2e2
+}
+
+.dg-title07.line-bottom .title:before{
+	content:normal;
+}
+.dg-title07.line-bottom .title:after{
+	content:"";
+}
+.dg-title07.line-bottom small{
+	margin-bottom:13px;
+	display:inline-block;
+}

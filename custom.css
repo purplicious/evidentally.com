@@ -1,0 +1,55 @@
+/*
+Error: Undefined variable: "$screen".
+        on line 6 of U:/html.test.dnngo.net/DNG-UnlimitedColorsPack-055-HTML/vendor/OwlCarousel2/docs_src/assets/scss/custom.scss
+
+1: $owl-primary-color: #1ccacd;
+2: $owl-success-color: #ff3f4d;
+3: $owl-gray-color: #f7f7f7;
+4: 
+5: 
+6: $medium-down: "#{$screen} and (max-width:#{lower-bound($medium-range)})" !default;
+7: 
+8: /* Custom mixins *\/
+9: 
+10: @mixin owl-transition($p:all, $t:300ms) {
+11: 	-webkit-transition: $p $t ease-in-out;
+
+Backtrace:
+U:/html.test.dnngo.net/DNG-UnlimitedColorsPack-055-HTML/vendor/OwlCarousel2/docs_src/assets/scss/custom.scss:6
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/script/tree/string_interpolation.rb:93:in `_perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:469:in `visit_variable'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/engine.rb:278:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:420:in `run'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/bin/sass:13:in `<top (required)>'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/bin/sass:23:in `load'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$screen\".\A         on line 6 of U:/html.test.dnngo.net/DNG-UnlimitedColorsPack-055-HTML/vendor/OwlCarousel2/docs_src/assets/scss/custom.scss\A \A 1: $owl-primary-color: #1ccacd;\A 2: $owl-success-color: #ff3f4d;\A 3: $owl-gray-color: #f7f7f7;\A 4: \A 5: \A 6: $medium-down: \"#{$screen} and (max-width:#{lower-bound($medium-range)})\" !default;\A 7: \A 8: /* Custom mixins */\A 9: \A 10: @mixin owl-transition($p:all, $t:300ms) {\A 11: 	-webkit-transition: $p $t ease-in-out;"; }

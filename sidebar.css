@@ -1,0 +1,310 @@
+﻿.sidebar-left,
+.sidebar-right,
+.sidebar-both {
+    overflow: hidden;
+}
+
+
+/* sidebar-left */
+
+.sidebar-left .main-content {
+    float: right;
+    padding-left: 25px;
+}
+
+.sidebar-left .sidebar,
+.sidebar-left .sidebar-bg,
+.sidebar-left .sidebar-bg-wide {
+    float: left;
+    padding-right: 25px;
+}
+
+.sidebar-left .sidebar-bg {
+    padding-left: 25px;
+}
+
+.sidebar-left .sidebar::before,
+.sidebar-left .sidebar-bg::before,
+.sidebar-left .sidebar-bg-wide::before {
+    content: "";
+    display: block;
+    height: 99999px;
+    position: absolute;
+    right: 0;
+    top: -300px;
+    z-index: -10;
+}
+
+.sidebar-left .sidebar::before {
+    border-right: 1px solid #eee;
+}
+
+.sidebar-left .sidebar-bg::before {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.sidebar-left .sidebar-bg-wide::before {
+    width: 99999px;
+    background-color: #f7f7f7;
+}
+
+@media only screen and (max-width: 992px) {
+    .sidebar-left .main-content {
+        padding-left: 15px;
+        float: none;
+    }
+    .sidebar-left .sidebar,
+    .sidebar-left .sidebar-bg,
+    .sidebar-left .sidebar-bg-wide {
+        padding-top: 25px;
+        margin-bottom: 25px;
+        padding-right: 15px;
+        float: none;
+    }
+    .sidebar-left .sidebar-bg {
+        padding-left: 15px;
+    }
+    .sidebar-left .sidebar::before {
+        border: 0;
+    }
+    .sidebar-left .sidebar-bg::before,
+    .sidebar-left .sidebar-bg-wide::before {
+        top: 0;
+        height: 100%;
+    }
+    .sidebar-left .sidebar-bg-wide::before {
+        right: -25%;
+    }
+}
+
+
+/* sidebar-left END */
+
+
+/* sidebar-right */
+
+.sidebar-right .main-content {
+    float: left;
+    padding-right: 25px;
+}
+
+.sidebar-right .sidebar,
+.sidebar-right .sidebar-bg,
+.sidebar-right .sidebar-bg-wide {
+    float: right;
+    padding-left: 25px;
+}
+
+.sidebar-right .sidebar-bg {
+    padding-right: 25px;
+}
+
+.sidebar-right .sidebar::before,
+.sidebar-right .sidebar-bg::before,
+.sidebar-right .sidebar-bg-wide::before {
+    content: "";
+    display: block;
+    height: 99999px;
+    position: absolute;
+    left: 0;
+    top: -300px;
+    z-index: -10;
+}
+
+.sidebar-right .sidebar::before {
+    border-left: 1px solid #eee;
+}
+
+.sidebar-right .sidebar-bg::before {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.sidebar-right .sidebar-bg-wide::before {
+    width: 99999px;
+    background-color: #f7f7f7;
+}
+
+@media only screen and (max-width: 992px) {
+    .sidebar-right .main-content {
+        float: none;
+        padding-right: 15px;
+    }
+    .sidebar-right .sidebar,
+    .sidebar-right .sidebar-bg,
+    .sidebar-right .sidebar-bg-wide {
+        float: none;
+        padding-top: 25px;
+        margin-bottom: 25px;
+        padding-left: 15px;
+    }
+    .sidebar-right .sidebar-bg {
+        padding-right: 15px;
+    }
+    .sidebar-right .sidebar::before {
+        border: 0;
+    }
+    .sidebar-right .sidebar-bg::before,
+    .sidebar-right .sidebar-bg-wide::before {
+        top: 0;
+        height: 100%;
+    }
+    .sidebar-right .sidebar-bg-wide::before {
+        left: -25%;
+    }
+}
+
+
+/* sidebar-right END */
+
+
+/* sidebar-both */
+
+.sidebar-both .main-content {
+    float: left;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* Left sidebar */
+
+.sidebar-both .sidebar,
+.sidebar-both .sidebar-bg,
+.sidebar-both .sidebar-bg-wide {
+    float: left;
+    padding-right: 25px;
+}
+
+.sidebar-both .sidebar-bg {
+    padding-left: 25px;
+}
+
+.sidebar-both .sidebar::before,
+.sidebar-both .sidebar-bg::before,
+.sidebar-both .sidebar-bg-wide::before {
+    content: "";
+    display: block;
+    height: 99999px;
+    position: absolute;
+    right: 0;
+    top: -300px;
+    z-index: -10;
+}
+
+.sidebar-both .sidebar::before {
+    border-right: 1px solid #eee;
+}
+
+.sidebar-both .sidebar-bg::before {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.sidebar-both .sidebar-bg-wide::before {
+    width: 99999px;
+    background-color: #f7f7f7;
+}
+
+
+/* Right sidebar */
+
+.sidebar-both .main-content+.sidebar,
+.sidebar-both .main-content+.sidebar-bg,
+.sidebar-both .main-content+.sidebar-bg-wide {
+    float: right;
+    padding-right: 15px;
+    padding-left: 25px;
+}
+
+.sidebar-both .main-content+.sidebar-bg {
+    padding-right: 25px;
+}
+
+.sidebar-both .main-content+.sidebar::before,
+.sidebar-both .main-content+.sidebar-bg::before,
+.sidebar-both .main-content+.sidebar-bg-wide::before {
+    content: "";
+    display: block;
+    height: 99999px;
+    position: absolute;
+    left: 0;
+    top: -300px;
+    z-index: -10;
+}
+
+.sidebar-both .main-content+.sidebar::before {
+    border: 0;
+    border-left: 1px solid #eee;
+}
+
+.sidebar-both .main-content+.sidebar-bg::before {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.sidebar-both .main-content+.sidebar-bg-wide::before {
+    width: 99999px;
+    background-color: #f7f7f7;
+}
+
+@media only screen and (max-width: 992px) {
+    .sidebar-both .main-content {
+        float: none;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .sidebar-both .sidebar,
+    .sidebar-both .sidebar-bg,
+    .sidebar-both .sidebar-bg-wide {
+        float: none;
+        padding-top: 25px;
+        margin-top: -25px;
+        margin-bottom: 25px;
+        padding-right: 15px;
+    }
+    .sidebar-both .sidebar-bg {
+        padding-left: 15px;
+    }
+    .sidebar-both .sidebar::before {
+        border: 0;
+    }
+    .sidebar-both .sidebar-bg::before,
+    .sidebar-both .sidebar-bg-wide::before {
+        top: 0;
+        height: 100%;
+    }
+    .sidebar-both .sidebar-bg-wide::before {
+        right: -25%;
+    }
+    .sidebar-both .main-content+.sidebar,
+    .sidebar-both .main-content+.sidebar-bg,
+    .sidebar-both .main-content+.sidebar-bg-wide {
+        padding-top: 25px;
+        margin-top: 0;
+        margin-bottom: 25px;
+        padding-left: 15px;
+    }
+    .sidebar-both .main-content+.sidebar-bg {
+        padding-right: 15px;
+    }
+    .sidebar-both .main-content+.sidebar::before {
+        border: 0;
+    }
+    .sidebar-both .main-content+.sidebar-bg::before,
+    .sidebar-both .main-content+.sidebar-bg-wide::before {
+        top: 0;
+        height: 100%;
+    }
+    .sidebar-both .main-content+.sidebar-bg-wide::before {
+        left: -25%;
+    }
+}
+
+
+/* sidebar-both END */
+
+.sidebar.no-line::before {
+    border: 0;
+}

@@ -1,0 +1,218 @@
+﻿
+/* ********* Table ******** */
+
+
+/*table*/
+.table{
+	border-top:1px solid #dddddd;
+	border-bottom:1px solid #dddddd;
+	color:#666666;
+}
+.table th{
+	color:#424242;
+	font-weight:normal;
+}
+.table>thead>tr>th{
+	border-bottom:1px solid #bbbbbb;
+}
+.table-hover>tbody>tr{
+	transition: 		background-color ease-in 200ms;
+	-moz-transition: 	background-color ease-in 200ms; /* Firefox 4 */
+	-webkit-transition: background-color ease-in 200ms; /* Safari and Chrome */
+	-o-transition: 		background-color ease-in 200ms; /* Opera */
+	-ms-transition: 	background-color ease-in 200ms; /* IE9? */
+}
+.table-hover>tbody>tr:hover {
+    background-color: #fcfcfc;
+}
+.table-striped>tbody>tr:nth-of-type(odd){
+    background-color: #fcfcfc;
+}
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th {
+    padding: 12px 20px;
+    line-height: 1.5384616;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.table-xlg>tbody>tr>td, 
+.table-xlg>tbody>tr>th, 
+.table-xlg>tfoot>tr>td, 
+.table-xlg>tfoot>tr>th, 
+.table-xlg>thead>tr>td, 
+.table-xlg>thead>tr>th{
+    padding: 20px;
+}
+.table-lg>tbody>tr>td, 
+.table-lg>tbody>tr>th, 
+.table-lg>tfoot>tr>td, 
+.table-lg>tfoot>tr>th, 
+.table-lg>thead>tr>td, 
+.table-lg>thead>tr>th {
+    padding: 15px 20px;
+}
+.table-sm>tbody>tr>td, 
+.table-sm>tbody>tr>th, 
+.table-sm>tfoot>tr>td, 
+.table-sm>tfoot>tr>th, 
+.table-sm>thead>tr>td, 
+.table-sm>thead>tr>th {
+    padding: 10px 20px;
+}
+.table-xs>tbody>tr>td, 
+.table-xs>tbody>tr>th, 
+.table-xs>tfoot>tr>td, 
+.table-xs>tfoot>tr>th, 
+.table-xs>thead>tr>td, 
+.table-xs>thead>tr>th {
+    padding: 8px 20px;
+}
+.table-xxs>tbody>tr>td, 
+.table-xxs>tbody>tr>th, 
+.table-xxs>tfoot>tr>td, 
+.table-xxs>tfoot>tr>th, 
+.table-xxs>thead>tr>td, 
+.table-xxs>thead>tr>th {
+    padding: 6px 15px;
+}
+.dg-scroll-horizontal,
+.dg-scroll-vertical,
+.dg-scroll{
+    overflow: auto;
+    border: 1px solid #ddd;
+	margin-bottom:20px;
+}
+.dg-scroll-horizontal{
+    max-height: 340px;
+}
+.dg-scroll-horizontal > .table,
+.dg-scroll-vertical > .table{
+	border:none;
+	margin:0px;
+}
+.dg-scroll-vertical > .table{
+	max-width:none;
+	width:inherit;
+}
+.dg-scroll-vertical > .table > thead{
+	white-space:nowrap;
+}
+
+.table[class*="header-"] > thead th,
+.table[class*="header-"] > thead td{
+	color:#FFF;
+}
+.table [class*="bg-"],
+.table [class*="bg-"] td,
+.table [class*="bg-"] th {
+	color:#FFF;
+}
+
+
+
+/*dnntable*/
+.dnntable {
+	width: 100%;
+}
+
+.dnntable th,
+.dnntable td {
+	padding: 15px 30px;
+	font-size: 14px;
+	transition: background-color ease-in 200ms;
+	-moz-transition: background-color ease-in 200ms; /* Firefox 4 */
+	-webkit-transition: background-color ease-in 200ms; /* Safari and Chrome */
+	-o-transition: background-color ease-in 200ms; /* Opera */
+	-ms-transition: background-color ease-in 200ms; /* IE9? */
+}
+
+.dnntable tr:hover td {
+	background-color: #f9f8f8;
+}
+
+.dnntable_1 th {
+	border-bottom: 2px solid #e4e4e4;
+}
+
+.dnntable_1 td {
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.dnntable_2 th {
+	border-bottom: 2px solid #e4e4e4;
+}
+
+.dnntable_2 td {
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.dnntable_2 tr:nth-child(even) td {
+	background-color: #f7f7f7;
+}
+
+.dnntable_3 th,
+.dnntable_3 td {
+	border: 1px solid #e4e4e4;
+}
+
+.dnntable_4 th,
+.dnntable_4 td {
+	border: 1px solid #e4e4e4;
+}
+
+.dnntable_4 tr:nth-child(even) td {
+	background-color: #f7f7f7;
+}
+
+
+
+.color-demo .table{
+	width: 16.66666667%;
+	margin:0 0 5px;
+	border:none;
+	display:block;
+}
+.color-demo .table thead {
+	display:block;
+}
+.color-demo .table thead th{
+	padding:5px 3px;
+	border:none;
+	white-space:nowrap;
+	display:block;
+	font-size:12px;
+}
+.color-demo.table {
+	border:none;
+}
+.color-demo.table > .col-sm-2 > div,
+.color-demo.table > .col-sm-3 > div,
+.color-demo.table > .col-sm-4 > div{
+	margin-bottom:5px;
+	padding:5px 3px;
+	white-space:nowrap;
+	font-size:12px;
+}
+
+.border-demo .col-sm-2 > div,
+.border-demo .col-sm-4 > div{
+	border-width:1px ;
+	border-style:solid;
+}
+
+
+.pane-area{
+	margin: 5px 0;
+	padding:12px 0px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    background: rgba(0,0,0,0.05);	
+	box-shadow:0 0 1px rgba(0,0,0,0.4);	
+	-moz-box-shadow:0 0 1px rgba(0,0,0,0.4); 	
+	-webkit-box-shadow:0 0 1px rgba(0,0,0,0.4);
+}

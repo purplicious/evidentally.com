@@ -1,0 +1,76 @@
+﻿/*aboutus04*/
+.page04-bg01{
+	background: url(../../inset/pages-images/aboutus04-bg01.jpg);
+}
+.aboutus04-imgbox div[class^='col'] {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.aboutus04-bg01 {
+    background-color: #e9e9e9
+}
+.aboutus04-bg01 .info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutus04-bg01 .info-list li {
+    padding: 8px 0;
+}
+
+.aboutus04-bg01 .info-list li i {
+    margin-right: 10px;
+    font-size: 1.3em;
+    width: 1.3em;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+.dg-title29{
+	position:relative;
+	margin-bottom:90px;
+}
+.dg-title29 .diamond{
+	display:block;
+	margin:25px auto 0 0;
+	transform:scale(1.3,0.95);
+	-webkit-transform:scale(1.3,0.95);
+	width:20px;
+}
+.dg-title29 .diamond:after,
+.dg-title29 .diamond:before{
+	content:"";
+	position:absolute;
+	width:19px;
+	height:19px;
+	top:100%;
+	left:0px;
+	border:1px solid #20a3f0;
+	transform:rotate(45deg) ;
+	-webkit-transform:rotate(45deg);
+	margin:0 6px;
+}
+.dg-title29 .diamond:before{
+	margin-top:13px;
+}
+.dg-title29.text-center{
+	text-align:center;
+}
+.dg-title29.text-center .diamond{
+	margin-left:auto;
+	margin-right:auto;
+}
+.dg-title29.text-right .diamond{
+	margin-right:0;
+	margin-left:auto;
+}
+.dg-title29 .diamond.color-white:after,
+.dg-title29 .diamond.color-white:before{
+	border-color:#fff;
+}

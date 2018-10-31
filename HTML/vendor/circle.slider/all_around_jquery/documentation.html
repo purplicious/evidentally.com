@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Content Slider plugin</title>
+<meta name="description" content="Content slider - jQuery plugin">
+<link href="fonts/ostrich_sans/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="fonts/pt_sans/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
+<link href="css/doc_style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+
+
+<div class="selectors">
+<h3 style="color:#313131;">Previews:</h3>
+<a href="index.html">Our team</a> <a href="sidebar.html">Widget style</a> <a href="products.html">Products</a> <a href="portfolio.html">Portfolio</a> <a href="services.html">Services</a> <a href="vertical.html">Vertical</a> 
+<a href="left_aligned.html">Left aligned</a> <a href="right_aligned.html">Right aligned</a> <a href="with_text_label.html">With text label</a><br /><a href="how_to_link.html">How to link a desired frame</a> <a href="how_to_control.html">How to control the slider</a> <a href="documentation.html">Documentation</a>
+</div>
+<div class="help">
+
+<h2>ABOUT</h2>
+<p>All Around content slider is a <strong>multi-purpose all-in-one slider</strong> solution for your website. It supports both images and video. It can be an easy and effective solution for your <strong>shop related website</strong> as you can display your products in an interesting and eye appealing way. All Around carousel is perfect for almost all type of websites and it can fit perfectly into all business areas. You can display your <strong>company services, personal portfolio, sport products, health services, real-estate properties, vacation/holiday offers, cooking recipes</strong> and much much more.
+<br /><br />
+You can adjust the content slider the way you need it or you can choose one of our <strong>6 prepared layouts</strong>. The All Around jQuery slider/carousel has <strong>tons of options and features</strong> that you can set-up. It ranges from auto-play option and vertical/horizontal alignment up to border colors and radius. The features of the All Around content slider / carousel are listed below.
+
+<h3>All Around content slider features</h3>
+
+- Infinite content loop<br />
+- Responsive and <strong>mobile ready</strong><br />
+- You can put multiple sliders/carousels on the same page<br />
+- You can set custom width and height of the circles<br />
+- Choose the <strong>number of items</strong> to be displayed<br />
+- Enable or disable the <strong>auto-play</strong> option<br />
+- Adjust the <strong>border radius</strong> (ranges from full circle to square)<br />
+- Choose the thickness of the borders (or you can disable them)<br />
+- You can <strong>display the shadow</strong> or disable it<br />
+- Automatic <strong>height adjustment</strong> for the content<br />
+- 3 options for <strong>main image click</strong> (next item, previous item, nothing)<br />
+- <strong>Bind keyboard</strong> arrow keys (left/right)<br />
+- Choose whether you want to <strong>enlarge</strong> the middle item or not<br />
+- Choose the movement speed of the images<br />
+- Set the starting speed of the images<br />
+- Set the speed of arrows (opening/closing)<br />
+- Set the hover <strong>movement, speed and easing</strong><br />
+- Choose the prettyPhoto speed, easing, width, start and movement<br />
+- Set the <strong>direction of auto-play</strong><br />
+- Choose to pre-load all the images or to load them dynamically
+</p>
+
+<h2>Including</h2>
+<p>In your &lt;head&gt; section include this:</p>
+<pre><code>&lt;link href="fonts/ostrich_sans/stylesheet.css" rel="stylesheet" type="text/css" /&gt;
+&lt;link href='http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800' rel='stylesheet' 
+	type='text/css'&gt;
+&lt;link href="css/content_slider_style.css" rel="stylesheet" type="text/css" /&gt;
+&lt;link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" 
+	charset="utf-8" /&gt;
+
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="js/jquery.content_slider.min.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="js/jquery.mousewheel.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="js/jquery.animate-colors.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="js/additional_content.js" type="text/javascript"&gt;&lt;/script&gt;
+</code></pre>
+<br />
+
+<h2>Calling</h2>
+<p>All you need to do is call:</p>
+<pre><code>&lt;script type="text/javascript"&gt;
+(function($){
+	$(document).ready(function() {
+
+		var image_array = new Array();
+		image_array = [
+			{image: 'content/1.png', link_url: 'content/1.png', link_rel: 'prettyPhoto'}, 
+				<span style="color: green; font-style: italic;">// image for the first layer, goes with the text from</span> <span style="color: black; font-weight: bold;">id="sw0"</span>
+			{image: 'content/2.png', link_url: 'content/2.png', link_rel: 'prettyPhoto'},
+				<span style="color: green; font-style: italic;">// image for the second layer, goes with the text from</span> <span style="color: black; font-weight: bold;">id="sw1"</span>
+			{image: 'content/3.png', link_url: <span style="color: brown; font-weight: bold;">'some-page.html', link_rel: '', link_target: '_blank', 
+			 main_link: 'some-page.html', main_link_target: 1</span>,
+			 <span class="purple" style="font-weight: bold;">upper_text_label_show: 0, upper_text_label: '', upper_text_label_style: '',
+			 lower_text_label_show: 1, lower_text_label: 'Amanda', lower_text_label_style: 'color: red;'</span>}
+				<span style="color: green; font-style: italic;">// image for the third layer, goes with the text from</span> <span style="color: black; font-weight: bold;">id="sw2"</span>
+				<span style="color: brown; font-style: italic; font-weight: bold;">// if 'link_rel' is empty, zoom icon will open link instead of an image.</span>
+				<span style="color: brown; font-style: italic; font-weight: bold;">// 'main_link' is a link for a whole big circle, and it is 
+				// available only if 'middle_click': 3 (see parameters list below).
+				// main_link_target: 0 = open link in the same window; 1 = in new tab</span>
+				<span class="purple" style="font-weight: bold;">// upper_text_label_show, lower_text_label_show = 0 means there is no text label, 
+				// 1 means there is a text label
+				// upper_text_label, lower_text_label = text, content
+				// upper_text_label_style, lower_text_label_style = CSS style, optional</span>
+		];
+		$('#<span class="orange">slider1</span>').content_slider({	<span style="color: green; font-style: italic;">// bind plugin to div</span> <span class="orange">id="slider1"</span>
+			map : image_array,		<span style="color: green; font-style: italic;">// pointer to the image map</span>
+			max_shown_items: 3,		<span style="color: green; font-style: italic;">// number of visible circles</span>
+			hv_switch: 0,			<span style="color: green; font-style: italic;">// 0 = horizontal slider, 1 = vertical</span>
+			active_item: 1,			<span style="color: green; font-style: italic;">// layer that will be shown at start, 0=first, 1=second...</span>
+			wrapper_text_max_height: 810,	<span style="color: green; font-style: italic;">// height of widget, displayed in pixels</span>
+			middle_click: 1,		<span style="color: green; font-style: italic;">// when main circle is clicked: 
+							// 1 = slider will go to the previous circle, 2 = to the next,
+							// 3 = open 'main_link', 0 = nowhere (no response)</span>
+			border_radius: -1		<span style="color: green; font-style: italic;">// -1 = circle, 0 and other = radius</span>
+		});
+	});
+})(jQuery);
+&lt;/script&gt;
+</code></pre>
+<br />
+
+
+<h2>HTML formating</h2>
+
+<p>Elements need to be wrapped like this:</p>
+<pre><code>&lt;div <span class="purple">class="content_slider_wrapper"</span> <span class="orange">id="slider1"</span>&gt;
+
+	&lt;div <span class="red" style="text-decoration: underline;">class="circle_slider_text_wrapper"</span> <span style="color: black; font-weight: bold;">id="sw0"</span> style="display: none;"&gt;
+	<span style="color: green; font-style: italic;">&lt;!-- content for the first layer, id="sw0" --&gt;</span>
+		&lt;div <span style="color: #FF0000;">class="content_slider_text_block_wrap"</span>&gt;
+		<span style="color: green; font-style: italic;">&lt;!-- "content_slider_text_block_wrap" is a div class for custom content --&gt;</span>
+			<span class="blue">&lt;h3&gt;Black Hoodie&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;
+			&lt;span&gt;Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet 
+			Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet 
+			Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet 
+			Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet
+			Lorem ipsum dolor sit amet&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+			&lt;a href="#" class="button_regular"&gt;More Info&lt;/a&gt;&lt;!-- button_regular --&gt;</span>
+		&lt;/div&gt;
+		&lt;div class="clear"&gt;&lt;/div&gt;	
+	&lt;/div&gt;
+
+	&lt;div <span class="red" style="text-decoration: underline;">class="circle_slider_text_wrapper"</span> <span style="color: black; font-weight: bold;">id="sw1"</span> style="display: none;"&gt;
+	<span style="color: green; font-style: italic;">&lt;!-- content for the second layer, id="sw1" --&gt;</span>
+		&lt;div <span style="color: #FF0000; font-weight: bold;">class="circle_slider_text"</span>&gt;
+		<span style="color: green; font-style: italic;">&lt;!-- "circle_slider_text" is a div class for two vertically separated text blocks--&gt;</span>
+			<span class="blue">&lt;h4&gt;Second layer&lt;/h4&gt;
+			&lt;span&gt;1. Lorem ipsum dolor sit amet. / consectetur adipisicing elit.&lt;br&gt;
+				2. Sed do eiusmod tempor. / labore et dolore magna aliqua.&lt;br&gt;
+				3. Quis nostrud. / exercitation ullamco.&lt;br&gt;
+				4. Laboris nisi ut aliquip ex.&lt;/span&gt;</span>
+			&lt;div class="clear"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div <span style="color: #FF0000;">class="circle_slider_text right"</span>&gt; <span style="color: green; font-style: italic;">&lt;!-- second text block --&gt;</span>
+			<span class="blue">&lt;h4&gt;Friendly robot features&lt;/h4&gt;
+			&lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+			incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+			exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+			in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/span&gt;</span>
+			&lt;div class="clear"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="clear"&gt;&lt;/div&gt;	
+	&lt;/div&gt;
+
+	&lt;div <span class="red" style="text-decoration: underline;">class="circle_slider_text_wrapper"</span> <span style="color: black; font-weight: bold;">id="sw2"</span> style="display: none;"&gt;
+	<span style="color: green; font-style: italic;">&lt;!-- content for the third layer, id="sw2" --&gt;</span>
+		&lt;div <span style="color: #FF0000; font-weight: bold;">class="circle_slider_text"</span>&gt;
+		<span style="color: green; font-style: italic;">&lt;!-- "circle_slider_text" is a div class for two vertically separated text blocks--&gt;</span>
+			<span class="blue">&lt;h4&gt;Third layer&lt;/h4&gt;
+			&lt;span&gt;1. Lorem ipsum dolor sit amet. / consectetur adipisicing elit.&lt;br&gt;
+				2. Sed do eiusmod tempor. / labore et dolore magna aliqua.&lt;br&gt;
+				3. Quis nostrud. / exercitation ullamco.&lt;br&gt;
+				4. Laboris nisi ut aliquip ex.&lt;br&gt;
+				5. Quis nostrud exercitation ullamco laboris.&lt;/span&gt;</span>
+			&lt;div class="clear"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div <span style="color: #FF0000;">class="circle_slider_text right"</span>&gt; <span style="color: green; font-style: italic;">&lt;!-- second text block --&gt;</span>
+			<span class="blue">&lt;h4&gt;Friendly robot features&lt;/h4&gt;
+			&lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+			incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+			exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+			in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+			sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.&lt;/span&gt;</span>
+			&lt;div class="clear"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="clear"&gt;&lt;/div&gt;	
+	&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+<span class="purple">* Main div class</span><br />
+<span class="red">* </span><span class="red" style="text-decoration: underline;">Layer class</span><br />
+<span style="color: #FF0000;"> * Type of content: <br />&nbsp;&nbsp;&nbsp;&nbsp;class="content_slider_text_block_wrap" is for custom content</span><br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #FF0000; font-weight: bold;">class="circle_slider_text" is for two vertically separated text blocks</span><br />
+<span style="color: green; font-style: italic;">* &lt;!-- Comments --></span><br />
+<span class="blue">* This can be any content you like.</span><br />
+<span class="orange">* ID of the main slider div, for binding plugin purposes</span><br />
+<span style="color: black; font-weight: bold;">* ID of a layer</span>
+
+<h2>How to build vertical version</h2>
+
+Here you can see differences in the code:<br />
+<b>Calling:</b>
+<pre><code>&lt;script type="text/javascript"&gt;
+(function($){
+	$(document).ready(function() {
+
+		var image_array = new Array();
+		image_array = [
+			{image: 'content/1.png', link_url: 'content/1.png', link_rel: 'prettyPhoto'}, 
+				// image for the first layer, goes with the text from id="sw0"
+			{image: 'content/2.png', link_url: 'content/2.png', link_rel: 'prettyPhoto'},
+				// image for the second layer, goes with the text from id="sw1"
+			{image: 'content/3.png', link_url: 'content/3.png', link_rel: 'prettyPhoto'}
+				// image for the third layer, goes with the text from id="sw2"
+		];
+		$('<span style="color: red; font-weight: bold;">#slider2</span>').content_slider({	// bind plugin to div id="slider2"
+			map : image_array,		// pointer to the image map
+			max_shown_items: 3,		// number of visible circles
+			<span style="color: red; font-weight: bold;">hv_switch: 1,			// 0 = horizontal slider, 1 = vertical</span>
+			active_item: 1,			// layer that will be shown at start, 0=first, 1=second...
+			middle_click: 1,		// desired action when main circle is clicked 
+			<span style="color: red; font-weight: bold;">wrapper_text_max_height: 1000,	// width of widget, displayed in pixels</span>
+			border_radius: -1		// -1 = circle, 0 and other = radius
+		});
+	});
+})(jQuery);
+&lt;/script&gt;
+</code></pre><br />
+<b>HTML formating:</b>
+<pre><code>&lt;div <span style="color: red; font-weight: bold;">class="content_slider_wrapper_vertical" id="slider2"</span>&gt;
+
+	&lt;div class="circle_slider_text_wrapper" id="sw0" style="display: none;"&gt;
+	&lt;!-- content for the first layer, id="sw0" --&gt;
+		&lt;div class="content_slider_text_block_wrap"&gt;
+		&lt;!-- "content_slider_text_block_wrap" is a div class for custom content --&gt;
+			&lt;h3&gt;Black Hoodie&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;
+			&lt;span&gt;Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet 
+			Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet 
+			Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet 
+			Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet
+			Lorem ipsum dolor sit amet&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+			&lt;a href="#" class="button_regular"&gt;More Info&lt;/a&gt;&lt;!-- button_regular --&gt;
+		&lt;/div&gt;
+		&lt;div class="clear"&gt;&lt;/div&gt;	
+	&lt;/div&gt;
+
+	&lt;div class="circle_slider_text_wrapper" id="sw1" style="display: none;"&gt;
+	&lt;!-- content for the second layer, id="sw1" --&gt;
+		&lt;div class="circle_slider_text"&gt;
+		&lt;!-- "circle_slider_text" is a div class for two vertically separated text blocks--&gt;
+			&lt;h4&gt;Second layer&lt;/h4&gt;
+			&lt;span&gt;1. Lorem ipsum dolor sit amet. / consectetur adipisicing elit.&lt;br&gt;
+				2. Sed do eiusmod tempor. / labore et dolore magna aliqua.&lt;br&gt;
+				3. Quis nostrud. / exercitation ullamco.&lt;br&gt;
+				4. Laboris nisi ut aliquip ex.&lt;/span&gt;
+			&lt;div class="clear"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="circle_slider_text right"&gt; &lt;!-- second text block --&gt;
+			&lt;h4&gt;Friendly robot features&lt;/h4&gt;
+			&lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+			incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+			exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+			in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/span&gt;
+			&lt;div class="clear"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="clear"&gt;&lt;/div&gt;	
+	&lt;/div&gt;
+
+	&lt;div class="circle_slider_text_wrapper" id="sw2" style="display: none;"&gt;
+		&lt;div <span style="color: orange; font-weight: bold;">class="circle_slider_text_wrapper_v2"</span>&gt;
+		&lt;!-- content for the third layer, id="sw2" --&gt;
+			&lt;div class="circle_slider_text"&gt;
+			&lt;!-- "circle_slider_text" is a div class for two vertically separated text blocks--&gt;
+				&lt;h4&gt;Third layer&lt;/h4&gt;
+				&lt;span&gt;1. Lorem ipsum dolor sit amet. / consectetur adipisicing elit.&lt;br&gt;
+					2. Sed do eiusmod tempor. / labore et dolore magna aliqua.&lt;br&gt;
+					3. Quis nostrud. / exercitation ullamco.&lt;br&gt;
+					4. Laboris nisi ut aliquip ex.&lt;br&gt;
+					5. Quis nostrud exercitation ullamco laboris.&lt;/span&gt;
+				&lt;div class="clear"&gt;&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="circle_slider_text right"&gt; &lt;!-- second text block --&gt;
+				&lt;h4&gt;Friendly robot features&lt;/h4&gt;
+				&lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+				dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+				mollit.&lt;/span&gt;
+				&lt;div class="clear"&gt;&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="clear"&gt;&lt;/div&gt;	
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;</code></pre><br />
+<span style="color: red; font-weight: bold;">* The differences</span><br />
+<span style="color: orange; font-weight: bold;">* New type of content, horizontally separated</span>
+
+<h2>Parameters</h2>
+You can modify Content Slider by using optional parameters argument:
+<pre><code>$('#slider1').content_slider({
+  <span class="orange">name : value</span>
+});
+</code></pre>
+<br />
+<p>
+List of available parameters:
+</p>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Default</th>
+		<th>Description</th>
+	</tr>
+	
+	<tr>
+		<td>map</td>
+		<td></td>
+		<td>Pointer to the image map, must be provided</td>
+	</tr>
+	<tr>
+		<td>max_shown_items</td>
+		<td>7</td>
+		<td>The number of visible circles</td>
+	</tr>
+	<tr>
+		<td>active_item</td>
+		<td>0</td>
+		<td>The ID number of a picture that is going to be placed in the center position when plug-in is initialized</td>
+	</tr>
+	<tr>
+		<td>wrapper_text_max_height</td>
+		<td>810</td>
+		<td>This is the height of the slider in horizontal mode, and width in vertical mode, displayed in pixels</td>
+	</tr>
+	<tr>
+		<td>automatic_height_resize</td>
+		<td>1</td>
+		<td>1 will automatically resize widget height if slide contains larger content, 0 will keep fixed value from 'wrapper_text_max_height' value</td>
+	</tr>
+	<tr>
+		<td>hv_switch</td>
+		<td>0</td>
+		<td>0 means horizontal plugin variant, 1 means vertical plugin variant</td>
+	</tr>
+	<tr>
+		<td>middle_click</td>
+		<td>2</td>
+		<td>when main circle is clicked:<br />1 = slider will go to the previous layer/circle<br />2 = slider will go to the next<br />3 = open 'main_link'<br />0 = nowhere (no response)</td>
+	</tr>
+	<tr>
+		<td>bind_arrow_keys</td>
+		<td>1</td>
+		<td>For value 1, the slider will slide if you press left/right on keyboard. Set it to 0 if you want to disable this feature.</td>
+	</tr>
+	<tr>
+		<td>small_border</td>
+		<td>5</td>
+		<td>Thickness of the border in small circles</td>
+	</tr>
+	<tr>
+		<td>big_border</td>
+		<td>8</td>
+		<td>Thickness of the border in big circle</td>
+	</tr>
+	<tr>
+		<td>border_radius</td>
+		<td>-1</td>
+		<td>-1 is full circle, any other (larger) value will set the border radius</td>
+	</tr>
+	<tr>
+		<td>radius_proportion</td>
+		<td>1</td>
+		<td>Keep radius proportion, so that small circles have proportionaly the same radius as the big circle. Set it to 0 if you want to disable this feature.</td>
+	</tr>
+	<tr>
+		<td>mode</td>
+		<td>2</td>
+		<td>Mode 1 doesn't enlarge the middle picture while it passes the center position, mode 2 enlarge the middle picture while it passes the center position</td>
+	</tr>
+	<tr>
+		<td>border_on_off</td>
+		<td>1</td>
+		<td>0 means no border, 1 means border</td>
+	</tr>
+	<tr>
+		<td>allow_shadow</td>
+		<td>1</td>
+		<td>1 = yes, 0 = no shadow around the circles</td>
+	</tr>
+	<tr>
+		<td>small_resolution_max_height</td>
+		<td>0</td>
+		<td>When you have a resolution smaller then 600 pixels, this will set the limitation of content height. Set it to 0 for no limit.</td>
+	</tr>
+	<tr>
+		<td>small_pic_width</td>
+		<td>84</td>
+		<td>Width (in pixels) of the small circles</td>
+	</tr>
+	<tr>
+		<td>small_pic_height</td>
+		<td>84</td>
+		<td>Height (in pixels) of the small circles</td>
+	</tr>
+	<tr>
+		<td>child_div_width</td>
+		<td>104</td>
+		<td>Width (in pixels) of the whole area around the small circle (including the very circle). If you change 'small_pic_width' value, change this too.</td>
+	</tr>
+	<tr>
+		<td>child_div_height</td>
+		<td>104</td>
+		<td>Height (in pixels) of the whole area around the small circle (including the very circle). If you change 'small_pic_height' value, change this too.</td>
+	</tr>
+	<tr>
+		<td>big_pic_width</td>
+		<td>231</td>
+		<td>Width (in pixels) of the big circle</td>
+	</tr>
+	<tr>
+		<td>big_pic_height</td>
+		<td>231</td>
+		<td>Height (in pixels) of the big circle</td>
+	</tr>
+	<tr>
+		<td>moving_speed</td>
+		<td>70</td>
+		<td>An amount of time, expressed in milliseconds, multiplied by a number of places pictures need to pass. Meaning, the closer the pictures are to the center the slower they will travel. Naturally, pictures that are further away will travel faster.</td>
+	</tr>
+	<tr>
+		<td>moving_speed_offset</td>
+		<td>100</td>
+		<td>A value, expressed in miliseconds, that is always added to sum. Starting speed. Set the larger value for slower circle traveling.</td>
+	</tr>
+	<tr>
+		<td>moving_easing</td>
+		<td>'linear'</td>
+		<td>jQuery easing effect</td>
+	</tr>
+	<tr>
+		<td>arrow_speed</td>
+		<td>300</td>
+		<td>Speed of the arrows - opening/closing</td>
+	</tr>
+	<tr>
+		<td>arrow_easing</td>
+		<td>'linear'</td>
+		<td>jQuery easing effect</td>
+	</tr>
+	<tr>
+		<td>hover_movement</td>
+		<td>6</td>
+		<td>How much (in pixels) will the circle enlarge or shrink on hover effect</td>
+	</tr>
+	<tr>
+		<td>hover_speed</td>
+		<td>100</td>
+		<td>Speed of hover effect</td>
+	</tr>
+	<tr>
+		<td>hover_easing</td>
+		<td>'linear'</td>
+		<td>jQuery easing effect</td>
+	</tr>
+	<tr>
+		<td>prettyPhoto_speed</td>
+		<td>200</td>
+		<td>Speed of the red cross (prettyPhoto link for zooming)</td>
+	</tr>
+	<tr>
+		<td>prettyPhoto_easing</td>
+		<td>'linear'</td>
+		<td>jQuery easing effect</td>
+	</tr>
+	<tr>
+		<td>prettyPhoto_width</td>
+		<td>21</td>
+		<td>Width of the prettyPhoto cross</td>
+	</tr>
+	<tr>
+		<td>prettyPhoto_start</td>
+		<td>0.93</td>
+		<td>Position of prettyPhoto cross - expressed in percentages (and divided by 100) of an circle - from 0.00 to 1.00</td>
+	</tr>
+	<tr>
+		<td>prettyPhoto_movement</td>
+		<td>45</td>
+		<td>How much (in pixels) will the red cross move when you hover over the big circle</td>
+	</tr>
+	<tr>
+		<td>prettyPhoto_color</td>
+		<td>#1AB99B</td>
+		<td>Color of Zoom icon</td>
+	</tr>
+	<tr>
+		<td>prettyPhoto_img</td>
+		<td>(empty string)</td>
+		<td>If you want some specific icon instead a 'plus' icon, enter here a URL of that image (image should be 21 x 21 px)</td>
+	</tr>
+	<tr>
+		<td>auto_play</td>
+		<td>0</td>
+		<td>1 means auto-play is ON, the slider will move circles automatically</td>
+	</tr>
+	<tr>
+		<td>auto_play_direction</td>
+		<td>1</td>
+		<td>1 = slider will go to the right, 2 = to the left</td>
+	</tr>
+	<tr>
+		<td>auto_play_pause_time</td>
+		<td>3000</td>
+		<td>Interval of auto-play, pause between sliding, expressed	in miliseconds (1000 miliseconds = 1 second)</td>
+	</tr>
+	<tr>
+		<td>preload_all_images</td>
+		<td>0</td>
+		<td>1 will preload all images, even though they are not shown at the start, so browser will cache them and show it immediately when you slide to them. 0 means no preloading.</td>
+	</tr>
+	<tr>
+		<td>enable_mousewheel</td>
+		<td>1</td>
+		<td>1 means mouse wheel will slide the slider when mouse pointer is above the slider. Set it to 0 if you want to disable this feature.</td>
+	</tr>
+	<tr>
+		<td>activate_border_div</td>
+		<td>1</td>
+		<td>1 will use better (but slower) render method for border and resizing. If the slider is slow - set it to 0.</td>
+	</tr>
+	<tr>
+		<td>border_color</td>
+		<td>'#282828'</td>
+		<td>Border color displayed in HEX HTML value</td>
+	</tr>
+	<tr>
+		<td>arrow_color</td>
+		<td>'#282828'</td>
+		<td>Arrows color displayed in HEX HTML value</td>
+	</tr>	
+	<tr>
+		<td>arrow_width</td>
+		<td>28</td>
+		<td>If you change arrow image, update this value</td>
+	</tr>
+	<tr>
+		<td>arrow_height</td>
+		<td>57</td>
+		<td>If you change arrow image, update this value</td>
+	</tr>
+	<tr>
+		<td>small_arrow_width</td>
+		<td>20</td>
+		<td>Small arrows will be used if you have disabled the borders with 'border_on_off' parameter. If you change arrow image, update this value (in pixels).</td>
+	</tr>
+	<tr>
+		<td>small_arrow_height</td>
+		<td>20</td>
+		<td>Small arrows will be used if you have disabled the borders with 'border_on_off' parameter. If you change arrow image, update this value (in pixels).</td>
+	</tr>
+	<tr>
+		<td>use_thin_arrows</td>
+		<td>0</td>
+		<td>Small arrows will be used if you set this option to 1, even border is enabled.</td>
+	</tr>
+	<tr>
+		<td>top_offset</td>
+		<td>0</td>
+		<td>Set the top position of the circles (in pixels). 0 means that it will automatically set the position to vertical center.</td>
+	</tr>
+	<tr>
+		<td>left_offset</td>
+		<td>0</td>
+		<td>This will push the circles to the right (in pixels)</td>
+	</tr>
+	<tr>
+		<td>plugin_url</td>
+		<td>(empty string)</td>
+		<td>URL path to the root folder of the plugin. By default it is a folder where are your HTML files.</td>
+	</tr>
+	<tr>
+		<td>responsive_by_available_space</td>
+		<td>0</td>
+		<td>0 will do responsive by browser window, 1 will do responsive by available space around the slider (parent div, container div).</td>
+	</tr>
+	<tr>
+		<td>keep_on_top_middle_circle</td>
+		<td>0</td>
+		<td>If circles overlap each other, this option will keep main circle on the top (valid values for this option: 0=disabled, 1=enabled)</td>
+	</tr>
+	<tr>
+		<td>dinamically_set_class_id</td>
+		<td>0</td>
+		<td>Circle div elements will get classes that identify its ID (id from a 'map' array). Classes will be named as: all_around_circle_0, all_around_circle_1, all_around_circle_2, etc... Also img elements will get classes: all_around_img_0, all_around_img_1, all_around_img_2, etc... So, if you enable this option, you can modify style of specific circle via CSS: .all_around_circle_2 {...}. Valid values for this option: 0=disabled, 1=enabled.</td>
+	</tr>
+	<tr>
+		<td>dinamically_set_position_class</td>
+		<td>0</td>
+		<td>Circle div elements will get classes that identify its current visual position on the slider (from left to right). Classes will be named as: all_around_position_0, all_around_position_1, all_around_position_2, etc... So, if you enable this option, you can modify style of (for example) main (large) circle via CSS: .all_around_position_2 {...}. Valid values for this option: 0=disabled, 1=enabled.</td>
+	</tr>
+	<tr>
+		<td>hide_arrows</td>
+		<td>0</td>
+		<td>Hide the arrows (0=no, 1=yes)</td>
+	</tr>
+	<tr>
+		<td>hide_prettyPhoto</td>
+		<td>0</td>
+		<td>Hide the zoom icon (0=no, 1=yes)</td>
+	</tr>
+	<tr>
+		<td>hide_content</td>
+		<td>0</td>
+		<td>Hide the content (all textual content) (0=no, 1=yes)</td>
+	</tr>
+	<tr>
+		<td>content_margin_left</td>
+		<td>0</td>
+		<td>If the content is not centered very well, you can push it to left or to right by passing negative or positive value to this option. Number will be considered as a number of pixels. So, if you set a value to -5 it will move the content to left for 5 pixels. Positive value, for example 5, will move the content to right for 5 pixels.</td>
+	</tr>
+	<tr>
+		<td>circle_left_offset</td>
+		<td>0</td>
+		<td>If circles are not centered very well, you can push it to left or to right by passing negative or positive value to this option. Number will be considered as a number of pixels. So, if you set a value to -5 it will move circles to left for 5 pixels. Positive value, for example 5, will move circles to right for 5 pixels.</td>
+	</tr>
+	<tr>
+		<td>minus_width</td>
+		<td>0</td>
+		<td>If width of the slider is too large, set value to 10 for example, and width of the slider will be 10px smaller.</td>
+	</tr>
+	<tr>
+		<td>main_circle_position</td>
+		<td>0</td>
+		<td>0 = Main circle is centered, 1 = left aligned, 2 = right aligned.</td>
+	</tr>
+	<tr>
+		<td>enable_scroll_with_touchmove_on_horizontal_version</td>
+		<td>1</td>
+		<td>On touch-screens, you can scroll the page by moving finger up and down over the circle. On horizontal version of the slider this option is active by default. 0 = Not active, 1 = Active.</td>
+	</tr>
+	<tr>
+		<td>enable_scroll_with_touchmove_on_vertical_version</td>
+		<td>0</td>
+		<td>On touch-screens, you can scroll the page by moving finger up and down over the circle. On vertical version of the slider this option is NOT active by default (because circles will be moved up and down). 0 = Not active, 1 = Active.</td>
+	</tr>
+	<tr>
+		<td>movement_coefficient</td>
+		<td>1</td>
+		<td>Coefficient for movement when you drag and move circles. Set it to lower value for smaller movement, for example set it to 0.5</td>
+	</tr>
+</table>
+
+<h2>Public functions</h2>
+You can use public functions this way:
+<pre><code>$('#slider1').content_slider(<span class="orange">'name_of_function'</span>, optional_parameter);
+</code></pre>
+<br />
+<p>
+List of available functions:
+</p>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Parameter</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>public_go_one_slide_left</td>
+		<td>(none)</td>
+		<td>Slider will go to the previous circle</td>
+	</tr>
+	<tr>
+		<td>public_go_one_slide_right</td>
+		<td>(none)</td>
+		<td>Slider will go to the next circle</td>
+	</tr>
+	<tr>
+		<td>public_go_n_slides_left</td>
+		<td>n</td>
+		<td>Slider will go to the left for 'n' circles</td>
+	</tr>
+	<tr>
+		<td>public_go_n_slides_right</td>
+		<td>n</td>
+		<td>Slider will go to the right for 'n' circles</td>
+	</tr>
+	<tr>
+		<td>start_auto_play</td>
+		<td>(none)</td>
+		<td>Slider will start auto-play mode</td>
+	</tr>
+	<tr>
+		<td>get_auto_play_status</td>
+		<td>(none)</td>
+		<td>Return 1 if auto-play is running, otherwise it returns 0</td>
+	</tr>
+	<tr>
+		<td>get_number_of_current_slide</td>
+		<td>(none)</td>
+		<td>Return ID number of active slide</td>
+	</tr>
+</table>
+
+<h2>Events</h2>
+
+Events are triggered on holder div ID (ID you call content_slider() function upon, for example '#slider1')
+<table>
+	<tr>
+		<th>Event</th>
+		<th>Method</th>
+	</tr>
+	
+	<tr>
+		<td>When user goes to previous slide</td>
+		<td>'prev'</td>
+	</tr>
+	
+	<tr>
+		<td>When user goes to next slide</td>
+		<td>'next'</td>
+	</tr>
+	
+	<tr>
+		<td>When slider open an slide</td>
+		<td>'open'</td>
+	</tr>
+	
+</table>
+Example:
+<pre><code>$('#slider1').on('prev', function(event) {
+	console.log('prev');
+});
+$('#slider1').on('next', function(event) {
+	console.log('next');
+});
+$('#slider1').on('open', function(event, id) {
+	console.log('open '+id+' slide');
+});</code></pre>
+<br />
+
+<div class="clear"></div>
+<h2>Requirements</h2>
+<p>
+Required: <a href="http://jquery.com/">jQuery 1.7+</a><br />
+Required: <a href="https://github.com/brandonaaron/jquery-mousewheel">jQuery Mousewheel</a> (included)<br />
+
+Extra: Use <a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing</a> for additional easing options.<br />
+
+</p>
+<br />
+<br />
+<br />
+</div>
+
+
+</body>
+</html>

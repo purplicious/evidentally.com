@@ -1,0 +1,52 @@
+﻿/*contact01*/
+
+.contact01-pagetitle-images {
+    background-image: url(../../inset/pages-images/contact01-img01.jpg);
+}
+.contact04-info .info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact04-info .info-list li {
+    padding: 8px 0;
+}
+
+.contact04-info .info-list li i {
+    margin-right: 10px;
+    font-size: 1.3em;
+    width: 1.3em;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.dg-title14{
+	margin-bottom:40px;
+}
+.dg-title14 .title{
+	margin:0 0 10px;
+}
+.dg-title14 small{
+	position:relative;
+	display:inline-block;
+	margin-bottom:6px;
+	font-size:14px;
+	font-style:italic;
+	color:#666;
+}
+.dg-title14 .title:after{
+	content:"";
+	width:110px;
+	border-bottom:1px solid #a8a8a8;
+	display:block;
+	margin-top:20px;
+}
+.dg-title14.color-white small{
+	color:#FFF;
+}
+.dg-title14.text-center .title:after{
+	margin-left: auto;
+	margin-right: auto;
+}

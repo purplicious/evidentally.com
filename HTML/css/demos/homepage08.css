@@ -1,0 +1,205 @@
+﻿ 
+    .home08-area {
+        display: table;
+        width: 100%;
+    }
+    
+    .home08-area .area-left,
+    .home08-area .area-right {
+        width: 50%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .home08-area .area-right {
+        position: relative;
+        padding: 100px;
+        background: url(../../inset/homepage08/home08-area-right.jpg) center top no-repeat;
+        background-size: cover;
+    }
+    
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .home08-area .area-right {
+            padding: 45px;
+        }
+    }
+    
+    @media only screen and (max-width: 991px) {
+        .home08-area,
+        .home08-area .area-left,
+        .home08-area .area-right {
+            width: auto;
+            display: block;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .home08-area .area-right {
+            padding: 45px;
+        }
+    }
+    
+    .home08-bg01 {
+        background: url(../../inset/homepage08/home08-bg01.jpg) no-repeat 40% 0;
+        background-size: cover;
+    }
+    
+    .home08-bg01 p {
+        color: #e7e7e7;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .home08-bg01 {
+            background-position: center 0;
+        }
+    }
+    
+    .home08-dividers {
+        border-top: 1px dashed rgba(255, 255, 255, 0.5);
+    }
+    
+    .home08-bg02 {
+        background-color: #f5f5f5;
+        color: #333333;
+    }
+    
+    .home08-area02 {
+        position: relative;
+    }
+    
+    .home08-area02 .area-left {
+        width: 50%;
+        background-position: center 10%;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+    
+    .home08-area02 .area-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    @media only screen and (max-width: 992px) {
+        .home08-area02 .area-left {
+            width: auto;
+        }
+        .home08-area02 .area-left {
+            width: auto;
+        }
+        .home08-area02 .area-right {
+            position: relative;
+            height: 300px;
+            width: auto;
+        }
+    }
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .home08-area02 .area-right {
+            height: 400px;
+        }
+    }
+    
+    .home08-imglist {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .home08-imglist:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    
+    .home08-imglist li {
+        list-style: none;
+        float: left;
+        width: 50%;
+        overflow: hidden;
+    }
+    
+    .home08-imglist li img {
+        width: 100%;
+        transition: all ease-in 200ms;
+        -moz-transition: all ease-in 200ms;
+        /* Firefox 4 */
+        -webkit-transition: all ease-in 200ms;
+        /* Safari and Chrome */
+        -o-transition: all ease-in 200ms;
+        /* Opera */
+        -ms-transition: all ease-in 200ms;
+        /* IE9? */
+    }
+    
+    .home08-imglist li:hover img {
+        transform: rotate(3deg) scale(1.1);
+        -webkit-transform: rotate(3deg) scale(1.1);
+    }
+    
+
+
+.dg-title13{
+	color:#ffffff;
+	margin-bottom:28px;
+}
+.dg-title13:after{
+	content:"";
+	margin-top:21px;
+	width:80px;
+	border-bottom:2px solid #FFF;
+	display:block;
+}
+
+.dg-title14{
+	margin-bottom:40px;
+}
+.dg-title14 .title{
+	margin:0 0 10px;
+}
+.dg-title14 small{
+	position:relative;
+	display:inline-block;
+	margin-bottom:6px;
+	font-size:14px;
+	font-style:italic;
+	color:#666;
+}
+.dg-title14 .title:after{
+	content:"";
+	width:110px;
+	border-bottom:1px solid #a8a8a8;
+	display:block;
+	margin-top:20px;
+}
+.dg-title14.color-white small{
+	color:#FFF;
+}
+.dg-title14.text-center .title:after{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.dg-title16 {
+	text-align:center;
+	padding-bottom:15px;
+}
+.dg-title16 small{
+	display:inline-block;
+	font-size:14px;
+	margin:0 0 9px;
+	font-style:italic;
+	letter-spacing:0.075em;
+	color:#666;
+}
+.dg-title16 .title{
+	margin:0 0 15px;
+}
+.dg-title16.text-left{
+	text-align:left;
+}

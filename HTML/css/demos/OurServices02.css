@@ -1,0 +1,55 @@
+﻿/*Service02*/
+
+.service02-bg01 {
+    background-color: #f5f5f5;
+}
+
+.service02-bg02 {
+    background: url(../../inset/pages-images/service02-bg02.jpg) no-repeat center center;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.dg-title36{
+	margin-bottom:30px;
+	text-align:center;
+}
+.dg-title36:before{
+	content:".\2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002.";
+	display:block;
+	margin:auto;
+	background-size: 10px 10px;  
+	background-repeat:repeat-x;
+	margin-bottom:21px;
+    text-decoration: line-through;
+	text-decoration-style: wavy; 
+	-moz-text-decoration-style: wavy;
+	font-size:13px;
+	line-height:1;
+	white-space:nowrap;
+	width:80px;
+	overflow:hidden;
+	color:#2ba8f0;
+	text-indent:-3px;
+}
+.dg-title36.text-left{
+	text-align:left;
+}
+.dg-title36.text-left:before{
+	color:#acacac;
+}
+
+.dg-title36.text-left:before{
+	margin-left:0;
+}
+.dg-title36.color-white:before{
+	color:#FFF;
+}
+@media only screen and (max-width: 767px) {
+	.dg-title36{
+		font-size:22px;
+	}
+}

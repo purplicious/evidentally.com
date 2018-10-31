@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="inset/favicon.ico" rel="shortcut icon">
+    <title>Coming Soon</title>
+    <!--jquery-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Font Icon -->
+    <link href="css/dnngo-font-icon.css" rel="stylesheet" type="text/css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,600" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/demos/comingsoon.css" rel="stylesheet" type="text/css">
+
+    <!-- Template elements -->
+    <link href="css/component/loaders.css" rel="stylesheet" type="text/css">
+
+    <!-- Template color -->
+    <link href="css/theme-color/blue.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Loading -->
+    <div class="page-loaders">
+            <div class="loaders">
+                <div class="loader-inner ball-clip-rotate-pulse loader-accent">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <!-- Loading End -->
+    <div class="comingsoon-main">
+        <div class="comingsoon-top">
+            <div class="comingsoon-vertical">
+                <div class="commingsoon-content">
+                    <div class="commingsoon-logo"><img src="inset/logo-d.png" srcset="inset/logo-d-2x.png 2x" alt="logo"></div>
+                    <h3 class="commingsoon-title">UNDER CONSTRUCTION!</h3>
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.</p>
+                </div>
+            </div>
+        </div>
+        <div class="comingsoon-center">
+            <div class="comingsoon-vertical">
+                <ul id="countdown">
+                    <li>
+                        <div class="timebox timedays">
+                            <div class="time"> <span class="days">00</span>
+                                <p class="timeRefDays"></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timebox timehours">
+                            <div class="time"> <span class="hours">00</span>
+                                <p class="timeRefHours"></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timebox timeminutes">
+                            <div class="time"><span class="minutes">00</span>
+                                <p class="timeRefMinutes"></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timebox timeseconds">
+                            <div class="time"><span class="seconds">00</span>
+                                <p class="timeRefSeconds"></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="time_end">time end ...</div>
+            </div>
+        </div>
+        <div class="comingsoon-bottom">
+            <div class="comingsoon-vertical">
+                <ul class="comingsoon-form">
+                    <li>
+                        <div class="form-row">
+                            <input id="name" name="flvname" class="flvname" placeholder="Your Name" required type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-row">
+                            <input id="Email" name="flvname" class="flvname" placeholder="Your Email" required type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <input name="submit" title="SUBSCRIBE" value="SUBSCRIBE" class="btn btn-accent" type="submit">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor script -->
+    <script src="js/comingsoon.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#countdown").countdown({
+                    date: "12 September 2018 11:49:00",
+                    format: "on",
+                    time_end: "off"
+                },
+                function() {
+                    // callback function
+                });
+        });
+    </script>
+</body>
+
+</html>

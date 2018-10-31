@@ -1,0 +1,77 @@
+﻿/*contact03*/
+
+.contact03-box {
+    -moz-box-shadow: 0px 0px 20px 3px #e4e4e4;
+    -webkit-box-shadow: 0px 0px 20px 3px #e4e4e4;
+    box-shadow: 0px 0px 20px 3px #e4e4e4;
+    margin-top: -150px;
+    position: relative;
+    z-index: 9999;
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.contactus03-map {
+    height: 650px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact03-box {
+        margin-top: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contact03-box {
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .contactus03-map {
+        height: 300px;
+    }
+}
+
+.dg-title36{
+	margin-bottom:30px;
+	text-align:center;
+}
+.dg-title36:before{
+	content:".\2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002 \2002.";
+	display:block;
+	margin:auto;
+	background-size: 10px 10px;  
+	background-repeat:repeat-x;
+	margin-bottom:21px;
+    text-decoration: line-through;
+	text-decoration-style: wavy; 
+	-moz-text-decoration-style: wavy;
+	font-size:13px;
+	line-height:1;
+	white-space:nowrap;
+	width:80px;
+	overflow:hidden;
+	color:#2ba8f0;
+	text-indent:-3px;
+}
+.dg-title36.text-left{
+	text-align:left;
+}
+.dg-title36.text-left:before{
+	color:#acacac;
+}
+
+.dg-title36.text-left:before{
+	margin-left:0;
+}
+.dg-title36.color-white:before{
+	color:#FFF;
+}
+@media only screen and (max-width: 767px) {
+	.dg-title36{
+		font-size:22px;
+	}
+}

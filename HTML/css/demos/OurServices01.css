@@ -1,0 +1,72 @@
+﻿/*Service01*/
+
+.ourservices01-bg03 {
+    background-color: #f4f4f4;
+}
+
+.service01-bg01 {
+    background: url(../../inset/pages-images/service01-bg01.jpg) no-repeat 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.service01-cont .title {
+    font-size: 48px;
+    font-weight: normal;
+    margin: 0;
+    color: #fff;
+}
+
+.service01-cont .description {
+    font-size: 20px;
+}
+
+.service01-bg02 {
+    background: url(../../inset/pages-images/service01-bg02.jpg) no-repeat 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.dg-title29{
+	position:relative;
+	margin-bottom:90px;
+}
+.dg-title29 .diamond{
+	display:block;
+	margin:25px auto 0 0;
+	transform:scale(1.3,0.95);
+	-webkit-transform:scale(1.3,0.95);
+	width:20px;
+}
+.dg-title29 .diamond:after,
+.dg-title29 .diamond:before{
+	content:"";
+	position:absolute;
+	width:19px;
+	height:19px;
+	top:100%;
+	left:0px;
+	border:1px solid #20a3f0;
+	transform:rotate(45deg) ;
+	-webkit-transform:rotate(45deg);
+	margin:0 6px;
+}
+.dg-title29 .diamond:before{
+	margin-top:13px;
+}
+.dg-title29.text-center{
+	text-align:center;
+}
+.dg-title29.text-center .diamond{
+	margin-left:auto;
+	margin-right:auto;
+}
+.dg-title29.text-right .diamond{
+	margin-right:0;
+	margin-left:auto;
+}
+.dg-title29 .diamond.color-white:after,
+.dg-title29 .diamond.color-white:before{
+	border-color:#fff;
+}

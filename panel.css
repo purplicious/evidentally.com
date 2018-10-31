@@ -1,0 +1,103 @@
+﻿
+/* ************ ShortCodes-panel ************* */
+
+
+/*panel */
+.panel {
+    margin-bottom: 35px;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+}
+.panel-heading {
+    padding: 13px 23px 13px;
+    border-bottom: 1px solid #dcdcdc;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	font-size:16px;
+	font-weight:bold;
+	letter-spacing: 1px;
+}
+.panel-body {
+    padding: 16px 23px 15px;
+}
+
+.panel-flat > .panel-heading{
+	border-bottom:none;
+    padding: 22px 23px 4px;
+}
+.panel-flat > .panel-body{
+    padding: 6px 23px 25px;
+}
+.panel-default>.panel-heading{
+	color:#424242;
+	background-color:#fafafa;
+	border-color: #dcdcdc;
+}
+.panel-heading[class*="bg-"]{
+    padding: 14px 24px 14px;
+	margin:-1px -1px 0;
+	border-bottom:none;
+}
+
+.panel-border-top,
+.panel-border-top.border-accent{
+	border-left-color:#dcdcdc!important;
+	border-right-color:#dcdcdc!important;
+	border-bottom-color:#dcdcdc!important;
+	border-left-width:1px!important;
+	border-right-width:1px!important;
+	border-bottom-width:1px!important;
+}
+.panel-border-left,
+.panel-border-left.border-accent{
+	border-top-color:#dcdcdc!important;
+	border-right-color:#dcdcdc!important;
+	border-bottom-color:#dcdcdc!important;
+	border-top-width:1px!important;
+	border-right-width:1px!important;
+	border-bottom-width:1px!important;
+}
+.panel-border-right,
+.panel-border-right.border-accent{
+	border-left-color:#dfdfdf!important;
+	border-top-color:#dfdfdf!important;
+	border-bottom-color:#dfdfdf!important;
+	border-left-width:1px!important;
+	border-top-width:1px!important;
+	border-bottom-width:1px!important;
+}
+.panel-border-bottom,
+.panel-border-bottom.border-accent{
+	border-left-color:#dfdfdf!important;
+	border-right-color:#dfdfdf!important;
+	border-top-color:#dfdfdf!important;
+	border-left-width:1px!important;
+	border-right-width:1px!important;
+	border-top-width:1px!important;
+}
+.border-lg{
+	border-width:2px
+}
+.border-xl{
+	border-width:3px
+}
+.panel[class*="bg-"]{
+	border:none;
+}
+.panel[class*="bg-"] .panel-heading{
+	color:#fff;
+	border-bottom:1px solid #ffffff;
+}
+
+.panel table {
+	border-bottom:none;
+}
+.panel > table {
+	border-top:none;
+}

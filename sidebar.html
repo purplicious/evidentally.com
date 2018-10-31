@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Content Slider</title>
+
+<link href="fonts/ostrich_sans/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
+<link href="css/content_slider_style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+<link rel="stylesheet" href="css/columns.css" type="text/css" media="screen" charset="utf-8" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.content_slider.min.js" type="text/javascript"></script>
+<script src="js/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.animate-colors.js" type="text/javascript"></script>
+<script src="js/additional_content.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function() {
+			var image_array = new Array();
+			image_array = [
+				{image: 'content/our_team/1.jpg', link_url: 'content/our_team/1big.jpg', link_rel: 'prettyPhoto'},
+					// image for the first layer, goes with the text from id="sw0"
+				{image: 'content/our_team/2.jpg', link_url: 'content/our_team/2big.jpg', link_rel: 'prettyPhoto'},
+					// image for the second layer, goes with the text from id="sw1"
+				{image: 'content/our_team/3.jpg', link_url: 'content/our_team/3big.jpg', link_rel: 'prettyPhoto'},
+					// image for the third layer, goes with the text from id="sw2"
+				{image: 'content/our_team/4.jpg', link_url: 'content/our_team/4big.jpg', link_rel: 'prettyPhoto'},
+					// ...
+				{image: 'content/our_team/5.jpg', link_url: 'content/our_team/5big.jpg', link_rel: 'prettyPhoto'},
+				{image: 'content/our_team/6.jpg', link_url: 'content/our_team/6big.jpg', link_rel: 'prettyPhoto'},
+				{image: 'content/our_team/7.jpg', link_url: 'content/our_team/7big.jpg', link_rel: 'prettyPhoto'}
+			];
+			$('#slider1').content_slider({		// bind plugin to div id="slider1"
+				map : image_array,				// pointer to the image map
+				max_shown_items: 1,				// number of visible circles
+				hv_switch: 0,					// 0 = horizontal slider, 1 = vertical
+				active_item: 0,					// layer that will be shown at start, 0=first, 1=second...
+				wrapper_text_max_height: 410,	// height of widget, displayed in pixels
+				middle_click: 1,				// when main circle is clicked: 1 = slider will go to the previous layer/circle, 2 = to the next
+				under_600_max_height: 1200,		// if resolution is below 600 px, set max height of content
+				border_radius:	-1,				// -1 = circle, 0 and other = radius
+				responsive_by_available_space: 1,
+				border_on_off: 0,
+				allow_shadow: 0
+			});
+		});
+	})(jQuery);
+</script>
+<link href="css/doc_style.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+<body>
+
+<div class="selectors">
+<h3 style="color:#313131;">Previews:</h3>
+<a href="index.html">Our team</a> <a href="sidebar.html">Widget style</a> <a href="products.html">Products</a> <a href="portfolio.html">Portfolio</a> <a href="services.html">Services</a> <a href="vertical.html">Vertical</a> 
+<a href="left_aligned.html">Left aligned</a> <a href="right_aligned.html">Right aligned</a> <a href="with_text_label.html">With text label</a><br /><a href="how_to_link.html">How to link a desired frame</a> <a href="how_to_control.html">How to control the slider</a> <a href="documentation.html">Documentation</a>
+</div>
+<div class="content_wrapper">
+<div class="column column-2-3"><img src="images/description.png" alt="" /></div>
+<div class="column column-1-3 column-last">
+<div class="content_slider_wrapper" id="slider1">
+
+	<div class="circle_slider_text_wrapper" id="sw0" style="display: none;">
+	<!-- content for the first layer, id="sw0" -->
+		<div class="content_slider_text_block_wrap">
+		<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+			<h3>Amanda McHilly</h3><br /><br />
+			
+			<span><span class="bold">Position: </span>Senior PHP Developer</span><br />
+			<span><span class="bold">E-mail: </span><a href="#">amanda.mchilly@shindiristudio.com</a></span><br /><br />
+			<span><span class="bold">About: </span>Amanda specializes in establishing and managing internal infrastructure and process for educational institutions, research centers, and non-profits. She is experienced in project management, finance, organizational leadership, and program implementation, all driven by a commitment to provide outstanding service.</span><br /><br /><br />
+			<a href="#" class="button_socials button_hover_effect fb" data-hovercolor="#496dba" data-hoveroutcolor="#3b5a9a"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect tw" data-hovercolor="#4bb8e7" data-hoveroutcolor="#23aae1"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect pin" data-hovercolor="#de343d" data-hoveroutcolor="#cc2129"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect yt" data-hovercolor="#fd0013" data-hoveroutcolor="#bb000e"></a><!-- button_socials button_hover_effect -->
+		</div>
+		<div class="clear"></div>	
+	</div>
+
+	<div class="circle_slider_text_wrapper" id="sw1" style="display: none;">
+	<!-- content for the second layer, id="sw1" -->
+		<div class="content_slider_text_block_wrap">
+		<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+			<h3>Ben Gillenhall</h3><br /><br />
+			
+			<span><span class="bold">Position: </span>Graphic/Web Designer</span><br />
+			<span><span class="bold">Address: </span>North Road 17, 35100 Birmingham, England</span><br />
+			<span><span class="bold">E-mail: </span><a href="#">ben.gillenhall@shindiristudio.com</a></span><br />
+			<span><span class="bold">Web: </span><a href="#">gillenhall.shindiristudio.com</a></span><br /><br /><br />
+			<a href="#" class="button_socials button_hover_effect fb" data-hovercolor="#496dba" data-hoveroutcolor="#3b5a9a"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect tw" data-hovercolor="#4bb8e7" data-hoveroutcolor="#23aae1"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect pin" data-hovercolor="#de343d" data-hoveroutcolor="#cc2129"></a><!-- button_socials button_hover_effect -->
+		</div>
+		<div class="clear"></div>	
+	</div>
+
+<div class="circle_slider_text_wrapper" id="sw2" style="display: none;">
+	<!-- content for the third layer, id="sw2" -->
+		<div class="content_slider_text_block_wrap">
+		<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+			<h3>Giselle Smithsonian</h3><br /><br />
+			
+			<span><span class="bold">Position: </span>Company PR</span><br />
+			<span><span class="bold">E-mail: </span><a href="#">giselle.smithsonian@shindiristudio.com</a></span><br /><br />
+			<span><span class="bold">About: </span>Giselle takes great pride in the company's mission, and enjoys providing sound company structure while producing quality design for socially and environmentally conscious clients. Giselle also enjoys good type design, the beach, and Boston sports.</span><br /><br /><br />
+			<a href="#" class="button_socials button_hover_effect fb" data-hovercolor="#496dba" data-hoveroutcolor="#3b5a9a"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect tw" data-hovercolor="#4bb8e7" data-hoveroutcolor="#23aae1"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect pin" data-hovercolor="#de343d" data-hoveroutcolor="#cc2129"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect yt" data-hovercolor="#fd0013" data-hoveroutcolor="#bb000e"></a><!-- button_socials button_hover_effect -->
+		</div>
+		<div class="clear"></div>	
+	</div>
+
+	<div class="circle_slider_text_wrapper" id="sw3" style="display: none;">
+		<!-- content for the fourth layer, id="sw3" -->
+		<div class="content_slider_text_block_wrap">
+		<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+			<h3>Rafael Munez</h3><br /><br />
+			
+			<span><span class="bold">Position: </span>Audio/Visual Effects</span><br />
+			<span><span class="bold">E-mail: </span><a href="#">rafael.munez@shindiristudio.com</a></span><br /><br />
+			<span><span class="bold">About: </span>Born and raised in Rio de Janeiro, Brazil, Rafael moved to Washington, DC in 2006. He has a great interest in international development and is passionate about helping non-profit organizations and social businesses communicate their messages to the world.</span><br /><br /><br />
+			<a href="#" class="button_socials button_hover_effect fb" data-hovercolor="#496dba" data-hoveroutcolor="#3b5a9a"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect tw" data-hovercolor="#4bb8e7" data-hoveroutcolor="#23aae1"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect pin" data-hovercolor="#de343d" data-hoveroutcolor="#cc2129"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect yt" data-hovercolor="#fd0013" data-hoveroutcolor="#bb000e"></a><!-- button_socials button_hover_effect -->
+		</div>
+		<div class="clear"></div>	
+	</div>
+	
+	<div class="circle_slider_text_wrapper" id="sw4" style="display: none;">	
+<!-- content for the fifth layer, id="sw4" -->
+		<div class="content_slider_text_block_wrap">
+		<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+			<h3>Brenda Wolsh</h3><br /><br />
+			
+			<span><span class="bold">Position: </span>CEO of Legal Department</span><br />
+			<span><span class="bold">E-mail: </span><a href="#">brenda.wolsh@shindiristudio.com</a></span><br /><br />
+			<span><span class="bold">About: </span>Brenda Wolsh is a communications expert turned bookkeeper, who also moonlights as a page layout consultant. She was Company's Business Director for over two years before starting her own bookkeeping consulting business. She thinks good communication and data can change the world.</span><br /><br /><br />
+		<a href="#" class="button_socials button_hover_effect fb" data-hovercolor="#496dba" data-hoveroutcolor="#3b5a9a"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect tw" data-hovercolor="#4bb8e7" data-hoveroutcolor="#23aae1"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect pin" data-hovercolor="#de343d" data-hoveroutcolor="#cc2129"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect yt" data-hovercolor="#fd0013" data-hoveroutcolor="#bb000e"></a><!-- button_socials button_hover_effect -->
+		</div>
+		<div class="clear"></div>	
+	</div>
+	
+	
+	<div class="circle_slider_text_wrapper" id="sw5" style="display: none;">
+<!-- content for the sixth layer, id="sw5" -->
+		<div class="content_slider_text_block_wrap">
+		<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+			<h3>Bradley Cooper</h3><br /><br />
+			
+			<span><span class="bold">Position: </span>Human Resources</span><br />
+			<span><span class="bold">E-mail: </span><a href="#">bradley.cooper@shindiristudio.com</a></span><br /><br />
+			<span><span class="bold">About: </span>Chemist, cultural events promoter, and now 1st string quarterback of the Company. Talking, stalking, locking, and rocking are his game. He`s the guy who seeks out the problems of the world to which we apply our amazing talents to.</span><br /><br /><br />
+			<a href="#" class="button_socials button_hover_effect fb" data-hovercolor="#496dba" data-hoveroutcolor="#3b5a9a"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect tw" data-hovercolor="#4bb8e7" data-hoveroutcolor="#23aae1"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect pin" data-hovercolor="#de343d" data-hoveroutcolor="#cc2129"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect yt" data-hovercolor="#fd0013" data-hoveroutcolor="#bb000e"></a><!-- button_socials button_hover_effect -->
+		</div>
+		<div class="clear"></div>	
+	</div>
+
+	<div class="circle_slider_text_wrapper" id="sw6" style="display: none;">
+		<!-- content for the seventh layer, id="sw6" -->
+		<div class="content_slider_text_block_wrap">
+		<!-- "content_slider_text_block_wrap" is a div class for custom content -->
+			<h3>Gillian Aston-Martin</h3><br /><br />
+			
+			<span><span class="bold">Position: </span>HTML/CSS Coder</span><br />
+			<span><span class="bold">E-mail: </span><a href="#">gillian.aston-martin@shindiristudio.com</a></span><br /><br />
+			<span><span class="bold">About: </span>My passion for what I do is borne out of my concern for others around the world. I truly believe that art is most effective at the consumer level, and I feel that it is my responsibility as an artist to continue the dialog between the artist and the consumer in order to create new perspective.</span><br /><br /><br />
+			<a href="#" class="button_socials button_hover_effect fb" data-hovercolor="#496dba" data-hoveroutcolor="#3b5a9a"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect tw" data-hovercolor="#4bb8e7" data-hoveroutcolor="#23aae1"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect pin" data-hovercolor="#de343d" data-hoveroutcolor="#cc2129"></a><!-- button_socials button_hover_effect -->
+			<a href="#" class="button_socials button_hover_effect yt" data-hovercolor="#fd0013" data-hoveroutcolor="#bb000e"></a><!-- button_socials button_hover_effect -->
+		</div>
+		<div class="clear"></div>	
+	</div>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

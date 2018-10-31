@@ -1,0 +1,208 @@
+﻿.home09-bg01 {
+        background-color: #6a71b5;
+    }
+    
+    .home09-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: table;
+        table-layout: fixed;
+        counter-reset: number;
+        overflow: hidden;
+    }
+    
+    .home09-list>li {
+        display: table-cell;
+        text-align: center;
+        padding: 90px 60px;
+        color: #FFF;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .home09-list>li:nth-child(1) {
+        background-color: #0573e3;
+    }
+    
+    .home09-list>li:nth-child(2) {
+        background-color: #2096f1;
+    }
+    
+    .home09-list>li:nth-child(3) {
+        background-color: #40b5f1;
+    }
+    
+    .home09-list>li:after {
+        content: "0"counter(number);
+        counter-increment: number;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        opacity: 0.1;
+        font-size: 420px;
+        font-family: Impact;
+        font-weight: bold;
+        pointer-events: none;
+        z-index: -1;
+    }
+    
+    .home09-list>li small {
+        font-size: 14px;
+        font-style: italic;
+    }
+    
+    .home09-list>li h3:after {
+        content: "";
+        width: 100px;
+        display: block;
+        border-bottom: 1px solid #FFF;
+        margin: 28px auto 40px;
+    }
+    
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .home09-list>li {
+            padding: 60px 40px;
+        }
+        .home09-list>li:after {
+            font-size: 250px;
+        }
+    }
+    
+    @media only screen and (max-width: 991px) {
+        .home09-list>li {
+            padding: 30px 20px;
+        }
+        .home09-list>li:after {
+            font-size: 200px;
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .home09-list,
+        .home09-list>li {
+            display: block;
+        }
+    }
+    
+    .dg-iconbox16 h3 {
+        color: #20a3f0;
+        font-size: 16px;
+        margin: 0 0 16px;
+    }
+    
+    .dg-iconbox16 h3 .icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    
+    .home09-bg02 {
+        background: url(../../inset/homepage09/home09-bg02.jpg) no-repeat center;
+        background-size: cover;
+    }
+    
+    
+    .home09-bg03 {
+        background: url(../../inset/homepage09/home09-bg03.jpg) no-repeat 0 0;
+        background-size: cover;
+    }
+    
+    .home09-bg04 {
+        background: url(../../inset/homepage09/home09-bg04.jpg) no-repeat 0 bottom;
+        background-size: cover;
+    }
+    
+    .home09-bg05 {
+        background: url(../../inset/homepage09/home09-bg05.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+    
+    .home09-bg05:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #20a3f0;
+        opacity: 0.85;
+    }
+    
+    .home09-bg05>.container {
+        position: relative;
+        z-index: 1;
+    }
+    
+
+.dg-title17{
+	text-align:center;
+	margin-bottom:30px;
+}
+.dg-title17 .title{
+	display:inline-block;
+	position:relative;
+	color:#20a3f0;
+	padding:15px 38px;
+	margin:0;
+}
+.dg-title17 .title:after,
+.dg-title17 .title:before,
+.dg-title17 .title span:after,
+.dg-title17 .title span:before{
+	content:"";
+	position:absolute;
+	border-width:1px;
+	border-color:#20a3f0;
+	width:15px;
+	height:15px;
+}
+.dg-title17 .title:after{
+	left:0;
+	top:0;
+	border-left-style:solid;
+	border-top-style:solid;
+}
+.dg-title17 .title:before{
+	right:0;
+	top:0;
+	border-right-style:solid;
+	border-top-style:solid;
+}
+.dg-title17 .title span:after{
+	left:0;
+	bottom:0;
+	border-left-style:solid;
+	border-bottom-style:solid;
+}
+.dg-title17 .title span:before{
+	right:0;
+	bottom:0;
+	border-right-style:solid;
+	border-bottom-style:solid;
+}
+@media only screen and (max-width: 767px) {
+	.dg-title17 h3{
+		font-size:25px;
+		padding:10px 25px;
+	}
+}
+
+.dg-title18{
+	margin-bottom:30px;
+}
+.dg-title18:after{
+	content:"";
+	display:block;
+	width:60px;
+	border-bottom:2px solid #20a3f0;
+	margin:28px 0 0;
+}
+.dg-title18.color-white:after{
+	border-bottom-color:#FFF;
+}

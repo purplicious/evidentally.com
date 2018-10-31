@@ -1,0 +1,33 @@
+﻿/*aboutus01*/
+
+.aboutus01-pagetitle-images {
+    background-image: url(../../inset/pages-images/aboutus01-img11.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutus01-pagetitle-images,
+.aboutus01-pagetitle-images a,
+.aboutus01-pagetitle-images a:link,
+.aboutus01-pagetitle-images a:active,
+.aboutus01-pagetitle-images a:visited,
+.aboutus01-pagetitle-images .title {
+    color: #FFF;
+}
+
+.aboutus01-pagetitle-images a:hover {
+    color: #20a3f0;
+}
+
+.aboutus01-bg01 {
+    /*background-color: #1b75b3;*/
+   background-color: #20a3f0;
+}
+
+.aboutus01-bg02 {
+    background: url(../../inset/pages-images/aboutus01-bg02.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+

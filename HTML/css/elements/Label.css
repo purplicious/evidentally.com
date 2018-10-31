@@ -1,0 +1,95 @@
+﻿
+/* ********* ShortCodes-Labels-and-badges ******** */
+
+
+
+/*label */
+.label{
+    padding: 0.3em .6em .3em;
+}
+
+/*Labels-and-badges*/
+.labelspage-title{
+	overflow:hidden;
+	text-align:center;
+}
+.labelspage-title h3{
+	position:relative;
+	display:inline-block;
+	padding:0px 20px;
+	max-width:80%;
+	color:#424242;
+	font-size:20px;
+	margin:0;
+}
+.labelspage-title h3 + p{
+	margin-top:21px;
+}
+.labelspage-title h3:after,
+.labelspage-title h3:before{
+	content:"";
+	position:absolute;
+	top:50%;
+	border-bottom:2px solid #f6f6f6;
+	width:2000px;
+	margin-top:-1px;
+}
+.labelspage-title h3:after{
+	left:100%;
+}
+.labelspage-title h3:before{
+	right:100%;
+}
+.labelspage-title p{
+	max-width:50%;
+	margin:auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.labelspage-title p{
+		max-width:75%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.labelspage-title p{
+		max-width:100%;
+	}
+}
+.badge{
+	vertical-align:middle;
+    margin-bottom: 2px;
+	font-weight:normal;
+}
+.badge-o {
+    display: inline-block;
+    min-width: 10px;
+    padding: 2px 6px;
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 10px;
+	color:inherit;
+	border-width:1px;
+	border-style:solid;
+	border-color:inherit;
+	vertical-align:middle;
+    margin-bottom: 2px;
+}
+.badge-white {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 10px;
+	color:inherit;
+	background-color:#FFF;
+	vertical-align:middle;
+    margin-bottom: 2px;
+}

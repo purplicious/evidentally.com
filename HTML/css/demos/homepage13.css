@@ -1,0 +1,218 @@
+﻿.home13-bg01 {
+        background-color: #f8f8f8;
+    }
+    
+    
+    .home13-bg02 {
+        background-color: #5a93d4;
+    }
+    
+    .home13-images-water {
+        position: relative;
+        z-index: 1;
+        pointer-events: none
+    }
+    
+    .home13-images-water .water {
+        z-index: -1;
+        transform: scale(3.5, 0.7);
+        -webkit-transform: scale(3.5, 0.7);
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-top: -25px;
+        opacity: 0.6;
+    }
+    
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .home13-images-water .water {
+            transform: scale(2.8, 0.56);
+            -webkit-transform: scale(2.8, 0.56);
+        }
+    }
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .home13-images-water .water {
+            transform: scale(2.1, 0.42);
+            -webkit-transform: scale(2.1, 0.42);
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .home13-images-water .water {
+            transform: scale(1, 0.2);
+            -webkit-transform: scale(1, 0.2);
+        }
+    }
+    
+    .home13-bg03 {
+        background-color: #f4f4f4;
+    }
+    
+    .home13-bg04 {
+        background-color: #7b97d0;
+    }
+    
+    .home13-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .home13-list li {
+        padding: 10px 0;
+    }
+    
+    .home13-list .dg-ico02 {
+        vertical-align: middle;
+        border-color: #FFF;
+        color: #FFF;
+        margin-right: 18px;
+    }
+    
+    .home13-bg05 {
+        background: url(../../inset/homepage13/home13-bg04.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    
+    .home13-bg06 {
+        background-color: #418ec3;
+    }
+    
+
+.dg-title22{
+	text-align:center;
+	margin:0px 7px 30px;
+}
+.dg-title22 .title{
+	display:inline-block;
+	position:relative;
+	padding:5px 20px;
+	margin:0;
+}
+.dg-title22 .title span{
+	color:#20a3f0;
+}
+.dg-title22 .title:after,
+.dg-title22 .title:before{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	width:42px;
+	height:22px;
+}
+.dg-title22 .title:after{
+	top:-4px;
+	border-left:1px solid #a8a8a8;
+}
+.dg-title22 .title:before{
+	left:-5px;
+	border-top:1px solid #a8a8a8;
+}
+.dg-title22 .title > .line:after,
+.dg-title22 .title > .line:before{
+	content:"";
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:42px;
+	height:22px;
+}
+.dg-title22 .title > .line:after{
+	bottom:-4px;
+	border-right:1px solid #a8a8a8;
+}
+.dg-title22 .title > .line:before{
+	right:-5px;
+	border-bottom:1px solid #a8a8a8;
+}
+.dg-title22.color-white .title:after,
+.dg-title22.color-white .title:before,
+.dg-title22.color-white .title > .line:after,
+.dg-title22.color-white .title > .line:before{
+	border-color:#FFF
+}
+
+.dg-title23{
+	margin:0px 0px 30px;
+}
+.dg-title23 .title{
+	font-size:28px;
+	display:inline-block;
+	position:relative;
+	padding:40px 0 0px;
+	margin:0;
+}
+.dg-title23 .title span{
+	color:#20a3f0;
+}
+.dg-title23 .title:after,
+.dg-title23 .title:before,
+.dg-title23 .title > .line:after,
+.dg-title23 .title > .line:before{
+	content:"";
+	position:absolute;
+	width:42px;
+	height:22px;
+}
+.dg-title23 .title:after{
+	border-left:1px solid #a8a8a8;
+	top:0px;
+	left:4px;
+}
+.dg-title23 .title:before{
+	border-top:1px solid #a8a8a8;
+	top:4px;
+	left:0;
+}
+.dg-title23 .title > .line:after{
+	top:0px;
+	left:26px;
+	border-right:1px solid #a8a8a8;
+}
+.dg-title23 .title > .line:before{
+	top:-4px;
+	left:30px;
+	border-bottom:1px solid #a8a8a8;
+}
+.dg-title23.color-white .title:after,
+.dg-title23.color-white .title:before,
+.dg-title23.color-white .title > .line:after,
+.dg-title23.color-white .title > .line:before{
+	border-color:#FFF
+}
+
+.dg-title23.text-right .title:after{
+	left:auto;
+	right:26px;
+}
+.dg-title23.text-right .title:before{
+	left:auto;
+	right:30px;
+}
+.dg-title23.text-right .title > .line:after{
+	left:auto;
+	right:4px
+}
+.dg-title23.text-right .title > .line:before{
+	left:auto;
+	right:0;
+}
+
+
+.dg-title41{
+	margin:0 0 30px;
+	line-height:1.5;
+}
+.dg-title41 span{
+	color:#20a3f0;
+}
+.dg-title41:after{
+	content:"";
+	width:80px;
+	border-bottom:1px solid ;
+	opacity:0.22;
+	display:block;
+	margin:18px 0 0;
+}

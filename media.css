@@ -1,0 +1,137 @@
+﻿
+/* ********* ShortCodes-MediaObject ******** */
+
+
+.media, 
+.media-body{
+	overflow:visible;
+}
+.media{
+	padding:16px 0px 16px;
+	margin:0;
+	overflow:visible;
+}
+.media-list.media-hover .media{
+	transition: 		background-color ease-in 200ms;
+	-moz-transition: 	background-color ease-in 200ms; 
+	-webkit-transition: background-color ease-in 200ms;
+	-o-transition: 		background-color ease-in 200ms;
+	-ms-transition: 	background-color ease-in 200ms;
+}
+.media-list.media-hover .media:hover{
+	background-color:#f8f8f8
+}
+.media-list.media-border .media{
+	border-bottom:1px solid #ebebeb
+}
+.media-list.media-border .media:last-child{
+	border-bottom:none;
+}
+.media-body .media-list{
+	padding-top:16px;
+}
+.media-body .media-list>.media:last-child{
+	padding-bottom:0;
+}
+
+
+.media-title{
+	margin:0 0 26px;
+}
+.media-title h3{
+	font-size:18px;
+	color:#424242;
+	line-height:1.2;
+}
+.media-title .right{
+	margin: -6px 0 0 0;
+}
+.media-list{
+	margin:0;
+	padding:0;
+}
+.media-left, 
+.media>.pull-left{
+	padding:0 20px 0 11px;
+	position:relative;
+}
+.media-right, 
+.media>.pull-right{
+	padding:0 11px 0 20px;
+	position:relative;
+}
+.media-body .media-left, 
+.media-body .media>.pull-left{
+	padding:0 20px 0 0px;
+}
+.media-body .media-right, 
+.media-body .media>.pull-right{
+	padding:0 0px 0 20px;
+}
+
+.media-heading {
+	font-size:16px;
+	line-height:1.4;
+	color:#181818;
+	margin:0;
+}
+.media-info{
+	font-size:13px;
+	color:#999999;
+	padding:0 8px 0 0;
+}
+.media-info.dotted:before{
+	content:"";
+	width:3px;
+	height:3px;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	background-color:#999999;
+	display:inline-block;
+	vertical-align:middle;
+	margin:0 8px;
+}
+.media .dropdown{
+	margin:0 10px;
+}
+.media .dropdown > div[type="button"]{
+	cursor:pointer;
+	color:#666666;
+}
+.media .dropdown-menu{
+	font-size:13px;
+}
+.media .dropdown-menu>li>a {
+    padding: 6px 20px;
+    font-weight:normal;
+    line-height: 1.6;
+    color: #666666;
+    white-space: nowrap;
+}
+.media .dropdown-menu>li>a:hover {
+	background-color:#eeeeee;
+	color:#666666;
+}
+.media-badge{
+    position: absolute;
+    top: -0px;
+    right: 100%;
+    border: 2px solid #FFF;
+    margin-right: -21px;
+    padding: 3px 5px;
+}
+.media-right .media-badge,
+.pull-right .media-badge{
+	left:100%;
+	right:auto;
+	margin:0 0 0 -21px;
+}
+.media .label{
+	font-size:13px;
+	padding:0px 6px;
+	height:21px;
+	line-height:21px;
+	font-weight:normal;
+	display:inline-block;
+}

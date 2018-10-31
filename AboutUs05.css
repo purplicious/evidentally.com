@@ -1,0 +1,148 @@
+﻿/*aboutus05*/
+
+.aboutus05-bg01 {
+    background: url(../../inset/pages-images/aboutus05-bg01.jpg) no-repeat 0 bottom;
+    background-size: cover;
+}
+
+.aboutus05-bg01 h3 {
+    color: #fff;
+}
+
+.aboutus05-bg02 {
+    background: url(../../inset/pages-images/aboutus05-bg02.jpg) no-repeat 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.aboutus05-bg02 .info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutus05-bg02 .info-list li {
+    padding: 8px 0;
+}
+
+.aboutus05-bg02 .info-list li i {
+    margin-right: 10px;
+    font-size: 1.3em;
+    width: 1.3em;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+
+.dg-title09{
+	text-align:center;
+	margin-bottom:30px;
+}
+.dg-title09 .title{
+}
+.dg-title09 .title:after{
+	content:"";
+	width:100px;
+	border-bottom:1px solid #20a3f0;
+	display:block;
+	margin:18px auto 15px;
+}
+.dg-title09.text-center .title:after{
+	width:50px;
+}
+.dg-title09.line-lg .title:after{
+	width:100px;
+}
+
+.dg-title09 small{
+	font-size:14px;
+	color:#666666;
+	font-style:italic;
+	margin-bottom:4px;
+	display:block;
+}
+
+.dg-title09.text-left{
+	text-align:left;
+}
+.dg-title09.text-left .title:after{
+	margin-left:0;
+	width:110px;
+}
+.dg-title09.text-right .title:after{
+	margin-right:0;
+	width:110px;
+}
+.dg-title09.color-white .title:after,
+.dg-title09.color-white .title:before{
+	border-color:#FFF;
+}
+.dg-title09.color-white .title{
+	color:#FFF;
+}
+.dg-title09.color-white small{
+	color:#bababa
+}
+.dg-title09.color-white,
+.dg-title09.color-white p{
+	color:#eaeaea
+}
+.dg-title09.size-xl small{
+	font-size:16px;
+}
+.dg-title09.size-xl .title:after{
+	margin-top: 25px;
+	margin-bottom:22px;
+}
+
+@media only screen and (max-width: 767px) {
+	.dg-title09 .title{
+		font-size:20px;
+		letter-spacing:1px;
+	}
+	.dg-title09 .title:after{
+		margin:20px auto 15px;
+	}
+}
+
+
+.dg-title14{
+	margin-bottom:40px;
+}
+.dg-title14 .title{
+	margin:0 0 10px;
+}
+.dg-title14 small{
+	position:relative;
+	display:inline-block;
+	margin-bottom:6px;
+	font-size:14px;
+	font-style:italic;
+	color:#666;
+}
+.dg-title14 .title:after{
+	content:"";
+	width:110px;
+	border-bottom:1px solid #a8a8a8;
+	display:block;
+	margin-top:20px;
+}
+.dg-title14.color-white small{
+	color:#FFF;
+}
+.dg-title14.text-center .title:after{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dg-title21{
+	font-size:36px;
+}
+.dg-title21:after{
+	content:"";
+	border-bottom:1px solid;
+	width:97px;
+	display:block;
+	margin:24px 0 34px;
+}

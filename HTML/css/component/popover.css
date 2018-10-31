@@ -1,0 +1,113 @@
+﻿
+/* ********* ShortCodes-popover ******** */
+
+
+
+.popover-demo{
+	background-color:#f5f5f5;
+	padding:17px 10px 16px;
+	margin:0 0px 15px;
+	text-align:center;
+}
+.popover-demo > h4{
+	font-size:16px;
+	color:#424242;
+	margin:0 0 10px;
+	font-weight:normal;
+}
+.popover-demo .modal{
+	text-align:left;
+}
+.popover {
+    border-radius: 2px;
+	border-color:#dcdcdc;
+	padding:0;
+	box-shadow:none;	
+	-moz-box-shadow:none; 	
+	-webkit-box-shadow:none;
+	font-family:inherit;
+	line-height:inherit;
+}
+.popover-title {
+    padding: 15px 20px 0;
+	margin: 0;
+    font-size: 14px;
+    background-color:transparent;
+    border-bottom:none;
+    border-radius:  0;
+	color:#666666;
+	font-size:16px;
+	font-weight:bold;
+	line-height:1.6;
+}
+.popover-content{
+    padding:10px 20px 15px;
+	color:#666666;
+	font-size:13px;
+}
+.popover>.arrow {
+    border-width: 7px;
+}
+.custom-header .popover-title{
+	color:#FFF;
+	padding:11px 20px; 
+}
+.custom-header .popover-content{
+	padding-top:15px; 
+}
+.custom-bg.popover{
+	border:none;
+}
+.custom-bg .popover-title,
+.custom-bg .popover-content{
+	color:#FFF;
+}
+.custom-bg.popover > .arrow:after{
+	content:normal;
+}
+.custom-bg.popover > .arrow{
+	border:none;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	transform-origin:center;
+	-webkit-transform-origin:center;
+	width:8px;
+	height:8px;
+}
+
+
+
+.popover.top>.arrow {
+    bottom: -7px;
+	margin-left: -7px;
+    border-top-color: #dcdcdc;
+}
+.popover.right>.arrow {
+    left: -7px;
+    margin-top: -7px;
+    border-right-color: #dcdcdc;
+}
+.popover.bottom>.arrow {
+    top: -7px;
+    margin-left: -7px;
+}
+.popover.left>.arrow {
+    right: -7px;
+    margin-top: -7px;   
+}
+.custom-bg.popover.top>.arrow {
+    bottom: -4px;
+	margin-left: -4px;
+}
+.custom-bg.popover.right>.arrow {
+    left: -4px;
+    margin-top: -4px;
+}
+.custom-bg.popover.bottom>.arrow {
+    top: -4px;
+    margin-left: -4px;
+}
+.custom-bg.popover.left>.arrow {
+    right: -4px;
+    margin-top: -3px;   
+}

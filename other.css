@@ -1,0 +1,56 @@
+﻿
+/* ************ other ************* */
+
+
+.blog-title01 {
+	font-size:20px;
+	color:#20a3f0;
+	margin-bottom:12px;
+	line-height:1.2;
+}
+
+
+.questions-title{
+	text-align:center;
+}
+.code-description{
+	font-size:15px;
+	margin-bottom:60px;
+}
+.code-description h1{
+	color:#424242;
+	font-size:28px;
+	font-weight:normal;
+	margin:0 0 14px;
+}
+
+
+
+
+.demo-heading{
+	border:none;
+}
+.demo-heading td{
+	border:none;
+	padding:0px 2%;
+}
+
+
+@media only screen and (max-width: 767px) {
+	.demo-center-spacing .col-sm-6{
+		padding:0 15px 15px!important
+	}
+}
+
+
+
+/*isotope*/
+.ajax-more.loading .fa{
+  display:inline-block!important;
+}
+
+
+
+
+
+
