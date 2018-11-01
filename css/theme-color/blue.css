@@ -248,9 +248,9 @@ div.footer-tag a:hover {
 .blog-grid-list .list-info a:hover{
 	color:#20a3f0;
 }
-.blog-grid-list .list-more, 
-.blog-grid-list .list-more a:link, 
-.blog-grid-list .list-more a:active, 
+.blog-grid-list .list-more,
+.blog-grid-list .list-more a:link,
+.blog-grid-list .list-more a:active,
 .blog-grid-list .list-more a:visited{
 	color:#20a3f0;
 }
@@ -266,9 +266,9 @@ div.footer-tag a:hover {
 .blog-classic-list .list-info a:hover{
 	color:#20a3f0;
 }
-.blog-classic-list .list-more, 
-.blog-classic-list .list-more a:link, 
-.blog-classic-list .list-more a:active, 
+.blog-classic-list .list-more,
+.blog-classic-list .list-more a:link,
+.blog-classic-list .list-more a:active,
 .blog-classic-list .list-more a:visited{
 	color:#20a3f0;
 }
@@ -284,9 +284,9 @@ div.footer-tag a:hover {
 .blog-classic2-list .list-info a:hover{
 	color:#20a3f0;
 }
-.blog-classic2-list .list-more, 
-.blog-classic2-list .list-more a:link, 
-.blog-classic2-list .list-more a:active, 
+.blog-classic2-list .list-more,
+.blog-classic2-list .list-more a:link,
+.blog-classic2-list .list-more a:active,
 .blog-classic2-list .list-more a:visited{
 	color:#20a3f0;
 }
@@ -294,7 +294,7 @@ div.footer-tag a:hover {
 	color:#20a3f0;
 }
 .blog-detail .list-info a:hover{
-	color:#20a3f0 
+	color:#20a3f0
 }
 .blog-detail .detail-date .month{
 	background-color:#20a3f0;
@@ -368,7 +368,7 @@ div.footer-tag a:hover {
 }
 .blog-grid-list-main .isotope-group.style_8 a::after,
 .blog-grid-list-main .isotope-group.style_8 a::after{
-	background-color: #20a3f0; 
+	background-color: #20a3f0;
 }
 .blog-grid-list-main .isotope-group a:hover,
 .blog-grid-list-main .isotope-group a.active{
@@ -382,13 +382,13 @@ div.footer-tag a:hover {
 .blog-grid-list-main .sort-btn .filter-switch {
     background: #20a3f0;
 }
-.blog-grid-list-main .isotope-group.style_1 a:hover, 
+.blog-grid-list-main .isotope-group.style_1 a:hover,
 .blog-grid-list-main .isotope-group.style_1 a.active,
-.blog-grid-list-main .isotope-group.style_3 a:hover, 
+.blog-grid-list-main .isotope-group.style_3 a:hover,
 .blog-grid-list-main .isotope-group.style_3 a.active,
-.blog-grid-list-main .isotope-group.style_5 a:hover, 
+.blog-grid-list-main .isotope-group.style_5 a:hover,
 .blog-grid-list-main .isotope-group.style_5 a.active,
-.blog-grid-list-main .isotope-group.style_6 a:hover, 
+.blog-grid-list-main .isotope-group.style_6 a:hover,
 .blog-grid-list-main .isotope-group.style_6 a.active{
 	background-color: #20a3f0;
 }
@@ -599,7 +599,7 @@ div.footer-tag a:hover {
     background-color: #20a3f0;
 }
 .menu-hover-line #dng-megamenu .primary-structure>li>a>span:before {
-    border-bottom: 2px solid #20a3f0;
+    border-bottom: 2px solid #7F3F98;
 }
 .roll-activated #dng-megamenu>ul>li:hover>a>span,
 .roll-activated #dng-megamenu>ul>li.current>a>span,
@@ -666,11 +666,11 @@ div.footer-tag a:hover {
 .widget-search:before{
 	color:#20a3f0;
 }
-.widget-data-box .bootstrap-datetimepicker-widget table td.active, 
+.widget-data-box .bootstrap-datetimepicker-widget table td.active,
 .widget-data-box .bootstrap-datetimepicker-widget table td.active:hover{
 	background-color:#20a3f0 !important;
 }
-.widget-testimonials .owl-nav .owl-prev:hover, 
+.widget-testimonials .owl-nav .owl-prev:hover,
 .widget-testimonials .owl-nav .owl-next:hover{
 	background-color:#20a3f0;
 }
@@ -857,7 +857,7 @@ div.footer-tag a:hover {
 .dg-carousel07 .owl-nav .owl-next:before {
 	border-color:#20a3f0;;
 }
-.dg-carousel08 .owl-nav .owl-prev:hover, 
+.dg-carousel08 .owl-nav .owl-prev:hover,
 .dg-carousel08 .owl-nav .owl-next:hover{
 	background-color:#20a3f0;
 }
@@ -901,11 +901,11 @@ div.footer-tag a:hover {
 .dg-clients04 .owl-dots .owl-dot.active:after{
 	background-color:#20a3f0 ;
 }
-.dg-clients06 .owl-nav .owl-prev:hover, 
+.dg-clients06 .owl-nav .owl-prev:hover,
 .dg-clients06 .owl-nav .owl-next:hover{
 	border-color:#20a3f0;
 }
-.dg-clients06 .owl-nav .owl-prev:hover:before, 
+.dg-clients06 .owl-nav .owl-prev:hover:before,
 .dg-clients06 .owl-nav .owl-next:hover:before {
 	border-color:#20a3f0;
 }
@@ -915,11 +915,11 @@ div.footer-tag a:hover {
 .dg-clients07 .owl-dots .owl-dot.active:after{
 	background-color:#20a3f0 ;
 }
-.dg-clients07 .owl-nav .owl-prev:hover, 
+.dg-clients07 .owl-nav .owl-prev:hover,
 .dg-clients07 .owl-nav .owl-next:hover{
 	border-color:#20a3f0;
 }
-.dg-clients07 .owl-nav .owl-prev:hover:before, 
+.dg-clients07 .owl-nav .owl-prev:hover:before,
 .dg-clients07 .owl-nav .owl-next:hover:before {
 	border-color:#20a3f0;
 }
@@ -1044,7 +1044,7 @@ div.footer-tag a:hover {
 
 
 /*ourteam*/
-.dg-ourteam01 .ico i:hover, 
+.dg-ourteam01 .ico i:hover,
 .dg-ourteam01 .ico .fa:hover{
 	background-color: #20a3f0;
 }
@@ -1137,7 +1137,7 @@ div.footer-tag a:hover {
 .dg-tabs-right ul.resp-tabs-list li.resp-tab-active {
 	color: #20a3f0;
 }
-[class*="dg-tabs-"] h2.resp-tab-active, 
+[class*="dg-tabs-"] h2.resp-tab-active,
 [class*="dg-tabs-"] h2.resp-tab-active:hover {
 	background: #20a3f0;
 }
@@ -1201,7 +1201,7 @@ div.footer-tag a:hover {
 	border-color:#20a3f0;
 	background-color:#20a3f0;
 }
-.dg-testimonials03 .owl-nav .owl-prev:hover, 
+.dg-testimonials03 .owl-nav .owl-prev:hover,
 .dg-testimonials03 .owl-nav .owl-next:hover{
 	background-color:#20a3f0;
 	border-color:#20a3f0;
@@ -1212,7 +1212,7 @@ div.footer-tag a:hover {
 .dg-testimonials07 .owl-dot.active span{
 	background-color: #20a3f0;
 }
-.dg-testimonials08 .owl-nav .owl-prev:hover:before, 
+.dg-testimonials08 .owl-nav .owl-prev:hover:before,
 .dg-testimonials08 .owl-nav .owl-next:hover:before{
 	border-color:#20a3f0;
 }
@@ -1228,19 +1228,19 @@ div.footer-tag a:hover {
 .dg-testimonials12 blockquote small{
 	color:#20a3f0;
 }
-.dg-testimonials15 .owl-nav .owl-prev:hover, 
+.dg-testimonials15 .owl-nav .owl-prev:hover,
 .dg-testimonials15 .owl-nav .owl-next:hover{
 	background-color:#20a3f0;
 }
-.dg-testimonials16 .owl-nav .owl-prev:hover, 
+.dg-testimonials16 .owl-nav .owl-prev:hover,
 .dg-testimonials16 .owl-nav .owl-next:hover{
 	background-color:#20a3f0;
 }
-.dg-testimonials17 .owl-nav .owl-prev:hover, 
+.dg-testimonials17 .owl-nav .owl-prev:hover,
 .dg-testimonials17 .owl-nav .owl-next:hover{
 	background-color:#20a3f0;
 }
-.dg-testimonials19 .owl-nav .owl-prev:hover, 
+.dg-testimonials19 .owl-nav .owl-prev:hover,
 .dg-testimonials19 .owl-nav .owl-next:hover{
 	background-color:#20a3f0;
 }
@@ -1992,11 +1992,11 @@ div.footer-tag a:hover {
 .list-ico .fa,
 .list-ico2 .fa,
 .list-ico3 .fa,
-.list-ico .lnr, 
-.list-ico2 .lnr, 
-.list-ico3 .lnr, 
-.list-ico .glyphicon, 
-.list-ico2 .glyphicon, 
+.list-ico .lnr,
+.list-ico2 .lnr,
+.list-ico3 .lnr,
+.list-ico .glyphicon,
+.list-ico2 .glyphicon,
 .list-ico3 .glyphicon,
 .list-ordened li:before,
 .list-ordened2 li:before{
@@ -2018,7 +2018,7 @@ div.footer-tag a:hover {
 
 
 /*MegaMenu*/
-.menu-tab ul.nav-tabs li.active a, 
+.menu-tab ul.nav-tabs li.active a,
 .menu-tab ul.nav-tabs li a:hover,
 .menu-tab .menu-tab-img a:hover,
 .portfoliosmenuslide li a:hover,
