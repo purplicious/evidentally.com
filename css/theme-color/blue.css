@@ -599,7 +599,7 @@ div.footer-tag a:hover {
     background-color: #20a3f0;
 }
 .menu-hover-line #dng-megamenu .primary-structure>li>a>span:before {
-    border-bottom: 2px solid #7F3F98;
+    border-bottom: 2px solid #4d2a74;
 }
 .roll-activated #dng-megamenu>ul>li:hover>a>span,
 .roll-activated #dng-megamenu>ul>li.current>a>span,
