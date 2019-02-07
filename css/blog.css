@@ -1463,10 +1463,22 @@ transition: 		background-color ease-in 200ms;
 	}
 }
 .blog-timeline2{
+	padding-left:100px;
+	position:relative;
+}
+.product-page-quote{
 	padding-left:10px;
 	position:relative;
 }
 .blog-timeline2:before{
+	content:"";
+	border-right:2px solid #e7e7e7;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:112px;
+}
+.product-page-quote:before{
 	content:"";
 	border-right:2px solid #e7e7e7;
 	position:absolute;
@@ -1481,6 +1493,9 @@ transition: 		background-color ease-in 200ms;
 	position:relative;
 }
 .blog-timeline2 .list-gallery{
+	margin-bottom:38px;
+}
+.product-page-quote .list-gallery{
 	margin-bottom:38px;
 }
 .blog-timeline2 .list-images {
@@ -1499,6 +1514,11 @@ transition: 		background-color ease-in 200ms;
 }
 
 .blog-timeline2 .list-viewinfo{
+	position:relative;
+	min-height:63px;
+	margin-bottom:18px;
+}
+.product-page-quote .list-viewinfo{
 	position:relative;
 	min-height:63px;
 	margin-bottom:18px;
@@ -1633,9 +1653,30 @@ transition: 		background-color ease-in 200ms;
 	-webkit-border-radius:4px;
 	position:relative;
 	min-height:100px;
-
 }
+.product-page-quote .list-quote{
+	background-color:#f5f5f5;
+	padding:20px 20px 20px 100px;
+	margin:0;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	position:relative;
+	min-height:100px;
+}
+
 .blog-timeline2 .list-quote:before{
+	content:"\f10d";
+	font-family:'dnngo' !important;
+	position:absolute;
+	left:20px;
+	top:20px;
+	font-size:60px;
+	color:#c4c3c3;
+	line-height:1;
+}
+
+.product-page-quote .list-quote:before{
 	content:"\f10d";
 	font-family:'dnngo' !important;
 	position:absolute;
@@ -1650,6 +1691,11 @@ transition: 		background-color ease-in 200ms;
 	font-size:20px;
 	color:#666666;
 }
+.product-page-quote .list-quote p{
+	text-indent:0;
+	font-size:20px;
+	color:#666666;
+}
 .blog-timeline2 .list-quote small{
 	position:static;
 	padding:0;
@@ -1658,6 +1704,13 @@ transition: 		background-color ease-in 200ms;
 	text-align:right;
 }
 
+.product-page-quote .list-quote small{
+	position:static;
+	padding:0;
+	color:#666666;
+	font-size:16px;
+	text-align:right;
+}
 .blog-timeline2 .list-video{
 	position: relative;
 	padding-bottom: 56.25%;
@@ -1764,11 +1817,17 @@ transition: 		background-color ease-in 200ms;
     z-index: 0;
 }
 @media only screen and (max-width: 767px) {
+	.product-page-quote {
+		padding:0px 0 0 20px;
+	}
 	.blog-timeline2 {
 		padding:0px 0 0 20px;
 	}
 	.blog-timeline2 {
 		padding:0px 0 0 20px;
+	}
+	.product-page-quote:before {
+		left:0;
 	}
 	.blog-timeline2:before{
 		left:0;
