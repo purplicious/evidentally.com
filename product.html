@@ -81,38 +81,46 @@
 <body>
     <!-- Loading -->
     <div class="page-loaders">
-            <div class="loaders">
-                <div class="loader-inner ball-clip-rotate-pulse loader-accent">
-                    <div></div>
-                    <div></div>
-                </div>
+        <div class="loaders">
+            <div class="loader-inner ball-clip-rotate-pulse loader-accent">
+                <div></div>
+                <div></div>
             </div>
         </div>
-        <!-- Loading End -->
+    </div>
+    <!-- Loading End -->
     <div class="theme-main">
         <div id="wrapper">
-            <!-- Header -->
-            <header class="header-bg roll-menu header-font-dark" data-top="250">
+
+          <!-- Header -->
+            <header class="header-bg roll-menu header-navbar header-not-float" data-top="250">
                 <div class="hidden-xs hidden-sm headerBox ">
                     <div class="shade"></div>
-                    <div class="container">
-                        <div id="megamenuWidthBox"></div>
-                        <div class="clearfix">
-                            <div class="header-bottom">
+                    <div class="clearfix">
+                        <div class="container">
+                            <div id="megamenuWidthBox"></div>
+                        </div>
+                        <div class="header-top">
+                            <div class="container">
                                 <div class="header-left">
                                     <div class="logo-main">
                                         <div class="Logobox">
-                                          <a title="Logo" href="/index.html"><img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo" /></a>
+                                            <a title="Logo" href="/index.html"><img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo" /></a>
                                         </div>
                                         <div class="FixedLogoPane">
-                                          <a title="Logo" href="/index.html"> <img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo" /></a>
+                                            <a title="Logo" href="/index.html"> <img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo" /></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="header-right text-right">
-                                    <nav class="nav-box clearfix menu-hover-line ">
-                                        <div class="menu-main">
-                                            <div id="dng-megamenu">
+                            </div>
+                        </div>
+
+                        <div class="header-bottom">
+                            <div class="container">
+                                <div class="header-left">
+                                  <nav class="nav-box clearfix menu-hover-line ">
+                                      <div class="menu-main">
+                                          <div id="dng-megamenu">
                                               <ul class="primary-structure">
                                                 <!--navigation -->
                                                 <li class="dir"> <a href="about.html" title="About Us"><span>About Us</span></a>
@@ -121,9 +129,9 @@
                                                 </li>
                                                 <!--navigation ends -->
                                               </ul>
-                                            </div>
-                                        </div>
-                                    </nav>
+                                          </div>
+                                      </div>
+                                  </nav>
                                 </div>
                             </div>
                         </div>
@@ -131,6 +139,7 @@
                 </div>
             </header>
             <!-- Header End -->
+
             <!-- Mobile Header -->
             <div class="visible-xs visible-sm mobile-header">
                 <div class="mobile-nav">
@@ -142,7 +151,24 @@
                                       <a title="Logo" href="/index.html"><img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo" /></a>
                                     </div>
                                 </div>
-                                <div class="mobile-right-icon"> <span class="fa fa-reorder" id="ico-menu-mobile"></span> </div>
+                                <div class="mobile-right-icon">
+                                    <span class="fa fa-reorder" id="ico-menu-mobile"></span>
+                                </div>
+                                <div class="mobile-right-icon">
+                                    <div class="search-popup-box">
+                                        <div class="icon"><span class="fa fa-search"></span></div>
+                                        <div class="popup-content">
+                                            <div class="popup-close"><span class="fa fa-cross2"></span></div>
+                                            <div class="popup-center">
+                                                <div class="info"></div>
+                                                <form name="formsearch" method="get" action="#">
+                                                    <input name="s" id="search" type="text" class="text" value="" placeholder="START TYPING AND PRESS ENTER TO SEARCH" />
+                                                    <button type="submit" class="submit"><span class="fa fa-search"></span></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div id="dng-megamenu-mobile" class="mobile-menu "></div>
                             </div>
                         </div>
@@ -150,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Mobile End -->
+            <!-- Mobile end -->
 
             <!--Request a demo BANNER -->
             <div id="rev_slider_487_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="newsletter-hero37" data-source="gallery" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
@@ -299,11 +325,6 @@
                       <li> <span class="fa fa-chart-growth dg-ico-max size-lg"></span>
                           <h3>IMPACT</h3>
                       </li>
-                      <!--hide subscriptions box
-                      <li> <span class="fa fa-sync dg-ico-max size-lg"></span>
-                          <h3>SUBSCRIPTIONS</h3>
-                      </li>
-                      stop hiding subscriptions box-->
                   </ul>
                 </section>
                 <!--end of section 3: reports>
