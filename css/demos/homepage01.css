@@ -13,7 +13,7 @@
         padding: 100px 30px;
         text-align: center;
         color: #FFF;
-        display: table-cell
+        display: table-cell;
     }
 
     .home01-icolist li:nth-child(1) {
@@ -795,7 +795,7 @@
 		font-size: 36px;
 	}
 	.home01-icolist li{
-		width: 50%;
+		width: 100%;
 		float: left;
 		padding: 50px 30px;
 	}
