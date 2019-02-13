@@ -3,8 +3,7 @@
         margin: 0;
         list-style: none;
         overflow: hidden;
-        display: table;
-        table-layout: fixed;
+        display: block;
         width: 100%;
     }
 
