@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- favicon starts -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- favicon ends -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130771980-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130771980-1');
+  </script>
+  <!-- end Google Analytics code -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Blog</title>
+    
+    <!--jQuery-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Font Icon -->
+    <link href="css/dnngo-font-icon.css" rel="stylesheet" type="text/css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,600" rel="stylesheet" type="text/css">
+
+    <!-- Vendor css -->
+    <link href="vendor/OwlCarousel2/owl.carousel.css" rel="stylesheet" type="text/css">
+
+    <!-- Template base -->
+    <link href="css/theme.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/blog.css" rel="stylesheet" type="text/css">
+	<link href="css/portfolios.css" rel="stylesheet" type="text/css">
+    <link href="css/page-title.css" rel="stylesheet" type="text/css">
+
+    <!-- Template component -->
+    <link href="css/component/carousel.css" rel="stylesheet" type="text/css">
+    <link href="css/component/loaders.css" rel="stylesheet" type="text/css">
+    
+    <!-- Template color -->
+    <link href="css/theme-color/blue.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div class="theme-main">
+        <div id="wrapper">
+            <!-- Header -->
+            <header class="header-bg roll-menu header-light header-not-float" data-top="250">
+                <div class="hidden-xs hidden-sm headerBox ">
+                    <div class="shade"></div>
+                    <div class="container">
+                        <div id="megamenuWidthBox"></div>
+                        <div class="clearfix">
+                            <div class="header-bottom">
+                                <div class="header-left">
+                                    <div class="logo-main">
+                                        <div class="Logobox">
+                                            <a title="Logo" href="/index.html"><img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo"></a>
+                                        </div>
+                                        <div class="FixedLogoPane">
+                                            <a title="Logo" href="/index.html"> <img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-right text-right">
+                                    <nav class="nav-box clearfix menu-hover-line ">
+                                        <div class="menu-main">
+                                            <div id="dng-megamenu">
+                                                <ul class="primary-structure">
+                                                    <!--navigation -->
+                                                    <li class="dir"> <a href="about.html" title="About Us"><span>About Us</span></a>
+                                                    </li>
+                                                    <li class="dir"> <a href="product.html" title="Product"><span>Product</span></a>
+                                                    </li>
+                                                    <li class="dir"> <a href="blog.html" title="Blog"><span>Blog</span></a>
+                                                    </li>
+                                                    <!--navigation ends -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <!--hiding the search
+                                        <div class="menuRightBox">
+                                            <span class="left-line"></span>
+                                            <div class="search-popup-box">
+                                                <div class="icon"><span class="fa fa-search"></span></div>
+                                                <div class="popup-content">
+                                                    <div class="popup-close"><span class="fa fa-cross2"></span></div>
+                                                    <div class="popup-center">
+                                                        <div class="info"></div>
+                                                        <form name="formsearch" method="get" action="#">
+                                                            <input name="s" id="search" type="text" class="text" value="" placeholder="START TYPING AND PRESS ENTER TO SEARCH">
+                                                            <button type="submit" class="submit"><span class="fa fa-search"></span></button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    stop hiding the search-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Header End -->
+            
+            <!-- Mobile Header -->
+            <div class="visible-xs visible-sm mobile-header">
+                <div class="mobile-nav">
+                    <div class="container">
+                        <div class="clearfix">
+                            <div class="mobile-navbox">
+                                <div class="mobile-logo-main  ">
+                                    <div class="Logobox  ">
+                                        <a title="Logo" href="/index.html"><img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo" /></a>
+                                    </div>
+                                </div>
+                                <div class="mobile-right-icon">
+                                    <span class="fa fa-reorder" id="ico-menu-mobile"></span>
+                                </div>
+                                <!--hiding the search
+                                <div class="mobile-right-icon">
+                                    <div class="search-popup-box">
+                                        <div class="icon"><span class="fa fa-search"></span></div>
+                                        <div class="popup-content">
+                                            <div class="popup-close"><span class="fa fa-cross2"></span></div>
+                                            <div class="popup-center">
+                                                <div class="info"></div>
+                                                <form name="formsearch" method="get" action="#">
+                                                    <input name="s" id="search" type="text" class="text" value="" placeholder="START TYPING AND PRESS ENTER TO SEARCH" />
+                                                    <button type="submit" class="submit"><span class="fa fa-search"></span></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                stop hiding the search-->
+
+                                <div id="dng-megamenu-mobile" class="mobile-menu "></div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile End -->
+            
+            <!--Page Title -->
+            <div class="pagetitleBox pagetitle-layout-column pagetitle-xl pagetitle-images Portfolios-pagetitle-images03">
+                <div class="container">
+                    <div class="pagetitle-border">
+                        <div class="pagetitle-left">
+                            <h1 class="title">Blog</h1>
+                        </div>
+                        <div class="pagetitle-right">
+                            <div class="pagetitle-info">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Page Title End-->
+            
+            <!--Content -->
+            <section id="page-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="blog-grid-list-main isotope-grid loading" data-item="2">
+                                <!-- Loading -->
+                                <div class="loading text-center">
+                                    <div class="loader-inner ball-clip-rotate-pulse loader-accent">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <!-- Loading End -->
+                                <div class="isotope-main">
+                                    
+                                    <!--Blog Item -->
+                                    <div class="isotope-item">
+                                        <div class="blog-grid-list">
+                                            <div class="list-date"><span class="day">19</span><span class="month">June</span></div>
+                                            <!-- Photo = 720x510 -->
+                                            <div class="list-image"><img alt="Three ways edtech usage data can yield classroom insights" src="inset/blog/blog-masonry2-01.jpg" /></div>
+                                            <div class="list-main">
+                                                <h3 class="list-title"><a href="https://edscoop.com/three-ways-edtech-usage-data-can-yield-classroom-insights" title="Three ways edtech usage data can yield classroom insights">Three ways edtech usage data can yield classroom insights</a></h3>
+                                                
+                                                <p class="list-description">EdScoop reports about how to make the most effective use of research provided by edtech applications.</p>
+                                                
+                                                <p><a href="https://edscoop.com/three-ways-edtech-usage-data-can-yield-classroom-insights" class="list-more" title="View more">Read article</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Blog Item End-->
+                                    
+                                    <!--Blog Slider -->
+                                    <div class="isotope-item">
+                                        <div class="blog-grid-list">
+                                            <div class="list-date"><span class="day">04</span><span class="month">June</span></div>
+                                            <div class="list-Slider">
+                                                <div class="owl-carousel dg-carousel13" data-autoHeight="false" data-autoplay="true" data-items="1" data-navigation="false">
+                                                    <!-- both pictures = 720x410 -->
+                                                    <div class="item ">
+                                                        <a href="#"> <img alt="Education Innovator Named CEO of Evidentally" src="inset/blog/blog-masonry2-02.jpg" /></a>
+                                                    </div>
+                                                    <div class="item ">
+                                                        <a href="#"><img alt="Education Innovator Named CEO of Evidentally" src="inset/blog/blog-masonry2-10.jpg" /> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-main">
+                                                <h3 class="list-title"><a href="/education-innovator-named-ceo-of-evidentally.html" title="Education Innovator Named CEO of Evidentally">Education Innovator Named CEO of Evidentally</a></h3>
+                                                
+                                                <p class="list-description">Press Release: Trisha Callella to Drive Growth for Startup Efficacy Analytics Company</p>
+                                                
+                                                <p><a href="/education-innovator-named-ceo-of-evidentally.html" class="list-more" title="View more">Read press release</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Blog Slider End-->
+                                    
+                                    <!--hiding the remaining blog post templates
+                                    <!--Blog Item --
+                                    <div class="isotope-item">
+                                        <div class="blog-grid-list">
+                                            <div class="list-date"><span class="day">20</span><span class="month">Feb</span></div>
+                                            <div class="list-image"><img alt="Essential Modules For Building Websites" src="inset/blog/blog-masonry2-03.jpg" /></div>
+                                            <div class="list-main">
+                                                <h3 class="list-title"><a href="#" title="Essential Modules For Building Websites">Essential Modules For Building Websites</a></h3>
+                                                <div class="list-info"> <span class="fa fa-user2"></span><a href="#" title="admin">Admin</a><span class="sep"></span><span class="fa fa-tag2"></span>
+                                                    <a href="#" title="Design">Design</a>, <a href="#" title="Web">Web</a><span class="sep"></span><span class="fa fa-bubble-dots"></span>12
+                                                </div>
+                                                <p class="list-description">Ut enim ad minima veniam, quis nostrum exercitatio nem ullam corporis suscipit laboriosam, nisi ut aliqid exea commodi consequatur.</p>
+                                                <p><a href="#" class="list-more" title="View more">View more</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Blog Item End-->
+                                    
+                                    <!--Blog Audio --
+                                    <div class="isotope-item">
+                                        <div class="blog-grid-list">
+                                            <div class="list-date"><span class="day">20</span><span class="month">Feb</span></div>
+                                            <div class="list-audio"><img alt="Success is not a good teacher failure makes you humble" src="inset/blog/blog-masonry2-04.jpg" />
+                                                <audio controls class="audio">
+													<source src="inset/blog/horse.ogg"></source>
+												</audio>
+                                            </div>
+                                            <div class="list-main">
+                                                <h3 class="list-title"><a href="#" title="Success is not a good teacher failure makes you humble">Success is not a good teacher failure makes you humble </a></h3>
+                                                <div class="list-info"> <span class="fa fa-user2"></span><a href="#" title="admin">Admin</a><span class="sep"></span><span class="fa fa-tag2"></span>
+                                                    <a href="#" title="Design">Design</a>, <a href="#" title="Web">Web</a><span class="sep"></span><span class="fa fa-bubble-dots"></span>12
+                                                </div>
+                                                <p class="list-description">Ut enim ad minima veniam, quis nostrum exercitatio nem ullam corporis suscipit laboriosam, nisi ut aliqid exea commodi consequatur.</p>
+                                                <p><a href="#" class="list-more" title="View more">View more</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Blog Audio End-->
+                                    
+                                    <!--Blog Video --
+                                    <div class="isotope-item">
+                                        <div class="blog-grid-list">
+                                            <div class="list-date"><span class="day">20</span><span class="month">Feb</span></div>
+                                            <div class="responsive-video">
+                                                <iframe width="853" height="480" src="https://www.youtube.com/embed/npfu0fN9GUA?wmode=transparent" frameborder="0"></iframe>
+                                            </div>
+                                            <div class="list-main">
+                                                <h3 class="list-title"><a href="#" title="Not he who has much is rich, but he who gives much ">Not he who has much is rich, but he who gives much </a></h3>
+                                                <div class="list-info"> <span class="fa fa-user2"></span><a href="#" title="admin">Admin</a><span class="sep"></span><span class="fa fa-tag2"></span>
+                                                    <a href="#" title="Design">Design</a>, <a href="#" title="Web">Web</a><span class="sep"></span><span class="fa fa-bubble-dots"></span>12
+                                                </div>
+                                                <p class="list-description">Ut enim ad minima veniam, quis nostrum exercitatio nem ullam corporis suscipit laboriosam, nisi ut aliqid exea commodi consequatur.</p>
+                                                <p><a href="#" class="list-more" title="View more">View more</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Blog Vido End-->
+                                    
+                                    <!--Blog Slider --
+                                    <div class="isotope-item">
+                                        <div class="blog-grid-list">
+                                            <div class="list-date"><span class="day">20</span><span class="month">Feb</span></div>
+                                            <div class="list-Slider">
+                                                <div class="owl-carousel dg-carousel13" data-autoHeight="false" data-autoplay="true" data-items="1" data-navigation="false">
+                                                    <div class="item ">
+                                                        <a href="#"> <img alt="Ultimate running event" src="inset/blog/blog-masonry2-06.jpg" /></a>
+                                                    </div>
+                                                    <div class="item ">
+                                                        <a href="#"><img alt="Ultimate running event" src="inset/blog/blog-grid2-09.jpg" /> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list-main">
+                                                <h3 class="list-title"><a href="#" title="The Top 10 Best Computer Speakers in the Market">The Top 10 Best Computer Speakers in the Market</a></h3>
+                                                <div class="list-info"> <span class="fa fa-user2"></span><a href="#" title="admin">Admin</a><span class="sep"></span><span class="fa fa-tag2"></span>
+                                                    <a href="#" title="Design">Design</a>, <a href="#" title="Web">Web</a><span class="sep"></span><span class="fa fa-bubble-dots"></span>12
+                                                </div>
+                                                <p class="list-description">Ut enim ad minima veniam, quis nostrum exercitatio nem ullam corporis suscipit laboriosam, nisi ut aliqid exea commodi consequatur.</p>
+                                                <p><a href="#" class="list-more" title="View more">View more</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Blog Slider End-->
+                                    <!--unhiding the remaining blog post templates -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-60"></div>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+            <!--Content End-->
+            
+            <!-- Footer -->
+            <footer class="footer-box footer-10">
+                <div class="footer-top text-center pt-60">
+                    <div class="container clearfix">
+                        <!-- Menu -->
+                        <ul class="footer-menu">
+                            <li><a href="/index.html" title="Home">Home</a></li>
+                            <li><a href="/about.html" title="About Us">About Us</a></li>
+                            <li><a href="/product.html" title="Product">Product</a></li>
+                            <li><a href="/blog.html" title="Product">Blog</a></li>
+                            <li><a target="_top" href="mailto:robin@evidentally.com?subject=I_want_to_learn_more_about_evidentally" title="Contact Us">Contact Us</a></li>
+                        </ul>
+                        <!-- Menu End -->
+                    </div>
+                </div>
+  
+                <div class="footer-bottom">
+                      <div class="container clearfix">
+                          <div class="row row-display-table text-center home01-lh">
+                              <div class="left">
+                                  <!-- Copyright -->
+                                  <p> Copyright 2019 </p>
+                                  <!-- Copyright End -->
+                              </div>
+                              <!-- Subscribe -->
+                              <!-- Social -->
+                            <div class="right">
+                              <div class="footer-social05">
+                                <a href="https://www.facebook.com/evidentally" title="facebook"><span class="fa fa-facebook"></span></a>
+                                <a href="https://twitter.com/evidentally_" title="twitter"><span class="fa fa-twitter"></span></a>
+                                <!--hide this
+                                <a href="#" title="linkedin"><span class="fa fa-linkedin"></span></a>
+                                end hiding-->
+                              </div>
+                            </div>
+                              <!-- Social End -->
+                              <!-- Subscribe End -->
+                          </div>
+                      </div>
+                  </div>
+              </footer>
+              <!-- Footer End -->
+
+            <div id="to-top" class="backtop01"><span></span></div>
+        </div>
+    </div>
+    <!-- Vendor script -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="vendor/OwlCarousel2/owl.carousel.min.js"></script>
+
+    <!-- Theme Base, Components and Settings -->
+    <script src="js/theme-functions.js"></script>
+
+    <!-- Custom js file -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
