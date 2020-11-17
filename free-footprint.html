@@ -70,18 +70,18 @@
 <body>
     <!-- Loading -->
     <div class="page-loaders">
-            <div class="loaders">
-                <div class="loader-inner ball-clip-rotate-pulse loader-accent">
-                    <div></div>
-                    <div></div>
-                </div>
+        <div class="loaders">
+            <div class="loader-inner ball-clip-rotate-pulse loader-accent">
+                <div></div>
+                <div></div>
             </div>
         </div>
-        <!-- Loading End -->
+    </div>
+    <!-- Loading End -->
     <div class="theme-main">
         <div id="wrapper">
             <!-- Header -->
-            <header class="header-bg roll-menu header-font-dark" data-top="250">
+            <header class="header-bg roll-menu header-light header-not-float" data-top="250">
                 <div class="hidden-xs hidden-sm headerBox ">
                     <div class="shade"></div>
                     <div class="container">
@@ -91,10 +91,10 @@
                                 <div class="header-left">
                                     <div class="logo-main">
                                         <div class="Logobox">
-                                          <a title="Logo" href="/index.html"><img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo" /></a>
+                                            <a title="Logo" href="/index.html"><img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo"></a>
                                         </div>
                                         <div class="FixedLogoPane">
-                                          <a title="Logo" href="/index.html"> <img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo" /></a>
+                                            <a title="Logo" href="/index.html"> <img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -102,21 +102,39 @@
                                     <nav class="nav-box clearfix menu-hover-line ">
                                         <div class="menu-main">
                                             <div id="dng-megamenu">
-                                              <ul class="primary-structure">
-                                                <!--navigation -->
-                                                <li class="dir"> <a href="/about.html" title="About Us"><span>About</span></a>
-                                                </li>
-                                                <li class="dir"> <a href="/product.html" title="Product"><span>Product</span></a>
-                                                </li>
-                                                <li class="dir"> <a href="/blog.html" title="Blog"><span>Blog</span></a>
-                                                </li>
-                                                <li class="dir"> <a href="/contact.html" title="Contact"><span>Contact</span></a>
-                                                </li>
-                                                <!--navigation ends -->
-                                              </ul>
+                                                <ul class="primary-structure">
+                                                    <!--navigation -->
+                                                    <li class="dir"> <a href="/about.html" title="About Us"><span>About</span></a>
+                                                    </li>
+                                                    <li class="dir"> <a href="/product.html" title="Product"><span>Product</span></a>
+                                                    </li>
+                                                    <li class="dir"> <a href="/blog.html" title="Blog"><span>Blog</span></a>
+                                                    </li>
+                                                    <li class="dir"> <a href="/contact.html" title="Contact"><span>Contact</span></a>
+                                                    </li>
+                                                    <!--navigation ends -->
+                                                </ul>
                                             </div>
                                         </div>
                                     </nav>
+                                    <!--hiding the search
+                                        <div class="menuRightBox">
+                                            <span class="left-line"></span>
+                                            <div class="search-popup-box">
+                                                <div class="icon"><span class="fa fa-search"></span></div>
+                                                <div class="popup-content">
+                                                    <div class="popup-close"><span class="fa fa-cross2"></span></div>
+                                                    <div class="popup-center">
+                                                        <div class="info"></div>
+                                                        <form name="formsearch" method="get" action="#">
+                                                            <input name="s" id="search" type="text" class="text" value="" placeholder="START TYPING AND PRESS ENTER TO SEARCH">
+                                                            <button type="submit" class="submit"><span class="fa fa-search"></span></button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    stop hiding the search-->
                                 </div>
                             </div>
                         </div>
@@ -124,7 +142,8 @@
                 </div>
             </header>
             <!-- Header End -->
-            <!-- Mobile Header -->
+            
+            <!-- Mobile Header start -->
             <div class="visible-xs visible-sm mobile-header">
                 <div class="mobile-nav">
                     <div class="container">
@@ -132,10 +151,12 @@
                             <div class="mobile-navbox">
                                 <div class="mobile-logo-main  ">
                                     <div class="Logobox  ">
-                                      <a title="Logo" href="/index.html"><img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo" /></a>
+                                        <a title="Logo" href="/index.html"><img src="inset/logo.png" srcset="inset/logo-2x.png 2x" alt="Logo" /></a>
                                     </div>
                                 </div>
-                                <div class="mobile-right-icon"> <span class="fa fa-reorder" id="ico-menu-mobile"></span> </div>
+                                <div class="mobile-right-icon">
+                                    <span class="fa fa-reorder" id="ico-menu-mobile"></span>
+                                </div>
                                 <div id="dng-megamenu-mobile" class="mobile-menu "></div>
                             </div>
                         </div>
@@ -143,7 +164,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Mobile Header End -->
+            <!-- Mobile header End -->
             
             
             <!--Content -->
