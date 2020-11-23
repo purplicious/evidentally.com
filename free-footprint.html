@@ -212,39 +212,75 @@
                     <p class="text-center width-55 mb-30 animation delay1 fadeInUp animated">If your product is sold to U.S. PK-12 institutional customers (i.e., schools or districts) and has been used in the market for at least one school year, you’re a good candidate for a Footprint Report.<br/>
                     To get started, please tell us a bit about your company and product.</p>
                     <div class="width-55">
-                        <form>
-                            <div class="row dg-form-content14">
+                        <div class="row dg-form-content14">
+                            <form name="contact" action="/thank-you" netlify>
                                 <div class="col-sm-6">
                                     <div class="form-row">
-                                        <input id="Name" type="text" name="flvname" class="flvname" required>
+                                        <input id="Name" type="text" name="name" class="flvname" required placeholder="Your Name">
                                         <label>Your name*</label>
-                                        <span class="line"></span> </div>
+                                        <span class="line"></span> 
+                                    </div>
                                 </div>
+                                
                                 <div class="col-sm-6">
                                     <div class="form-row">
-                                        <input id="Email" type="text" name="flvname" class="flvname" required>
+                                        <input id="Company" type="text" name="company" class="flvname" required placeholder="Company Name">
+                                        <label>Company name*</label>
+                                        <span class="line"></span> 
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="form-row">
+                                        <input id="Product" type="text" name="product" class="flvname" required placeholder="Product Name">
+                                        <label>Product name*</label>
+                                        <span class="line"></span> 
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="form-row">
+                                        <input id="Email" type="text" name="email" class="flvname" required placeholder="Your Email">
                                         <label>Your email*</label>
                                         <span class="line"></span></div>
                                 </div>
+                                
+                                <!--Hiding the subject line --
                                 <div class="col-sm-12">
                                     <div class="form-row">
                                         <input id="Subject" type="text" name="flvname" class="Subject" required>
                                         <label>Subject*</label>
                                         <span class="line"></span></div>
                                 </div>
+                                <-- stopping hiding the subject line --> 
+
                                 <div class="col-sm-12">
                                     <div class="form-row">
-                                        <textarea id="mymessage" name="flvmessage" class="flvmessage" rows="4" required></textarea>
-                                        <label>Message*</label>
+                                        <textarea id="customers" name="users" class="flvmessage" rows="4" required placeholder="Number of districts and schools using the product"></textarea>
+                                        <label>Approximately how many districts and schools are using the product?*</label>
                                         <span class="line"></span></div>
                                 </div>
-                                <div class="col-sm-12 mt-30 pb-30">
-                                    <input type="submit" name="submit" title="SUBMIT NOW" value="SUBMIT NOW" class=" dg-btn-1 radius-3px btn-accent hover-info size-lg">
+                                
+                                <div class="col-sm-12">
+                                    <div class="form-row">
+                                        <textarea id="market" name="market" class="flvmessage" rows="4" required placeholder="Month and year the product was introduced to the market"></textarea>
+                                        <label>When was the product introduced in the market?*</label>
+                                        <span class="line"></span></div>
                                 </div>
-                            </div>
-                        </form>
-                    </div>
-                    <!--Form End -->
+                                
+                                <div class="col-sm-12">
+                                    <div class="form-row">
+                                        <textarea id="comments" name="comments" class="flvmessage" rows="4" required placeholder="other comments or questions"></textarea>
+                                        <label>Comments or questions*</label>
+                                        <span class="line"></span></div>
+                                </div>
+                               
+                                <div class="col-sm-12 mt-30 pb-30">
+                                    <input type="submit" name="submit" title="SUBMIT NOW" value="Submit " class=" dg-btn-1 radius-3px btn-accent hover-info size-lg">
+                                </div>
+                            </form>
+                        </div>
+                    </div><!--Form End --> 
                 </div>
             </section>
             <div class="clearfix"></div>
